@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/libavutil
+END
+sha1.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/libavutil/sha1.h
+END
+adler32.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/libavutil/adler32.h
+END
+avstring.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/libavutil/avstring.h
+END
+mathematics.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/libavutil/mathematics.h
+END
+lzo.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/libavutil/lzo.h
+END
+avutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/libavutil/avutil.h
+END
+pixfmt.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/libavutil/pixfmt.h
+END
+crc.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/libavutil/crc.h
+END
+rational.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/libavutil/rational.h
+END
+mem.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/libavutil/mem.h
+END
+log.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/libavutil/log.h
+END
+fifo.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/libavutil/fifo.h
+END
+base64.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/libavutil/base64.h
+END
+md5.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/libavutil/md5.h
+END
+intfloat_readwrite.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/libavutil/intfloat_readwrite.h
+END
+common.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/libavutil/common.h
+END

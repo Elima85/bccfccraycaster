@@ -1,0 +1,365 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/public/!svn/ver/42/voreen-snapshot/modules/base/processors/image
+END
+fade.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/fade.cpp
+END
+imagethreshold.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/imagethreshold.cpp
+END
+explosioncompositor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/explosioncompositor.cpp
+END
+unaryimageprocessor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/unaryimageprocessor.cpp
+END
+edgedetect.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/edgedetect.h
+END
+median.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/median.h
+END
+imagemorphology.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/imagemorphology.cpp
+END
+compositor.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/compositor.h
+END
+colordepth.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/colordepth.h
+END
+gaussian.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/gaussian.cpp
+END
+canny.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/canny.h
+END
+nonminmaxsuppression.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/nonminmaxsuppression.cpp
+END
+grayscale.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/grayscale.h
+END
+targettotexture.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/targettotexture.h
+END
+texturetotarget.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/texturetotarget.h
+END
+mean.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/mean.cpp
+END
+regionofinterest2d.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/regionofinterest2d.h
+END
+labeling.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/labeling.h
+END
+background.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/background.h
+END
+convolution.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/convolution.h
+END
+tonemapping.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/42/voreen-snapshot/modules/base/processors/image/tonemapping.h
+END
+binaryimageprocessor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/binaryimageprocessor.cpp
+END
+imageoverlay.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/imageoverlay.h
+END
+quadview.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/quadview.h
+END
+depthdarkening.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/depthdarkening.h
+END
+labelingmath.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/labelingmath.h
+END
+edgedetect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/edgedetect.cpp
+END
+median.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/median.cpp
+END
+compositor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/compositor.cpp
+END
+gabor.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/gabor.h
+END
+unsharpmasking.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/unsharpmasking.h
+END
+imagemasking.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/imagemasking.h
+END
+orientationoverlay.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/orientationoverlay.h
+END
+colordepth.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/colordepth.cpp
+END
+explosioncompositor.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/explosioncompositor.h
+END
+fade.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/fade.h
+END
+imagethreshold.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/imagethreshold.h
+END
+unaryimageprocessor.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/unaryimageprocessor.h
+END
+imagemorphology.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/imagemorphology.h
+END
+canny.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/canny.cpp
+END
+grayscale.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/grayscale.cpp
+END
+targettotexture.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/targettotexture.cpp
+END
+texturetotarget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/texturetotarget.cpp
+END
+regionofinterest2d.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/regionofinterest2d.cpp
+END
+labeling.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/labeling.cpp
+END
+background.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/background.cpp
+END
+gaussian.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/gaussian.h
+END
+convolution.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/convolution.cpp
+END
+tonemapping.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/42/voreen-snapshot/modules/base/processors/image/tonemapping.cpp
+END
+nonminmaxsuppression.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/nonminmaxsuppression.h
+END
+imageoverlay.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/imageoverlay.cpp
+END
+quadview.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/quadview.cpp
+END
+mean.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/mean.h
+END
+depthdarkening.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/depthdarkening.cpp
+END
+labelingmath.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/labelingmath.cpp
+END
+gabor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/gabor.cpp
+END
+unsharpmasking.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/unsharpmasking.cpp
+END
+imagemasking.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/imagemasking.cpp
+END
+binaryimageprocessor.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/binaryimageprocessor.h
+END
+orientationoverlay.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/image/orientationoverlay.cpp
+END

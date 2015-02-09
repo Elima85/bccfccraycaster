@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/public/!svn/ver/42/voreen-snapshot/modules/base
+END
+basemodule.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/public/!svn/ver/41/voreen-snapshot/modules/base/basemodule.xml
+END
+basemodule.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/public/!svn/ver/42/voreen-snapshot/modules/base/basemodule.cpp
+END
+basemoduledefine.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/41/voreen-snapshot/modules/base/basemoduledefine.h
+END
+basemodule.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/41/voreen-snapshot/modules/base/basemodule.h
+END
+basemoduleqt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/public/!svn/ver/41/voreen-snapshot/modules/base/basemoduleqt.cpp
+END
+base_qt.pri
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/public/!svn/ver/41/voreen-snapshot/modules/base/base_qt.pri
+END
+deploymentlist.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/41/voreen-snapshot/modules/base/deploymentlist.txt
+END
+base_common.pri
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/public/!svn/ver/41/voreen-snapshot/modules/base/base_common.pri
+END
+base_core.pri
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/public/!svn/ver/42/voreen-snapshot/modules/base/base_core.pri
+END
+basemoduleqt.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/public/!svn/ver/41/voreen-snapshot/modules/base/basemoduleqt.h
+END

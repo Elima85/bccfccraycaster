@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/public/!svn/ver/41/voreen-snapshot/modules/base/qt/processorwidgets
+END
+dynamicglslwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/modules/base/qt/processorwidgets/dynamicglslwidget.h
+END
+baseprocessorwidgetfactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/public/!svn/ver/41/voreen-snapshot/modules/base/qt/processorwidgets/baseprocessorwidgetfactory.cpp
+END
+dynamicglslwidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/modules/base/qt/processorwidgets/dynamicglslwidget.cpp
+END
+baseprocessorwidgetfactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/41/voreen-snapshot/modules/base/qt/processorwidgets/baseprocessorwidgetfactory.h
+END

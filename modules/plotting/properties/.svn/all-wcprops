@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/properties
+END
+plotselectionproperty.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/properties/plotselectionproperty.h
+END
+plotdataproperty.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/properties/plotdataproperty.h
+END
+plotpredicateproperty.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/properties/plotpredicateproperty.cpp
+END
+plotentitiesproperty.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/properties/plotentitiesproperty.cpp
+END
+plotpredicateproperty.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/properties/plotpredicateproperty.h
+END
+plotselectionproperty.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/properties/plotselectionproperty.cpp
+END
+plotdataproperty.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/properties/plotdataproperty.cpp
+END
+plotentitiesproperty.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/properties/plotentitiesproperty.h
+END

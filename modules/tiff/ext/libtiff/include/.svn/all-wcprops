@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/public/!svn/ver/41/voreen-snapshot/modules/tiff/ext/libtiff/include
+END
+tiffconf.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/modules/tiff/ext/libtiff/include/tiffconf.h
+END
+tiffio.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/public/!svn/ver/41/voreen-snapshot/modules/tiff/ext/libtiff/include/tiffio.h
+END
+tiff.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/modules/tiff/ext/libtiff/include/tiff.h
+END
+tiffvers.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/modules/tiff/ext/libtiff/include/tiffvers.h
+END

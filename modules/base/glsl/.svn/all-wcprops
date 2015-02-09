@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/public/!svn/ver/42/voreen-snapshot/modules/base/glsl
+END
+sl_frontcompositing.frag
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/sl_frontcompositing.frag
+END
+rc_curvature.frag
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/rc_curvature.frag
+END
+rc_hitpoints.frag
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/rc_hitpoints.frag
+END
+dynamicglsl.frag
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/dynamicglsl.frag
+END
+rc_multivolume.frag
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/rc_multivolume.frag
+END
+eep_vertex.vert
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/eep_vertex.vert
+END
+sl_singlevolume.frag
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/sl_singlevolume.frag
+END
+sl_base.frag
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/public/!svn/ver/42/voreen-snapshot/modules/base/glsl/sl_base.frag
+END
+sl_singlevolume.vert
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/42/voreen-snapshot/modules/base/glsl/sl_singlevolume.vert
+END
+sl_base.vert
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/public/!svn/ver/42/voreen-snapshot/modules/base/glsl/sl_base.vert
+END
+rc_simple.frag
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/rc_simple.frag
+END
+rc_id.frag
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/rc_id.frag
+END
+rc_firsthit.frag
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/rc_firsthit.frag
+END
+eep_texcoord.vert
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/eep_texcoord.vert
+END
+rc_segmentation.frag
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/rc_segmentation.frag
+END
+sl_halfslicing.frag
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/sl_halfslicing.frag
+END
+eep_simple.frag
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/eep_simple.frag
+END
+eep_simple.vert
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/42/voreen-snapshot/modules/base/glsl/eep_simple.vert
+END
+eep_geometry.frag
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/eep_geometry.frag
+END
+textoverlay.frag
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/textoverlay.frag
+END
+gabor.frag
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/gabor.frag
+END
+eep_jitter.frag
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/eep_jitter.frag
+END
+eep_depth.frag
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/eep_depth.frag
+END
+rc_singlevolume.frag
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/rc_singlevolume.frag
+END
+eep_depth.vert
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/public/!svn/ver/42/voreen-snapshot/modules/base/glsl/eep_depth.vert
+END
+eep_clipping.frag
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/eep_clipping.frag
+END
+rc_rgb.frag
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/rc_rgb.frag
+END

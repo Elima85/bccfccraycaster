@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/public/!svn/ver/42/voreen-snapshot/modules/opencl/cl
+END
+mod_samplers.cl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/cl/mod_samplers.cl
+END
+parallel_reduction.cl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/42/voreen-snapshot/modules/opencl/cl/parallel_reduction.cl
+END
+simple.cl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/cl/simple.cl
+END
+grayscale.cl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/cl/grayscale.cl
+END
+raytracingentryexitpoints.cl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/cl/raytracingentryexitpoints.cl
+END
+gradient.cl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/cl/gradient.cl
+END
+raycaster.cl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/cl/raycaster.cl
+END
+mod_gradients.cl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/cl/mod_gradients.cl
+END
+voreenblas.cl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/cl/voreenblas.cl
+END
+mod_volumewrite.cl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/cl/mod_volumewrite.cl
+END

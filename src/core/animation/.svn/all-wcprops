@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/public/!svn/ver/41/voreen-snapshot/src/core/animation
+END
+animation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/public/!svn/ver/41/voreen-snapshot/src/core/animation/animation.cpp
+END
+animatedprocessor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/src/core/animation/animatedprocessor.cpp
+END
+interpolationfunctionfactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/41/voreen-snapshot/src/core/animation/interpolationfunctionfactory.cpp
+END
+templatepropertytimeline.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/src/core/animation/templatepropertytimeline.cpp
+END
+interpolationfunctionbase.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/src/core/animation/interpolationfunctionbase.cpp
+END
+templatepropertytimelinestate.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/src/core/animation/templatepropertytimelinestate.cpp
+END
+propertykeyvalue.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/src/core/animation/propertykeyvalue.cpp
+END
+interpolationfunction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/src/core/animation/interpolationfunction.cpp
+END
+serializationfactories.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/src/core/animation/serializationfactories.cpp
+END

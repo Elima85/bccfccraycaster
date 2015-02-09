@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering
+END
+deploymentlist.win64.txt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/deploymentlist.win64.txt
+END
+fontrenderingmodule.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/fontrenderingmodule.h
+END
+fontrendering_common.pri
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/fontrendering_common.pri
+END
+fontrendering_core.pri
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/fontrendering_core.pri
+END
+fontrenderingmodule.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/fontrenderingmodule.xml
+END
+deploymentlist.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/deploymentlist.txt
+END
+deploymentlist.win32.txt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/deploymentlist.win32.txt
+END
+fontrenderingmodule.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/fontrenderingmodule.cpp
+END
+fontrendering_app.pri
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/fontrendering_app.pri
+END

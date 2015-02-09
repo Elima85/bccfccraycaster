@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/41/voreen-snapshot/data/workspaces/templates
+END
+plotting-bar.vws
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/public/!svn/ver/41/voreen-snapshot/data/workspaces/templates/plotting-bar.vws
+END
+raycasting.vws
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/data/workspaces/templates/raycasting.vws
+END
+dynamicglslprocessor.vws
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/data/workspaces/templates/dynamicglslprocessor.vws
+END
+renderloop.vws
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/data/workspaces/templates/renderloop.vws
+END
+sliceviewer-multiple.vws
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/data/workspaces/templates/sliceviewer-multiple.vws
+END
+glslraycaster.vws
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/data/workspaces/templates/glslraycaster.vws
+END
+raycasting-cliplight.vws
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/data/workspaces/templates/raycasting-cliplight.vws
+END
+explodedviews.vws
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/data/workspaces/templates/explodedviews.vws
+END
+plotting-line.vws
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/data/workspaces/templates/plotting-line.vws
+END
+arbitraryclipping.vws
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/data/workspaces/templates/arbitraryclipping.vws
+END
+multicanvas.vws
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/public/!svn/ver/41/voreen-snapshot/data/workspaces/templates/multicanvas.vws
+END
+plotting-surface.vws
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/data/workspaces/templates/plotting-surface.vws
+END
+order.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/data/workspaces/templates/order.cfg
+END
+raycasting-multi.vws
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/data/workspaces/templates/raycasting-multi.vws
+END
+raycasting-large.vws
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/data/workspaces/templates/raycasting-large.vws
+END
+timerbased-animation.vws
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/data/workspaces/templates/timerbased-animation.vws
+END
+raycasting-geometry.vws
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/data/workspaces/templates/raycasting-geometry.vws
+END
+sliceviewer-single.vws
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/data/workspaces/templates/sliceviewer-single.vws
+END

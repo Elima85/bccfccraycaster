@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/public/!svn/ver/41/voreen-snapshot/modules/hpmc
+END
+hpmc_app.pri
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/41/voreen-snapshot/modules/hpmc/hpmc_app.pri
+END
+hpmcmodule.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/41/voreen-snapshot/modules/hpmc/hpmcmodule.h
+END
+hpmc_common.pri
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/public/!svn/ver/41/voreen-snapshot/modules/hpmc/hpmc_common.pri
+END
+hpmc_core.pri
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/public/!svn/ver/41/voreen-snapshot/modules/hpmc/hpmc_core.pri
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/public/!svn/ver/41/voreen-snapshot/modules/hpmc/README.txt
+END
+hpmcmodule.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/public/!svn/ver/41/voreen-snapshot/modules/hpmc/hpmcmodule.xml
+END
+hpmcmodule.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/public/!svn/ver/41/voreen-snapshot/modules/hpmc/hpmcmodule.cpp
+END

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/propertywidgets
+END
+plotpropertywidgetfactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/propertywidgets/plotpropertywidgetfactory.cpp
+END
+plotdatapropertywidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/propertywidgets/plotdatapropertywidget.cpp
+END
+plotentitiespropertywidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/propertywidgets/plotentitiespropertywidget.h
+END
+plotzoompropertywidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/propertywidgets/plotzoompropertywidget.h
+END
+plotselectionpropertywidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/propertywidgets/plotselectionpropertywidget.h
+END
+plotpropertywidgetfactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/propertywidgets/plotpropertywidgetfactory.h
+END
+plotdatapropertywidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/propertywidgets/plotdatapropertywidget.h
+END
+plotpredicatepropertywidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/propertywidgets/plotpredicatepropertywidget.cpp
+END
+plotentitiespropertywidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/propertywidgets/plotentitiespropertywidget.cpp
+END
+plotzoompropertywidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/propertywidgets/plotzoompropertywidget.cpp
+END
+plotpredicatepropertywidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/propertywidgets/plotpredicatepropertywidget.h
+END
+plotselectionpropertywidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/propertywidgets/plotselectionpropertywidget.cpp
+END

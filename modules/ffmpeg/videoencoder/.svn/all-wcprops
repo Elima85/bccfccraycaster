@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/videoencoder
+END
+videoencoder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/videoencoder/videoencoder.cpp
+END
+videoencoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/videoencoder/videoencoder.h
+END

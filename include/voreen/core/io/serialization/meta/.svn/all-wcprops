@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/io/serialization/meta
+END
+primitivemetadata.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/io/serialization/meta/primitivemetadata.h
+END
+windowstatemetadata.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/io/serialization/meta/windowstatemetadata.h
+END
+metadatabase.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/io/serialization/meta/metadatabase.h
+END
+coremetadatafactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/io/serialization/meta/coremetadatafactory.h
+END
+metadatacontainer.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/io/serialization/meta/metadatacontainer.h
+END
+networkannotation.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/io/serialization/meta/networkannotation.h
+END
+positionmetadata.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/io/serialization/meta/positionmetadata.h
+END
+zoommetadata.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/io/serialization/meta/zoommetadata.h
+END
+selectionmetadata.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/io/serialization/meta/selectionmetadata.h
+END
+aggregationmetadata.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/io/serialization/meta/aggregationmetadata.h
+END
+realworldmappingmetadata.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/io/serialization/meta/realworldmappingmetadata.h
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/public/!svn/ver/41/voreen-snapshot/src/core/datastructures/geometry
+END
+geometryfactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/src/core/datastructures/geometry/geometryfactory.cpp
+END
+meshlistgeometry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/41/voreen-snapshot/src/core/datastructures/geometry/meshlistgeometry.cpp
+END
+meshgeometry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/src/core/datastructures/geometry/meshgeometry.cpp
+END
+vertexgeometry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/41/voreen-snapshot/src/core/datastructures/geometry/vertexgeometry.cpp
+END
+facegeometry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/src/core/datastructures/geometry/facegeometry.cpp
+END
+geometry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/src/core/datastructures/geometry/geometry.cpp
+END

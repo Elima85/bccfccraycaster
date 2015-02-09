@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/public/!svn/ver/42/voreen-snapshot/src/core/properties
+END
+propertyowner.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/public/!svn/ver/41/voreen-snapshot/src/core/properties/propertyowner.cpp
+END
+intproperty.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/src/core/properties/intproperty.cpp
+END
+boolproperty.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/public/!svn/ver/41/voreen-snapshot/src/core/properties/boolproperty.cpp
+END
+filedialogproperty.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/public/!svn/ver/41/voreen-snapshot/src/core/properties/filedialogproperty.cpp
+END
+voxeltypeproperty.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/public/!svn/ver/41/voreen-snapshot/src/core/properties/voxeltypeproperty.cpp
+END
+vectorproperty.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/42/voreen-snapshot/src/core/properties/vectorproperty.cpp
+END
+numericproperty.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/src/core/properties/numericproperty.cpp
+END
+propertyvector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/src/core/properties/propertyvector.cpp
+END
+transfuncproperty.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/public/!svn/ver/41/voreen-snapshot/src/core/properties/transfuncproperty.cpp
+END
+matrixproperty.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/src/core/properties/matrixproperty.cpp
+END
+floatproperty.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/public/!svn/ver/41/voreen-snapshot/src/core/properties/floatproperty.cpp
+END
+fontproperty.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/public/!svn/ver/41/voreen-snapshot/src/core/properties/fontproperty.cpp
+END
+shaderproperty.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/src/core/properties/shaderproperty.cpp
+END
+stringproperty.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/src/core/properties/stringproperty.cpp
+END
+propertyfactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/src/core/properties/propertyfactory.cpp
+END
+optionproperty.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/src/core/properties/optionproperty.cpp
+END
+buttonproperty.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/src/core/properties/buttonproperty.cpp
+END
+property.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/public/!svn/ver/42/voreen-snapshot/src/core/properties/property.cpp
+END
+eventproperty.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/public/!svn/ver/41/voreen-snapshot/src/core/properties/eventproperty.cpp
+END
+condition.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/src/core/properties/condition.cpp
+END
+volumecollectionproperty.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/src/core/properties/volumecollectionproperty.cpp
+END
+volumehandleproperty.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/src/core/properties/volumehandleproperty.cpp
+END
+stringexpressionproperty.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/src/core/properties/stringexpressionproperty.cpp
+END
+cameraproperty.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/src/core/properties/cameraproperty.cpp
+END

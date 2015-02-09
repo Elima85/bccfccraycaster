@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/public/!svn/ver/42/voreen-snapshot/src/core/processors
+END
+volumerenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/42/voreen-snapshot/src/core/processors/volumerenderer.cpp
+END
+processor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/src/core/processors/processor.cpp
+END
+renderprocessor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/42/voreen-snapshot/src/core/processors/renderprocessor.cpp
+END
+canvasrenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/src/core/processors/canvasrenderer.cpp
+END
+imageprocessor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/src/core/processors/imageprocessor.cpp
+END
+cache.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/public/!svn/ver/41/voreen-snapshot/src/core/processors/cache.cpp
+END
+processorwidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/src/core/processors/processorwidget.cpp
+END
+volumeraycaster.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/src/core/processors/volumeraycaster.cpp
+END
+volumecreatebase.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/src/core/processors/volumecreatebase.cpp
+END
+processorfactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/src/core/processors/processorfactory.cpp
+END
+volumeprocessor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/src/core/processors/volumeprocessor.cpp
+END
+imageprocessorbypassable.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/src/core/processors/imageprocessorbypassable.cpp
+END
+profiling.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/src/core/processors/profiling.cpp
+END
+geometryrendererbase.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/src/core/processors/geometryrendererbase.cpp
+END

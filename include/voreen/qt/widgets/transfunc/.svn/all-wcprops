@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/transfunc
+END
+transfunceditor.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/transfunc/transfunceditor.h
+END
+transfunceditorintensitypet.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/transfunc/transfunceditorintensitypet.h
+END
+transfuncintensitygradientpainter.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/transfunc/transfuncintensitygradientpainter.h
+END
+transfuncmappingcanvas.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/transfunc/transfuncmappingcanvas.h
+END
+transfuncmappingcanvasramp.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/transfunc/transfuncmappingcanvasramp.h
+END
+colorpicker.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/transfunc/colorpicker.h
+END
+doubleslider.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/transfunc/doubleslider.h
+END
+transfunceditorintensitygradient.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/transfunc/transfunceditorintensitygradient.h
+END
+histogrampainter.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/transfunc/histogrampainter.h
+END
+transfunceditorintensity.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/transfunc/transfunceditorintensity.h
+END
+transfunceditorintensityramp.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/transfunc/transfunceditorintensityramp.h
+END
+transfuncplugin.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/transfunc/transfuncplugin.h
+END
+transfunctexturepainter.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/transfunc/transfunctexturepainter.h
+END
+colorluminancepicker.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/transfunc/colorluminancepicker.h
+END

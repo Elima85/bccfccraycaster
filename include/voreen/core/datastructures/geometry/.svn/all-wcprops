@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/geometry
+END
+vertexgeometry.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/geometry/vertexgeometry.h
+END
+facegeometry.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/geometry/facegeometry.h
+END
+geometry.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/geometry/geometry.h
+END
+pointlistgeometry.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/geometry/pointlistgeometry.h
+END
+scalargeometry.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/geometry/scalargeometry.h
+END
+geometryfactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/geometry/geometryfactory.h
+END
+meshlistgeometry.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/geometry/meshlistgeometry.h
+END
+pointsegmentlistgeometry.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/geometry/pointsegmentlistgeometry.h
+END
+pointgeometry.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/geometry/pointgeometry.h
+END
+meshgeometry.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/geometry/meshgeometry.h
+END

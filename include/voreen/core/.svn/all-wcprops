@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/public/!svn/ver/42/voreen-snapshot/include/voreen/core
+END
+coremodule.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/coremodule.h
+END
+voreenapplication.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/42/voreen-snapshot/include/voreen/core/voreenapplication.h
+END
+voreencoredefine.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/voreencoredefine.h
+END
+voreenmodule.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/voreenmodule.h
+END
+version.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/version.h
+END

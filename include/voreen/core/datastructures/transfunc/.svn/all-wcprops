@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/42/voreen-snapshot/include/voreen/core/datastructures/transfunc
+END
+transfuncintensity.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/transfunc/transfuncintensity.h
+END
+transfuncfactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/transfunc/transfuncfactory.h
+END
+transfuncprimitive.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/transfunc/transfuncprimitive.h
+END
+transfunc.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/transfunc/transfunc.h
+END
+transfuncintensitygradient.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/transfunc/transfuncintensitygradient.h
+END
+transfuncmappingkey.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/public/!svn/ver/42/voreen-snapshot/include/voreen/core/datastructures/transfunc/transfuncmappingkey.h
+END

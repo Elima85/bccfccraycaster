@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/public/!svn/ver/41/voreen-snapshot/src/qt/widgets/processor
+END
+coreprocessorwidgetfactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/public/!svn/ver/41/voreen-snapshot/src/qt/widgets/processor/coreprocessorwidgetfactory.cpp
+END
+qprocessorwidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/src/qt/widgets/processor/qprocessorwidget.cpp
+END
+canvasrendererwidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/src/qt/widgets/processor/canvasrendererwidget.cpp
+END

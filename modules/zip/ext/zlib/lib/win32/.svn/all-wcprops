@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/public/!svn/ver/41/voreen-snapshot/modules/zip/ext/zlib/lib/win32
+END
+zdll.lib
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/modules/zip/ext/zlib/lib/win32/zdll.lib
+END
+zlib1.dll
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/modules/zip/ext/zlib/lib/win32/zlib1.dll
+END
+zlib.def
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/modules/zip/ext/zlib/lib/win32/zlib.def
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/public/!svn/ver/42/voreen-snapshot/src/qt
+END
+aboutbox.ui
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/public/!svn/ver/41/voreen-snapshot/src/qt/aboutbox.ui
+END
+aboutbox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/public/!svn/ver/41/voreen-snapshot/src/qt/aboutbox.cpp
+END
+coremoduleqt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/public/!svn/ver/41/voreen-snapshot/src/qt/coremoduleqt.cpp
+END
+pch_qt.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/public/!svn/ver/41/voreen-snapshot/src/qt/pch_qt.h
+END
+progressdialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/41/voreen-snapshot/src/qt/progressdialog.cpp
+END
+remotecontrollerqt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/public/!svn/ver/42/voreen-snapshot/src/qt/remotecontrollerqt.cpp
+END
+voreenapplicationqt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/public/!svn/ver/42/voreen-snapshot/src/qt/voreenapplicationqt.cpp
+END
+voreenlib_qt.pro
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/public/!svn/ver/42/voreen-snapshot/src/qt/voreenlib_qt.pro
+END
+voreenmoduleqt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/41/voreen-snapshot/src/qt/voreenmoduleqt.cpp
+END
+versionqt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/public/!svn/ver/41/voreen-snapshot/src/qt/versionqt.cpp
+END
+helpbrowser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/public/!svn/ver/41/voreen-snapshot/src/qt/helpbrowser.cpp
+END

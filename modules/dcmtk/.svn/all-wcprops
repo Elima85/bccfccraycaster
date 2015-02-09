@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/public/!svn/ver/41/voreen-snapshot/modules/dcmtk
+END
+dcmtk_qt.pri
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/public/!svn/ver/41/voreen-snapshot/modules/dcmtk/dcmtk_qt.pri
+END
+dcmtk_common.pri
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/public/!svn/ver/41/voreen-snapshot/modules/dcmtk/dcmtk_common.pri
+END
+dcmtk_core.pri
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/public/!svn/ver/41/voreen-snapshot/modules/dcmtk/dcmtk_core.pri
+END
+dcmtkmodule.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/public/!svn/ver/41/voreen-snapshot/modules/dcmtk/dcmtkmodule.xml
+END
+dcmtkmodule.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/public/!svn/ver/41/voreen-snapshot/modules/dcmtk/dcmtkmodule.cpp
+END
+dcmtkmoduledefine.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/modules/dcmtk/dcmtkmoduledefine.h
+END
+deploymentlist.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/public/!svn/ver/41/voreen-snapshot/modules/dcmtk/deploymentlist.txt
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/public/!svn/ver/41/voreen-snapshot/modules/dcmtk/README.txt
+END
+dcmtk_app.pri
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/public/!svn/ver/41/voreen-snapshot/modules/dcmtk/dcmtk_app.pri
+END
+dcmtkmodule.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/public/!svn/ver/41/voreen-snapshot/modules/dcmtk/dcmtkmodule.h
+END

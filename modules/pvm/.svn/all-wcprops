@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/public/!svn/ver/41/voreen-snapshot/modules/pvm
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/public/!svn/ver/41/voreen-snapshot/modules/pvm/LICENSE.txt
+END
+pvm_common.pri
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/public/!svn/ver/41/voreen-snapshot/modules/pvm/pvm_common.pri
+END
+pvm_core.pri
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/public/!svn/ver/41/voreen-snapshot/modules/pvm/pvm_core.pri
+END
+pvmmodule.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/41/voreen-snapshot/modules/pvm/pvmmodule.xml
+END
+pvmmodule.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/41/voreen-snapshot/modules/pvm/pvmmodule.cpp
+END
+deploymentlist.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/public/!svn/ver/41/voreen-snapshot/modules/pvm/deploymentlist.txt
+END
+pvmmodule.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/public/!svn/ver/41/voreen-snapshot/modules/pvm/pvmmodule.h
+END

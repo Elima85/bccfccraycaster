@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/ftgl/include/FTGL
+END
+FTBufferFont.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/ftgl/include/FTGL/FTBufferFont.h
+END
+FTGLExtrdFont.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/ftgl/include/FTGL/FTGLExtrdFont.h
+END
+FTGLPolygonFont.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/ftgl/include/FTGL/FTGLPolygonFont.h
+END
+ftgl.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/ftgl/include/FTGL/ftgl.h
+END
+FTPixmapGlyph.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/ftgl/include/FTGL/FTPixmapGlyph.h
+END
+FTTextureGlyph.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/ftgl/include/FTGL/FTTextureGlyph.h
+END
+FTFont.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/ftgl/include/FTGL/FTFont.h
+END
+FTGLPixmapFont.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/ftgl/include/FTGL/FTGLPixmapFont.h
+END
+FTBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/ftgl/include/FTGL/FTBuffer.h
+END
+FTGLTextureFont.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/ftgl/include/FTGL/FTGLTextureFont.h
+END
+FTBufferGlyph.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/ftgl/include/FTGL/FTBufferGlyph.h
+END
+FTLayout.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/ftgl/include/FTGL/FTLayout.h
+END
+FTBitmapGlyph.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/ftgl/include/FTGL/FTBitmapGlyph.h
+END
+FTGlyph.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/ftgl/include/FTGL/FTGlyph.h
+END
+FTOutlineGlyph.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/ftgl/include/FTGL/FTOutlineGlyph.h
+END
+FTGLBitmapFont.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/ftgl/include/FTGL/FTGLBitmapFont.h
+END
+FTPolyGlyph.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/ftgl/include/FTGL/FTPolyGlyph.h
+END
+FTSimpleLayout.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/ftgl/include/FTGL/FTSimpleLayout.h
+END
+FTGLOutlineFont.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/ftgl/include/FTGL/FTGLOutlineFont.h
+END
+FTPoint.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/ftgl/include/FTGL/FTPoint.h
+END
+FTExtrdGlyph.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/ftgl/include/FTGL/FTExtrdGlyph.h
+END
+FTBBox.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/ftgl/include/FTGL/FTBBox.h
+END

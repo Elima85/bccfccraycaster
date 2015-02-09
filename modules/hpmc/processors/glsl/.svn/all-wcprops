@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/public/!svn/ver/41/voreen-snapshot/modules/hpmc/processors/glsl
+END
+mc_extract.vert
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/modules/hpmc/processors/glsl/mc_extract.vert
+END
+mc_render.frag
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/modules/hpmc/processors/glsl/mc_render.frag
+END
+mc_render.vert
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/modules/hpmc/processors/glsl/mc_render.vert
+END

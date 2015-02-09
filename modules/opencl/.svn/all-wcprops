@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/public/!svn/ver/42/voreen-snapshot/modules/opencl
+END
+opencl_common.pri
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/opencl_common.pri
+END
+opencl_core.pri
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/opencl_core.pri
+END
+openclmoduleqt.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/openclmoduleqt.h
+END
+openclmodule.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/openclmodule.xml
+END
+openclmoduledefine.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/openclmoduledefine.h
+END
+openclmodule.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/openclmodule.cpp
+END
+opencl_app.pri
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/opencl_app.pri
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/README.txt
+END
+openclmodule.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/openclmodule.h
+END
+openclmoduleqt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/openclmoduleqt.cpp
+END
+opencl_qt.pri
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/opencl_qt.pri
+END

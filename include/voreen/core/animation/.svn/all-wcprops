@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation
+END
+undoableanimation.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/undoableanimation.h
+END
+propertykeyvalue.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/propertykeyvalue.h
+END
+propertytimeline.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/propertytimeline.h
+END
+interpolationfunction.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/interpolationfunction.h
+END
+serializationfactories.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/serializationfactories.h
+END
+timelineobserver.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/timelineobserver.h
+END
+animation.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/animation.h
+END
+animationstate.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/animationstate.h
+END
+animatedprocessor.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/animatedprocessor.h
+END
+interpolationfunctionfactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/interpolationfunctionfactory.h
+END
+animationobserver.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/animationobserver.h
+END
+templatepropertytimeline.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/templatepropertytimeline.h
+END
+interpolationfunctionbase.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/interpolationfunctionbase.h
+END
+templatepropertytimelinestate.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/templatepropertytimelinestate.h
+END

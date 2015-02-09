@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/public/!svn/ver/41/voreen-snapshot/src/qt/widgets/animation
+END
+propertytimelinewidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/41/voreen-snapshot/src/qt/widgets/animation/propertytimelinewidget.cpp
+END
+keyframegraphicsitem.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/src/qt/widgets/animation/keyframegraphicsitem.cpp
+END
+animationexportwidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/src/qt/widgets/animation/animationexportwidget.cpp
+END
+animationeditor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/src/qt/widgets/animation/animationeditor.cpp
+END
+propertytimelineview.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/src/qt/widgets/animation/propertytimelineview.cpp
+END
+overviewwidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/src/qt/widgets/animation/overviewwidget.cpp
+END
+processortimelinewidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/src/qt/widgets/animation/processortimelinewidget.cpp
+END
+timelinewidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/src/qt/widgets/animation/timelinewidget.cpp
+END
+templatepropertytimelinewidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/public/!svn/ver/41/voreen-snapshot/src/qt/widgets/animation/templatepropertytimelinewidget.cpp
+END
+nodechainwidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/src/qt/widgets/animation/nodechainwidget.cpp
+END
+currentframegraphicsitem.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/41/voreen-snapshot/src/qt/widgets/animation/currentframegraphicsitem.cpp
+END

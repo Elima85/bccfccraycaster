@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/workspaces
+END
+dynocl-tiefighter-demo.vws
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/workspaces/dynocl-tiefighter-demo.vws
+END
+dynocl-volumewrite-demo.vws
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/workspaces/dynocl-volumewrite-demo.vws
+END
+dynocl-image2d-demo.vws
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/workspaces/dynocl-image2d-demo.vws
+END

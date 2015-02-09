@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/public/!svn/ver/41/voreen-snapshot/ext/glut/lib/win32
+END
+glut32.lib
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/public/!svn/ver/41/voreen-snapshot/ext/glut/lib/win32/glut32.lib
+END
+glut.def
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/public/!svn/ver/41/voreen-snapshot/ext/glut/lib/win32/glut.def
+END
+glut32.dll
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/public/!svn/ver/41/voreen-snapshot/ext/glut/lib/win32/glut32.dll
+END

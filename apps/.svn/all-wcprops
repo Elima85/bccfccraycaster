@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/public/!svn/ver/42/voreen-snapshot/apps
+END
+pch_qtapp.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/public/!svn/ver/38/voreen-snapshot/apps/pch_qtapp.h
+END
+voreenapp.pri
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/public/!svn/ver/41/voreen-snapshot/apps/voreenapp.pri
+END

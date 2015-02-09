@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/processorwidgets
+END
+plotdatagroupwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/processorwidgets/plotdatagroupwidget.h
+END
+plotprocessorwidgetfactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/processorwidgets/plotprocessorwidgetfactory.h
+END
+plotdatamergewidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/processorwidgets/plotdatamergewidget.h
+END
+plotdataprocessorwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/processorwidgets/plotdataprocessorwidget.h
+END
+plotdataselectwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/processorwidgets/plotdataselectwidget.h
+END
+plotprocessorwidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/processorwidgets/plotprocessorwidget.cpp
+END
+plotdatafitfunctionwidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/processorwidgets/plotdatafitfunctionwidget.cpp
+END
+plotprocessorwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/processorwidgets/plotprocessorwidget.h
+END
+plotdatagroupwidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/processorwidgets/plotdatagroupwidget.cpp
+END
+plotdatafitfunctionwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/processorwidgets/plotdatafitfunctionwidget.h
+END
+plotprocessorwidgetfactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/processorwidgets/plotprocessorwidgetfactory.cpp
+END
+plotdatamergewidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/processorwidgets/plotdatamergewidget.cpp
+END
+plotdataprocessorwidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/processorwidgets/plotdataprocessorwidget.cpp
+END
+plotdataselectwidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/processorwidgets/plotdataselectwidget.cpp
+END

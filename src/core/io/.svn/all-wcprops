@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/public/!svn/ver/41/voreen-snapshot/src/core/io
+END
+volumeserializer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/public/!svn/ver/41/voreen-snapshot/src/core/io/volumeserializer.cpp
+END
+volumewriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/public/!svn/ver/41/voreen-snapshot/src/core/io/volumewriter.cpp
+END
+rawvolumereader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/41/voreen-snapshot/src/core/io/rawvolumereader.cpp
+END
+volumeserializerpopulator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/public/!svn/ver/41/voreen-snapshot/src/core/io/volumeserializerpopulator.cpp
+END
+textfilereader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/public/!svn/ver/41/voreen-snapshot/src/core/io/textfilereader.cpp
+END
+vvdformat.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/41/voreen-snapshot/src/core/io/vvdformat.cpp
+END
+visiblehumanreader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/public/!svn/ver/41/voreen-snapshot/src/core/io/visiblehumanreader.cpp
+END
+vvdvolumereader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/41/voreen-snapshot/src/core/io/vvdvolumereader.cpp
+END
+datvolumereader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/41/voreen-snapshot/src/core/io/datvolumereader.cpp
+END
+vvdvolumewriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/41/voreen-snapshot/src/core/io/vvdvolumewriter.cpp
+END
+timetofinishreporter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/public/!svn/ver/41/voreen-snapshot/src/core/io/timetofinishreporter.cpp
+END
+progressbar.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/public/!svn/ver/41/voreen-snapshot/src/core/io/progressbar.cpp
+END
+volumereader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/public/!svn/ver/41/voreen-snapshot/src/core/io/volumereader.cpp
+END
+vevovolumereader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/public/!svn/ver/41/voreen-snapshot/src/core/io/vevovolumereader.cpp
+END
+datvolumewriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/41/voreen-snapshot/src/core/io/datvolumewriter.cpp
+END

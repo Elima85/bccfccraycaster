@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/interaction
+END
+plotpickingmanager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/interaction/plotpickingmanager.cpp
+END
+plotpickingmanager.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/interaction/plotpickingmanager.h
+END
+plotcamerainteractionhandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/interaction/plotcamerainteractionhandler.cpp
+END
+plotcamerainteractionhandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/interaction/plotcamerainteractionhandler.h
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/public/!svn/ver/41/voreen-snapshot/modules/tiff/io
+END
+tiffvolumereader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/public/!svn/ver/41/voreen-snapshot/modules/tiff/io/tiffvolumereader.cpp
+END
+tiffvolumereader.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/public/!svn/ver/41/voreen-snapshot/modules/tiff/io/tiffvolumereader.h
+END

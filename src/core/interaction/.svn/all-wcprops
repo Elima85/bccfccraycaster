@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/public/!svn/ver/41/voreen-snapshot/src/core/interaction
+END
+firstpersonnavigation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/src/core/interaction/firstpersonnavigation.cpp
+END
+voreentrackball.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/src/core/interaction/voreentrackball.cpp
+END
+pickingmanager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/src/core/interaction/pickingmanager.cpp
+END
+trackballnavigation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/src/core/interaction/trackballnavigation.cpp
+END
+interactionhandlerfactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/src/core/interaction/interactionhandlerfactory.cpp
+END
+buttonpressinteractionhandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/src/core/interaction/buttonpressinteractionhandler.cpp
+END
+camerainteractionhandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/src/core/interaction/camerainteractionhandler.cpp
+END
+slicecamerainteractionhandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/src/core/interaction/slicecamerainteractionhandler.cpp
+END
+idmanager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/public/!svn/ver/41/voreen-snapshot/src/core/interaction/idmanager.cpp
+END
+booltoggleinteractionhandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/41/voreen-snapshot/src/core/interaction/booltoggleinteractionhandler.cpp
+END
+flythroughnavigation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/src/core/interaction/flythroughnavigation.cpp
+END
+interactionhandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/src/core/interaction/interactionhandler.cpp
+END

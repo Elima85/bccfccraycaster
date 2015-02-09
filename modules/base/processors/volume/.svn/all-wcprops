@@ -1,0 +1,293 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume
+END
+volumetransformation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumetransformation.cpp
+END
+volumecreate.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumecreate.h
+END
+volumecrop.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumecrop.h
+END
+volumeresample.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumeresample.cpp
+END
+vectormagnitude.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/vectormagnitude.cpp
+END
+volumecollectionsave.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumecollectionsave.cpp
+END
+volumemirror.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumemirror.cpp
+END
+volumehalfsample.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumehalfsample.cpp
+END
+volumecubify.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumecubify.cpp
+END
+volumecombine.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumecombine.h
+END
+volumeinversion.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumeinversion.h
+END
+volumefiltering.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumefiltering.cpp
+END
+volumescaling.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumescaling.h
+END
+volumecurvature.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumecurvature.h
+END
+volumenormalization.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumenormalization.cpp
+END
+volumedistancetransform.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumedistancetransform.cpp
+END
+volumecomposer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumecomposer.cpp
+END
+volumemasking.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumemasking.cpp
+END
+volumegradient.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumegradient.cpp
+END
+volumeformatconversion.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumeformatconversion.cpp
+END
+volumedecomposer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumedecomposer.cpp
+END
+volumecrop.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumecrop.cpp
+END
+volumecreate.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumecreate.cpp
+END
+volumetranslation.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumetranslation.h
+END
+volumesave.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumesave.h
+END
+volumemorphology.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumemorphology.h
+END
+volumetransformation.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumetransformation.h
+END
+volumecombine.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumecombine.cpp
+END
+volumeinversion.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumeinversion.cpp
+END
+vectormagnitude.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/vectormagnitude.h
+END
+volumeresample.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumeresample.h
+END
+volumemirror.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumemirror.h
+END
+volumecollectionsave.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumecollectionsave.h
+END
+volumescaling.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumescaling.cpp
+END
+volumecurvature.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumecurvature.cpp
+END
+volumehalfsample.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumehalfsample.h
+END
+volumecubify.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumecubify.h
+END
+volumefiltering.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumefiltering.h
+END
+volumenormalization.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumenormalization.h
+END
+volumedistancetransform.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumedistancetransform.h
+END
+volumecomposer.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumecomposer.h
+END
+volumetranslation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumetranslation.cpp
+END
+volumemasking.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumemasking.h
+END
+volumesave.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumesave.cpp
+END
+volumemorphology.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumemorphology.cpp
+END
+volumegradient.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumegradient.h
+END
+volumeformatconversion.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumeformatconversion.h
+END
+volumedecomposer.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/volume/volumedecomposer.h
+END

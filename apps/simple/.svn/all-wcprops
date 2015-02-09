@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/public/!svn/ver/41/voreen-snapshot/apps/simple
+END
+simple-glut.pro
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/public/!svn/ver/41/voreen-snapshot/apps/simple/simple-glut.pro
+END
+simple-glut.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/public/!svn/ver/41/voreen-snapshot/apps/simple/simple-glut.cpp
+END
+simple-qt.pro
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/41/voreen-snapshot/apps/simple/simple-qt.pro
+END
+simple-qt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/41/voreen-snapshot/apps/simple/simple-qt.cpp
+END

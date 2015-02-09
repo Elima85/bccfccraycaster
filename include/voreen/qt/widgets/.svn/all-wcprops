@@ -1,0 +1,221 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/42/voreen-snapshot/include/voreen/qt/widgets
+END
+sliderspinboxwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/sliderspinboxwidget.h
+END
+eventpropertywidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/eventpropertywidget.h
+END
+stringselectiondialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/stringselectiondialog.h
+END
+voreensettingsdialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/voreensettingsdialog.h
+END
+volumeviewhelper.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/volumeviewhelper.h
+END
+volumeloadbutton.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/volumeloadbutton.h
+END
+remotecontrollerwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/42/voreen-snapshot/include/voreen/qt/widgets/remotecontrollerwidget.h
+END
+snapshotwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/snapshotwidget.h
+END
+lineeditresetwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/lineeditresetwidget.h
+END
+syntaxhighlighter.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/syntaxhighlighter.h
+END
+expandableheaderbutton.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/expandableheaderbutton.h
+END
+propertyselectiondialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/propertyselectiondialog.h
+END
+lightwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/lightwidget.h
+END
+documentationwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/documentationwidget.h
+END
+choicelistcombobox.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/choicelistcombobox.h
+END
+consoleplugin.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/public/!svn/ver/42/voreen-snapshot/include/voreen/qt/widgets/consoleplugin.h
+END
+volumelistingdialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/volumelistingdialog.h
+END
+labelingwidgetqt.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/labelingwidgetqt.h
+END
+keydetectorwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/keydetectorwidget.h
+END
+propertystatewidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/propertystatewidget.h
+END
+inputmappingdialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/inputmappingdialog.h
+END
+volumeiohelper.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/volumeiohelper.h
+END
+enterexitpushbutton.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/enterexitpushbutton.h
+END
+performancerecordwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/42/voreen-snapshot/include/voreen/qt/widgets/performancerecordwidget.h
+END
+rendertargetviewer.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/rendertargetviewer.h
+END
+clickablelabel.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/clickablelabel.h
+END
+customlabel.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/customlabel.h
+END
+volumecontainerwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/volumecontainerwidget.h
+END
+processorlistwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/processorlistwidget.h
+END
+codeedit.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/codeedit.h
+END
+glslhighlighter.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/glslhighlighter.h
+END
+volumereaderselectiondialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/volumereaderselectiondialog.h
+END
+voreentoolwindow.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/voreentoolwindow.h
+END
+propertylistwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/propertylistwidget.h
+END
+shaderplugin.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/shaderplugin.h
+END
+rawvolumewidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/include/voreen/qt/widgets/rawvolumewidget.h
+END

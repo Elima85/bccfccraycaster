@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/utils/GLSLparser/annotations
+END
+annotationterminals.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/utils/GLSLparser/annotations/annotationterminals.h
+END
+annotationlexer.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/utils/GLSLparser/annotations/annotationlexer.h
+END
+annotationvisitor.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/utils/GLSLparser/annotations/annotationvisitor.h
+END
+annotationnodes.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/utils/GLSLparser/annotations/annotationnodes.h
+END
+annotationparser.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/utils/GLSLparser/annotations/annotationparser.h
+END

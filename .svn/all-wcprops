@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/public/!svn/ver/43/voreen-snapshot
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/public/!svn/ver/41/voreen-snapshot/LICENSE.txt
+END
+pch.h
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/public/!svn/ver/41/voreen-snapshot/pch.h
+END
+qmake-python.bat
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/public/!svn/ver/41/voreen-snapshot/qmake-python.bat
+END
+LICENSE-academic.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/public/!svn/ver/41/voreen-snapshot/LICENSE-academic.txt
+END
+Changelog.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/public/!svn/ver/42/voreen-snapshot/Changelog.txt
+END
+config-default.txt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/public/!svn/ver/43/voreen-snapshot/config-default.txt
+END
+qmake-default.bat
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/public/!svn/ver/41/voreen-snapshot/qmake-default.bat
+END
+qmake-xcode.sh
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/public/!svn/ver/41/voreen-snapshot/qmake-xcode.sh
+END
+commonconf.pri
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/public/!svn/ver/41/voreen-snapshot/commonconf.pri
+END
+CREDITS.txt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/public/!svn/ver/41/voreen-snapshot/CREDITS.txt
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/public/!svn/ver/41/voreen-snapshot/readme.txt
+END
+voreen.pro
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/public/!svn/ver/42/voreen-snapshot/voreen.pro
+END

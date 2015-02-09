@@ -1,0 +1,305 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils
+END
+plotpredicate.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotpredicate.cpp
+END
+plotentitysettings.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotentitysettings.h
+END
+plotlibrarylatexrender.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotlibrarylatexrender.cpp
+END
+aggregationfunction.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/aggregationfunction.h
+END
+plotexpression.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotexpression.h
+END
+plotlibrary.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotlibrary.cpp
+END
+plotlibraryfilebase.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotlibraryfilebase.h
+END
+plotlibrarylatex.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotlibrarylatex.h
+END
+plotbase.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotbase.cpp
+END
+functionlibrary.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/functionlibrary.cpp
+END
+plotrow.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotrow.h
+END
+colormap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/colormap.cpp
+END
+plotlibraryopengl.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotlibraryopengl.h
+END
+plotdata.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotdata.h
+END
+plotlibrarynonefilebase.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotlibrarynonefilebase.cpp
+END
+plotcell.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotcell.cpp
+END
+plotlibrarysvg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotlibrarysvg.cpp
+END
+plotfunction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotfunction.cpp
+END
+plotselection.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotselection.cpp
+END
+smartlabel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/smartlabel.cpp
+END
+plotpredicatefactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotpredicatefactory.cpp
+END
+plotlibrarysvgrender.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotlibrarysvgrender.h
+END
+plotdatainserter.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotdatainserter.h
+END
+aggregationfunctionfactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/aggregationfunctionfactory.h
+END
+plotentitysettings.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotentitysettings.cpp
+END
+aggregationfunction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/aggregationfunction.cpp
+END
+plotlibraryfilebase.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotlibraryfilebase.cpp
+END
+plotexpression.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotexpression.cpp
+END
+plotlibrarylatex.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotlibrarylatex.cpp
+END
+plotpredicate.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotpredicate.h
+END
+plotlibrarylatexrender.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotlibrarylatexrender.h
+END
+plotrow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotrow.cpp
+END
+plotlibrary.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotlibrary.h
+END
+plotdata.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotdata.cpp
+END
+plotlibraryopengl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotlibraryopengl.cpp
+END
+plotbase.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotbase.h
+END
+functionlibrary.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/functionlibrary.h
+END
+colormap.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/colormap.h
+END
+plotlibrarysvgrender.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotlibrarysvgrender.cpp
+END
+plotlibrarynonefilebase.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotlibrarynonefilebase.h
+END
+plotcell.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotcell.h
+END
+plotdatainserter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotdatainserter.cpp
+END
+aggregationfunctionfactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/aggregationfunctionfactory.cpp
+END
+plotlibrarysvg.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotlibrarysvg.h
+END
+plotzoomstate.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotzoomstate.h
+END
+plotselection.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotselection.h
+END
+interval.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/interval.h
+END
+plotfunction.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotfunction.h
+END
+smartlabel.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/smartlabel.h
+END
+plotpredicatefactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/utils/plotpredicatefactory.h
+END

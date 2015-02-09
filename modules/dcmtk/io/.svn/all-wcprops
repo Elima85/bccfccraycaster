@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/public/!svn/ver/41/voreen-snapshot/modules/dcmtk/io
+END
+dcmtkfindscu.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/modules/dcmtk/io/dcmtkfindscu.cpp
+END
+dcmtkseriesinfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/public/!svn/ver/41/voreen-snapshot/modules/dcmtk/io/dcmtkseriesinfo.h
+END
+dcmtkvolumereader.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/public/!svn/ver/41/voreen-snapshot/modules/dcmtk/io/dcmtkvolumereader.h
+END
+dcmtkfindscu.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/41/voreen-snapshot/modules/dcmtk/io/dcmtkfindscu.h
+END
+dcmtkmovescu.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/modules/dcmtk/io/dcmtkmovescu.cpp
+END
+voreendcmtk.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/public/!svn/ver/41/voreen-snapshot/modules/dcmtk/io/voreendcmtk.h
+END
+dcmtkvolumewriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/modules/dcmtk/io/dcmtkvolumewriter.cpp
+END
+dcmtkmovescu.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/41/voreen-snapshot/modules/dcmtk/io/dcmtkmovescu.h
+END
+dcmtkvolumewriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/public/!svn/ver/41/voreen-snapshot/modules/dcmtk/io/dcmtkvolumewriter.h
+END
+dcmtkvolumereader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/modules/dcmtk/io/dcmtkvolumereader.cpp
+END

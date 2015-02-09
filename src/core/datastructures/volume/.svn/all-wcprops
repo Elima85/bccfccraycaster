@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/public/!svn/ver/41/voreen-snapshot/src/core/datastructures/volume
+END
+volumefactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/src/core/datastructures/volume/volumefactory.cpp
+END
+volumederiveddata.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/src/core/datastructures/volume/volumederiveddata.cpp
+END
+volume.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/public/!svn/ver/41/voreen-snapshot/src/core/datastructures/volume/volume.cpp
+END
+volumecontainer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/src/core/datastructures/volume/volumecontainer.cpp
+END
+volumehash.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/src/core/datastructures/volume/volumehash.cpp
+END
+diskrepresentation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/41/voreen-snapshot/src/core/datastructures/volume/diskrepresentation.cpp
+END
+volumeelement.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/src/core/datastructures/volume/volumeelement.cpp
+END
+modality.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/src/core/datastructures/volume/modality.cpp
+END
+volumehandle.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/src/core/datastructures/volume/volumehandle.cpp
+END
+volumecollection.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/41/voreen-snapshot/src/core/datastructures/volume/volumecollection.cpp
+END
+volumehandledecorator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/public/!svn/ver/41/voreen-snapshot/src/core/datastructures/volume/volumehandledecorator.cpp
+END
+volumetexture.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/src/core/datastructures/volume/volumetexture.cpp
+END
+volumerepresentation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/public/!svn/ver/41/voreen-snapshot/src/core/datastructures/volume/volumerepresentation.cpp
+END
+volumegl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/src/core/datastructures/volume/volumegl.cpp
+END
+volumederiveddatafactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/public/!svn/ver/41/voreen-snapshot/src/core/datastructures/volume/volumederiveddatafactory.cpp
+END
+histogram.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/src/core/datastructures/volume/histogram.cpp
+END
+gradient.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/src/core/datastructures/volume/gradient.cpp
+END

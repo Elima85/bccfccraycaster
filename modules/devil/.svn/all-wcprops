@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/public/!svn/ver/41/voreen-snapshot/modules/devil
+END
+devilmodule.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/public/!svn/ver/41/voreen-snapshot/modules/devil/devilmodule.h
+END
+deploymentlist.win64.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/modules/devil/deploymentlist.win64.txt
+END
+devil_common.pri
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/public/!svn/ver/41/voreen-snapshot/modules/devil/devil_common.pri
+END
+devil_core.pri
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/public/!svn/ver/41/voreen-snapshot/modules/devil/devil_core.pri
+END
+devilmodule.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/public/!svn/ver/41/voreen-snapshot/modules/devil/devilmodule.xml
+END
+deploymentlist.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/public/!svn/ver/41/voreen-snapshot/modules/devil/deploymentlist.txt
+END
+devilmodule.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/public/!svn/ver/41/voreen-snapshot/modules/devil/devilmodule.cpp
+END
+deploymentlist.win32.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/modules/devil/deploymentlist.win32.txt
+END
+devil_app.pri
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/public/!svn/ver/41/voreen-snapshot/modules/devil/devil_app.pri
+END

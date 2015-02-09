@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include
+END
+inttypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/inttypes.h
+END
+stdint.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/stdint.h
+END

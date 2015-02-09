@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/public/!svn/ver/41/voreen-snapshot/src/core/ports
+END
+geometryport.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/41/voreen-snapshot/src/core/ports/geometryport.cpp
+END
+port.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/public/!svn/ver/41/voreen-snapshot/src/core/ports/port.cpp
+END
+renderport.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/public/!svn/ver/41/voreen-snapshot/src/core/ports/renderport.cpp
+END
+coprocessorport.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/public/!svn/ver/41/voreen-snapshot/src/core/ports/coprocessorport.cpp
+END
+textport.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/public/!svn/ver/41/voreen-snapshot/src/core/ports/textport.cpp
+END
+volumeport.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/public/!svn/ver/41/voreen-snapshot/src/core/ports/volumeport.cpp
+END

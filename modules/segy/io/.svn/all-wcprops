@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/public/!svn/ver/41/voreen-snapshot/modules/segy/io
+END
+segyvolumereader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/public/!svn/ver/41/voreen-snapshot/modules/segy/io/segyvolumereader.cpp
+END
+segyvolumereader.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/public/!svn/ver/41/voreen-snapshot/modules/segy/io/segyvolumereader.h
+END

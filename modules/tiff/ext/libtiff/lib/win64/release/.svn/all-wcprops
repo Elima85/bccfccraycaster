@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/public/!svn/ver/41/voreen-snapshot/modules/tiff/ext/libtiff/lib/win64/release
+END
+libtiff.lib
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/modules/tiff/ext/libtiff/lib/win64/release/libtiff.lib
+END
+libtiff_s.lib
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/public/!svn/ver/41/voreen-snapshot/modules/tiff/ext/libtiff/lib/win64/release/libtiff_s.lib
+END
+libtiff.dll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/modules/tiff/ext/libtiff/lib/win64/release/libtiff.dll
+END

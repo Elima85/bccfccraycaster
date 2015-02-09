@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/public/!svn/ver/41/voreen-snapshot/modules/jama/ext/include/jama
+END
+jama_cholesky.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/modules/jama/ext/include/jama/jama_cholesky.h
+END
+jama_qr.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/modules/jama/ext/include/jama/jama_qr.h
+END
+jama_eig.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/modules/jama/ext/include/jama/jama_eig.h
+END
+jama_svd.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/modules/jama/ext/include/jama/jama_svd.h
+END
+jama_lu.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/modules/jama/ext/include/jama/jama_lu.h
+END

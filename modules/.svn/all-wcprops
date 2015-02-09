@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/public/!svn/ver/42/voreen-snapshot/modules
+END
+moduleregistration.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/public/!svn/ver/41/voreen-snapshot/modules/moduleregistration.h
+END
+moduleregistration_qt.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/41/voreen-snapshot/modules/moduleregistration_qt.h
+END
+default.pri
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/public/!svn/ver/41/voreen-snapshot/modules/default.pri
+END

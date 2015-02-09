@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/libavcodec
+END
+xvmc.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/libavcodec/xvmc.h
+END
+vdpau.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/libavcodec/vdpau.h
+END
+opt.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/libavcodec/opt.h
+END
+avcodec.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/libavcodec/avcodec.h
+END

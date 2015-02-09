@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/public/!svn/ver/41/voreen-snapshot/modules/segy
+END
+segymodule.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/41/voreen-snapshot/modules/segy/segymodule.h
+END
+segy_common.pri
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/public/!svn/ver/41/voreen-snapshot/modules/segy/segy_common.pri
+END
+segy_core.pri
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/public/!svn/ver/41/voreen-snapshot/modules/segy/segy_core.pri
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/public/!svn/ver/41/voreen-snapshot/modules/segy/README.txt
+END
+segymodule.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/public/!svn/ver/41/voreen-snapshot/modules/segy/segymodule.xml
+END
+segymodule.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/public/!svn/ver/41/voreen-snapshot/modules/segy/segymodule.cpp
+END

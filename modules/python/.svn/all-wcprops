@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/public/!svn/ver/42/voreen-snapshot/modules/python
+END
+pythonmoduleqt.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/41/voreen-snapshot/modules/python/pythonmoduleqt.h
+END
+python_core.pri
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/public/!svn/ver/41/voreen-snapshot/modules/python/python_core.pri
+END
+python_common.pri
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/public/!svn/ver/41/voreen-snapshot/modules/python/python_common.pri
+END
+pythonmodule.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/41/voreen-snapshot/modules/python/pythonmodule.xml
+END
+pythonmoduledefine.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/modules/python/pythonmoduledefine.h
+END
+deploymentlist.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/modules/python/deploymentlist.txt
+END
+deploymentlist.win32.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/modules/python/deploymentlist.win32.txt
+END
+deploymentlist.win64.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/modules/python/deploymentlist.win64.txt
+END
+pythonmoduleve.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/modules/python/pythonmoduleve.cpp
+END
+python_ve.pri
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/public/!svn/ver/41/voreen-snapshot/modules/python/python_ve.pri
+END
+pythonmoduleve.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/41/voreen-snapshot/modules/python/pythonmoduleve.h
+END
+pythonmodule.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/41/voreen-snapshot/modules/python/pythonmodule.cpp
+END
+python_app.pri
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/public/!svn/ver/41/voreen-snapshot/modules/python/python_app.pri
+END
+pythonmoduleqt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/modules/python/pythonmoduleqt.cpp
+END
+pythonmodule.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/public/!svn/ver/41/voreen-snapshot/modules/python/pythonmodule.h
+END
+python_qt.pri
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/public/!svn/ver/41/voreen-snapshot/modules/python/python_qt.pri
+END

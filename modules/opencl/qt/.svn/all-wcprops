@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/qt
+END
+dynamicopenclwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/qt/dynamicopenclwidget.h
+END
+openclpropertywidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/qt/openclpropertywidget.h
+END
+openclhighlighter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/qt/openclhighlighter.cpp
+END
+openclplugin.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/qt/openclplugin.cpp
+END
+openclprocessorwidgetfactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/qt/openclprocessorwidgetfactory.h
+END
+openclpropertywidgetfactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/qt/openclpropertywidgetfactory.cpp
+END
+openclhighlighter.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/qt/openclhighlighter.h
+END
+openclplugin.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/qt/openclplugin.h
+END
+openclpropertywidgetfactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/qt/openclpropertywidgetfactory.h
+END
+dynamicopenclwidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/qt/dynamicopenclwidget.cpp
+END
+openclpropertywidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/qt/openclpropertywidget.cpp
+END
+openclprocessorwidgetfactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/modules/opencl/qt/openclprocessorwidgetfactory.cpp
+END

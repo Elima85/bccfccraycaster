@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/interaction
+END
+booltoggleinteractionhandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/interaction/booltoggleinteractionhandler.h
+END
+flythroughnavigation.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/interaction/flythroughnavigation.h
+END
+interactionhandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/interaction/interactionhandler.h
+END
+firstpersonnavigation.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/interaction/firstpersonnavigation.h
+END
+voreentrackball.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/interaction/voreentrackball.h
+END
+pickingmanager.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/interaction/pickingmanager.h
+END
+trackballnavigation.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/interaction/trackballnavigation.h
+END
+mwheelnumpropinteractionhandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/interaction/mwheelnumpropinteractionhandler.h
+END
+interactionhandlerfactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/interaction/interactionhandlerfactory.h
+END
+buttonpressinteractionhandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/interaction/buttonpressinteractionhandler.h
+END
+camerainteractionhandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/interaction/camerainteractionhandler.h
+END
+slicecamerainteractionhandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/interaction/slicecamerainteractionhandler.h
+END
+idmanager.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/interaction/idmanager.h
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/public/!svn/ver/41/voreen-snapshot/modules/tiff/ext/libtiff
+END
+license.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/public/!svn/ver/41/voreen-snapshot/modules/tiff/ext/libtiff/license.txt
+END
+version.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/public/!svn/ver/41/voreen-snapshot/modules/tiff/ext/libtiff/version.txt
+END
+COPYRIGHT
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/public/!svn/ver/41/voreen-snapshot/modules/tiff/ext/libtiff/COPYRIGHT
+END

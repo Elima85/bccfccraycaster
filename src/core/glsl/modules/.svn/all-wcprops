@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/public/!svn/ver/42/voreen-snapshot/src/core/glsl/modules
+END
+mod_transfunc.frag
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/src/core/glsl/modules/mod_transfunc.frag
+END
+mod_depth.frag
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/public/!svn/ver/41/voreen-snapshot/src/core/glsl/modules/mod_depth.frag
+END
+mod_shadows.frag
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/src/core/glsl/modules/mod_shadows.frag
+END
+mod_raysetup.frag
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/src/core/glsl/modules/mod_raysetup.frag
+END
+mod_shading.frag
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/src/core/glsl/modules/mod_shading.frag
+END
+mod_gradients.frag
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/src/core/glsl/modules/mod_gradients.frag
+END
+mod_curvature.frag
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/src/core/glsl/modules/mod_curvature.frag
+END
+vrn_shaderincludes.frag
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/src/core/glsl/modules/vrn_shaderincludes.frag
+END
+mod_filtering.frag
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/src/core/glsl/modules/mod_filtering.frag
+END
+mod_sampler2d.frag
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/src/core/glsl/modules/mod_sampler2d.frag
+END
+mod_sampler3d.frag
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/42/voreen-snapshot/src/core/glsl/modules/mod_sampler3d.frag
+END
+mod_compositing.frag
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/public/!svn/ver/41/voreen-snapshot/src/core/glsl/modules/mod_compositing.frag
+END
+mod_segmentation.frag
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/src/core/glsl/modules/mod_segmentation.frag
+END
+mod_lightprobe.frag
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/public/!svn/ver/41/voreen-snapshot/src/core/glsl/modules/mod_lightprobe.frag
+END
+mod_normdepth.frag
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/src/core/glsl/modules/mod_normdepth.frag
+END

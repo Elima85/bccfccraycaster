@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/public/!svn/ver/41/voreen-snapshot/modules/zip/io
+END
+zipvolumereader.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/public/!svn/ver/41/voreen-snapshot/modules/zip/io/zipvolumereader.h
+END
+ziparchive.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/public/!svn/ver/41/voreen-snapshot/modules/zip/io/ziparchive.cpp
+END
+ziparchive.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/public/!svn/ver/41/voreen-snapshot/modules/zip/io/ziparchive.h
+END
+zipvolumereader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/public/!svn/ver/41/voreen-snapshot/modules/zip/io/zipvolumereader.cpp
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg
+END
+ffmpegmodule.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ffmpegmodule.h
+END
+ffmpeg_common.pri
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ffmpeg_common.pri
+END
+ffmpeg_core.pri
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ffmpeg_core.pri
+END
+ffmpegmodule.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ffmpegmodule.xml
+END
+deploymentlist.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/deploymentlist.txt
+END
+deploymentlist.win32.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/deploymentlist.win32.txt
+END
+ffmpegmodule.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ffmpegmodule.cpp
+END
+ffmpegmoduledefine.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ffmpegmoduledefine.h
+END
+ffmpeg_app.pri
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ffmpeg_app.pri
+END

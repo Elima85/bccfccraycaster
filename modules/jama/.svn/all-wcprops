@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/public/!svn/ver/41/voreen-snapshot/modules/jama
+END
+jama_common.pri
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/public/!svn/ver/41/voreen-snapshot/modules/jama/jama_common.pri
+END
+jama_core.pri
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/public/!svn/ver/41/voreen-snapshot/modules/jama/jama_core.pri
+END
+deploymentlist.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/41/voreen-snapshot/modules/jama/deploymentlist.txt
+END

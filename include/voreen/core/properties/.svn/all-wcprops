@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/public/!svn/ver/42/voreen-snapshot/include/voreen/core/properties
+END
+cameraproperty.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/42/voreen-snapshot/include/voreen/core/properties/cameraproperty.h
+END
+voxeltypeproperty.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/voxeltypeproperty.h
+END
+floatproperty.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/floatproperty.h
+END
+fontproperty.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/fontproperty.h
+END
+stringproperty.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/stringproperty.h
+END
+propertyfactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/propertyfactory.h
+END
+action.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/42/voreen-snapshot/include/voreen/core/properties/action.h
+END
+templateproperty.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/templateproperty.h
+END
+propertywidgetfactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/propertywidgetfactory.h
+END
+buttonproperty.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/buttonproperty.h
+END
+property.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/public/!svn/ver/42/voreen-snapshot/include/voreen/core/properties/property.h
+END
+condition.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/public/!svn/ver/42/voreen-snapshot/include/voreen/core/properties/condition.h
+END
+volumecollectionproperty.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/volumecollectionproperty.h
+END
+propertywidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/propertywidget.h
+END
+allactions.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/allactions.h
+END
+stringexpressionproperty.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/stringexpressionproperty.h
+END
+intproperty.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/intproperty.h
+END
+propertyowner.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/propertyowner.h
+END
+boolproperty.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/boolproperty.h
+END
+callmemberaction.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/callmemberaction.h
+END
+filedialogproperty.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/filedialogproperty.h
+END
+numericproperty.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/numericproperty.h
+END
+propertyvector.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/propertyvector.h
+END
+vectorproperty.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/vectorproperty.h
+END
+transfuncproperty.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/transfuncproperty.h
+END
+matrixproperty.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/matrixproperty.h
+END
+shaderproperty.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/shaderproperty.h
+END
+optionproperty.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/optionproperty.h
+END
+targetaction.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/targetaction.h
+END
+allproperties.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/allproperties.h
+END
+eventproperty.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/eventproperty.h
+END
+templatepropertycondition.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/public/!svn/ver/42/voreen-snapshot/include/voreen/core/properties/templatepropertycondition.h
+END
+volumehandleproperty.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/properties/volumehandleproperty.h
+END

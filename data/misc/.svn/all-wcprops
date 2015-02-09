@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/public/!svn/ver/41/voreen-snapshot/data/misc
+END
+data_sincos.csv
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/38/voreen-snapshot/data/misc/data_sincos.csv
+END
+data_barplot.csv
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/public/!svn/ver/41/voreen-snapshot/data/misc/data_barplot.csv
+END
+data_lineplot.csv
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/public/!svn/ver/38/voreen-snapshot/data/misc/data_lineplot.csv
+END

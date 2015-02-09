@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/operators
+END
+volumeoperatorminmax.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/operators/volumeoperatorminmax.h
+END
+volumeoperatormedian.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/operators/volumeoperatormedian.h
+END
+volumeoperatormorphology.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/operators/volumeoperatormorphology.h
+END
+volumeoperatornormalize.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/operators/volumeoperatornormalize.h
+END
+volumeoperatorresize.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/operators/volumeoperatorresize.h
+END
+volumeoperatorsubset.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/operators/volumeoperatorsubset.h
+END
+volumeoperatorinvert.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/operators/volumeoperatorinvert.h
+END
+volumeoperatorresample.h
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/operators/volumeoperatorresample.h
+END
+volumeoperatormirror.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/operators/volumeoperatormirror.h
+END
+volumeoperatorisuniform.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/operators/volumeoperatorisuniform.h
+END
+volumeoperatorhalfsample.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/operators/volumeoperatorhalfsample.h
+END
+volumeoperatorcalcerror.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/operators/volumeoperatorcalcerror.h
+END
+volumeoperatortranspose.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/operators/volumeoperatortranspose.h
+END
+volumeoperatornumsignificant.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/operators/volumeoperatornumsignificant.h
+END
+volumeoperatorconvert.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/operators/volumeoperatorconvert.h
+END
+volumeoperatorswapendianness.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/operators/volumeoperatorswapendianness.h
+END

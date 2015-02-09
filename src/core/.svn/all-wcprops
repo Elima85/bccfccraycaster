@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/public/!svn/ver/42/voreen-snapshot/src/core
+END
+coremodule.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/public/!svn/ver/41/voreen-snapshot/src/core/coremodule.cpp
+END
+voreenapplication.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/public/!svn/ver/42/voreen-snapshot/src/core/voreenapplication.cpp
+END
+voreenmodule.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/41/voreen-snapshot/src/core/voreenmodule.cpp
+END
+version.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/public/!svn/ver/42/voreen-snapshot/src/core/version.cpp
+END
+voreenlib_core.pro
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/public/!svn/ver/42/voreen-snapshot/src/core/voreenlib_core.pro
+END
+coremodule.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/public/!svn/ver/41/voreen-snapshot/src/core/coremodule.xml
+END

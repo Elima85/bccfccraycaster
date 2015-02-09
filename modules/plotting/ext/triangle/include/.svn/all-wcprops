@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/ext/triangle/include
+END
+dpoint.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/ext/triangle/include/dpoint.hpp
+END
+del_interface.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/ext/triangle/include/del_interface.hpp
+END
+triangle.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/ext/triangle/include/triangle.h
+END
+triangle_impl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/ext/triangle/include/triangle_impl.hpp
+END

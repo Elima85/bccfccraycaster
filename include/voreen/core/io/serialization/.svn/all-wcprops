@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/io/serialization
+END
+abstractserializable.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/io/serialization/abstractserializable.h
+END
+xmlserializer.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/io/serialization/xmlserializer.h
+END
+xmlserializationconstants.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/io/serialization/xmlserializationconstants.h
+END
+serialization.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/io/serialization/serialization.h
+END
+serializablefactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/io/serialization/serializablefactory.h
+END
+resourcefactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/io/serialization/resourcefactory.h
+END
+serializationexceptions.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/io/serialization/serializationexceptions.h
+END
+xmlprocessor.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/io/serialization/xmlprocessor.h
+END
+xmldeserializer.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/io/serialization/xmldeserializer.h
+END
+xmlserializerbase.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/io/serialization/xmlserializerbase.h
+END
+serializable.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/io/serialization/serializable.h
+END

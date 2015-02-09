@@ -1,0 +1,251 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype
+END
+ftcid.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftcid.h
+END
+ftmac.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftmac.h
+END
+ftoutln.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftoutln.h
+END
+fttrigon.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/fttrigon.h
+END
+ftcache.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftcache.h
+END
+ftsynth.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftsynth.h
+END
+ttunpat.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ttunpat.h
+END
+ftstroke.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftstroke.h
+END
+ftchapters.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftchapters.h
+END
+ftmodapi.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftmodapi.h
+END
+ftlist.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftlist.h
+END
+tttags.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/tttags.h
+END
+ftbitmap.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftbitmap.h
+END
+ftlzw.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftlzw.h
+END
+ftincrem.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftincrem.h
+END
+ftrender.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftrender.h
+END
+ftglyph.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftglyph.h
+END
+t1tables.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/t1tables.h
+END
+ftsnames.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftsnames.h
+END
+tttables.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/tttables.h
+END
+ftmoderr.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftmoderr.h
+END
+freetype.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/freetype.h
+END
+ftgasp.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftgasp.h
+END
+ftbdf.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftbdf.h
+END
+ftsizes.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftsizes.h
+END
+fttypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/fttypes.h
+END
+ftwinfnt.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftwinfnt.h
+END
+fterrdef.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/fterrdef.h
+END
+ftgzip.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftgzip.h
+END
+ftmm.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftmm.h
+END
+ttnameid.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ttnameid.h
+END
+fterrors.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/fterrors.h
+END
+ftgxval.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftgxval.h
+END
+ftimage.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftimage.h
+END
+ftsystem.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftsystem.h
+END
+ftotval.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftotval.h
+END
+ftpfr.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftpfr.h
+END
+ftbbox.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftbbox.h
+END
+ftxf86.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftxf86.h
+END
+ftadvanc.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftadvanc.h
+END
+ftlcdfil.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/modules/fontrendering/ext/freetype/include/freetype/ftlcdfil.h
+END

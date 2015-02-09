@@ -1,0 +1,509 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/public/!svn/ver/42/voreen-snapshot/ext/tgt
+END
+spline.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/spline.h
+END
+frustum.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/frustum.cpp
+END
+textureunit.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/textureunit.h
+END
+painter.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/painter.h
+END
+guiapplication.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/2/voreen-snapshot/ext/tgt/guiapplication.cpp
+END
+init.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/init.h
+END
+gpucapabilities.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/42/voreen-snapshot/ext/tgt/gpucapabilities.h
+END
+font.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/font.h
+END
+light.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/light.h
+END
+texturereaderdevil.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/texturereaderdevil.h
+END
+tgt_math.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/tgt_math.h
+END
+manager.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/manager.h
+END
+tgt_gl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/tgt_gl.cpp
+END
+glmath.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/glmath.h
+END
+vertex.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/vertex.h
+END
+texturereader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/texturereader.cpp
+END
+texturereadertga.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/2/voreen-snapshot/ext/tgt/texturereadertga.h
+END
+gpucapabilitieswindows.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/gpucapabilitieswindows.h
+END
+naturalcubicspline.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/naturalcubicspline.cpp
+END
+physmem.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/physmem.h
+END
+camera.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/camera.cpp
+END
+bounds.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/bounds.cpp
+END
+quaternion.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/quaternion.h
+END
+glcanvas.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/glcanvas.cpp
+END
+texture.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/texture.cpp
+END
+init.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/init.cpp
+END
+material.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/material.h
+END
+gpucapabilities.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/public/!svn/ver/42/voreen-snapshot/ext/tgt/gpucapabilities.cpp
+END
+assert.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/assert.h
+END
+light.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/light.cpp
+END
+texturereaderdevil.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/texturereaderdevil.cpp
+END
+tgt.pro
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/tgt.pro
+END
+guiapplication.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/guiapplication.h
+END
+texturereadertga.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/texturereadertga.cpp
+END
+curve.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/curve.cpp
+END
+tgt_gl.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/tgt_gl.h
+END
+catmullromspline.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/catmullromspline.cpp
+END
+bspline.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/bspline.cpp
+END
+camera.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/camera.h
+END
+exception.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/exception.cpp
+END
+bounds.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/bounds.h
+END
+assert.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/assert.cpp
+END
+glcanvas.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/glcanvas.h
+END
+texture.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/texture.h
+END
+shadermanager.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/public/!svn/ver/42/voreen-snapshot/ext/tgt/shadermanager.h
+END
+types.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/types.h
+END
+stopwatch.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/stopwatch.cpp
+END
+logmanager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/logmanager.cpp
+END
+quadtree.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/quadtree.h
+END
+timer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/timer.cpp
+END
+framebufferobject.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/framebufferobject.h
+END
+filesystem.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/public/!svn/ver/42/voreen-snapshot/ext/tgt/filesystem.cpp
+END
+curve.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/curve.h
+END
+spline.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/spline.cpp
+END
+tesselator.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/tesselator.h
+END
+catmullromspline.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/catmullromspline.h
+END
+framecounter.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/framecounter.h
+END
+textureunit.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/textureunit.cpp
+END
+texturemanager.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/texturemanager.h
+END
+bspline.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/bspline.h
+END
+shadermanager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/42/voreen-snapshot/ext/tgt/shadermanager.cpp
+END
+painter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/painter.cpp
+END
+exception.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/exception.h
+END
+plane.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/plane.h
+END
+font.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/font.cpp
+END
+singleton.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/singleton.h
+END
+vector.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/vector.h
+END
+renderable.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/renderable.h
+END
+matrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/matrix.h
+END
+frustum.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/frustum.h
+END
+framebufferobject.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/framebufferobject.cpp
+END
+gpucapabilitieswindows.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/gpucapabilitieswindows.cpp
+END
+stopwatch.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/stopwatch.h
+END
+logmanager.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/logmanager.h
+END
+physmem.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/physmem.cpp
+END
+tesselator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/tesselator.cpp
+END
+timer.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/timer.h
+END
+texturereader.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/texturereader.h
+END
+filesystem.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/public/!svn/ver/42/voreen-snapshot/ext/tgt/filesystem.h
+END
+texturemanager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/texturemanager.cpp
+END
+line.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/line.h
+END
+naturalcubicspline.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/naturalcubicspline.h
+END
+mouse.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/mouse.h
+END
+quadric.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/quadric.h
+END

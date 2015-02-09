@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/interpolation
+END
+camerainterpolationfunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/interpolation/camerainterpolationfunctions.h
+END
+intinterpolationfunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/interpolation/intinterpolationfunctions.h
+END
+boolinterpolationfunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/interpolation/boolinterpolationfunctions.h
+END
+vec2interpolationfunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/interpolation/vec2interpolationfunctions.h
+END
+vec3interpolationfunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/interpolation/vec3interpolationfunctions.h
+END
+vec4interpolationfunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/interpolation/vec4interpolationfunctions.h
+END
+transfuncinterpolationfunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/interpolation/transfuncinterpolationfunctions.h
+END
+mat2interpolationfunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/interpolation/mat2interpolationfunctions.h
+END
+basicintinterpolation.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/interpolation/basicintinterpolation.h
+END
+mat3interpolationfunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/interpolation/mat3interpolationfunctions.h
+END
+mat4interpolationfunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/interpolation/mat4interpolationfunctions.h
+END
+floatinterpolationfunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/interpolation/floatinterpolationfunctions.h
+END
+stringinterpolationfunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/interpolation/stringinterpolationfunctions.h
+END
+ivec2interpolationfunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/interpolation/ivec2interpolationfunctions.h
+END
+ivec3interpolationfunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/interpolation/ivec3interpolationfunctions.h
+END
+quatinterpolationfunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/interpolation/quatinterpolationfunctions.h
+END
+ivec4interpolationfunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/interpolation/ivec4interpolationfunctions.h
+END
+basicfloatinterpolation.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/interpolation/basicfloatinterpolation.h
+END
+volumecollectioninterpolationfunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/interpolation/volumecollectioninterpolationfunctions.h
+END
+volumehandleinterpolationfunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/interpolation/volumehandleinterpolationfunctions.h
+END
+shadersourceinterpolationfunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/animation/interpolation/shadersourceinterpolationfunctions.h
+END

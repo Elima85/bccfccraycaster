@@ -1,0 +1,221 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/public/!svn/ver/42/voreen-snapshot/modules/base/processors/geometry
+END
+geometryboundingbox.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/geometryboundingbox.h
+END
+isosurfaceextractor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/isosurfaceextractor.cpp
+END
+lightwidgetrenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/lightwidgetrenderer.cpp
+END
+planewidgetprocessor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/planewidgetprocessor.cpp
+END
+pointsegmentlistrenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/pointsegmentlistrenderer.h
+END
+camerapositionrenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/camerapositionrenderer.h
+END
+boundingboxrenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/boundingboxrenderer.h
+END
+geometrysave.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/geometrysave.cpp
+END
+depthpeelingprocessor.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/depthpeelingprocessor.h
+END
+slicepositionrenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/slicepositionrenderer.h
+END
+pointlistrenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/pointlistrenderer.h
+END
+geometryrenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/geometryrenderer.cpp
+END
+eepgeometryintegrator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/public/!svn/ver/42/voreen-snapshot/modules/base/processors/geometry/eepgeometryintegrator.cpp
+END
+quadricrenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/quadricrenderer.h
+END
+meshslabclipping.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/meshslabclipping.cpp
+END
+meshclipping.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/meshclipping.h
+END
+geometryboundingbox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/geometryboundingbox.cpp
+END
+meshclippingwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/meshclippingwidget.h
+END
+pointsegmentlistrenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/pointsegmentlistrenderer.cpp
+END
+geometryprocessor.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/geometryprocessor.h
+END
+isosurfaceextractor.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/isosurfaceextractor.h
+END
+camerapositionrenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/camerapositionrenderer.cpp
+END
+boundingboxrenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/boundingboxrenderer.cpp
+END
+lightwidgetrenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/lightwidgetrenderer.h
+END
+planewidgetprocessor.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/planewidgetprocessor.h
+END
+depthpeelingprocessor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/depthpeelingprocessor.cpp
+END
+slicepositionrenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/slicepositionrenderer.cpp
+END
+pointlistrenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/pointlistrenderer.cpp
+END
+geometrysave.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/geometrysave.h
+END
+quadricrenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/quadricrenderer.cpp
+END
+meshclipping.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/meshclipping.cpp
+END
+meshclippingwidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/meshclippingwidget.cpp
+END
+geometryrenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/geometryrenderer.h
+END
+meshslabclipping.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/meshslabclipping.h
+END
+eepgeometryintegrator.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/eepgeometryintegrator.h
+END
+geometryprocessor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/modules/base/processors/geometry/geometryprocessor.cpp
+END

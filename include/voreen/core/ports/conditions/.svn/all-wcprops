@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/ports/conditions
+END
+portcondition.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/ports/conditions/portcondition.h
+END
+portconditionvolumetype.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/ports/conditions/portconditionvolumetype.h
+END

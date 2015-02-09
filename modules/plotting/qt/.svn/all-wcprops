@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt
+END
+plotselectionentrytablemodel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/plotselectionentrytablemodel.cpp
+END
+plotselectiondialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/plotselectiondialog.cpp
+END
+plotselectionentrytablemodel.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/plotselectionentrytablemodel.h
+END
+extendedtable.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/extendedtable.cpp
+END
+plotselectiondialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/plotselectiondialog.h
+END
+plotdatasimpletablemodel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/plotdatasimpletablemodel.cpp
+END
+plotentitysettingsdialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/plotentitysettingsdialog.cpp
+END
+plotdatawidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/plotdatawidget.cpp
+END
+extendedtable.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/extendedtable.h
+END
+plotselectiontablemodel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/plotselectiontablemodel.cpp
+END
+plotpredicatedialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/plotpredicatedialog.cpp
+END
+plotdatasimpletablemodel.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/plotdatasimpletablemodel.h
+END
+plotentitysettingsdialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/plotentitysettingsdialog.h
+END
+plotdatawidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/plotdatawidget.h
+END
+plotselectiontablemodel.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/plotselectiontablemodel.h
+END
+plotdataextendedtablemodel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/plotdataextendedtablemodel.cpp
+END
+plotpredicatedialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/plotpredicatedialog.h
+END
+plotdataextendedtablemodel.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/modules/plotting/qt/plotdataextendedtablemodel.h
+END

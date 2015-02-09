@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/glut
+END
+glutapplication.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/2/voreen-snapshot/ext/tgt/glut/glutapplication.cpp
+END
+gluttimer.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/glut/gluttimer.h
+END
+glutapplication.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/glut/glutapplication.h
+END
+glutmouse.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/public/!svn/ver/12/voreen-snapshot/ext/tgt/glut/glutmouse.cpp
+END
+glutcanvas.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/glut/glutcanvas.cpp
+END
+glutmouse.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/glut/glutmouse.h
+END
+glutcanvas.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/glut/glutcanvas.h
+END
+gluttimer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/2/voreen-snapshot/ext/tgt/glut/gluttimer.cpp
+END

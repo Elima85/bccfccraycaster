@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/public/!svn/ver/41/voreen-snapshot/data/volumes
+END
+walnut.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/public/!svn/ver/36/voreen-snapshot/data/volumes/walnut.dat
+END
+walnut.raw
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/public/!svn/ver/36/voreen-snapshot/data/volumes/walnut.raw
+END
+walnut-transformed.dat
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/37/voreen-snapshot/data/volumes/walnut-transformed.dat
+END
+walnut-transformed.raw
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/37/voreen-snapshot/data/volumes/walnut-transformed.raw
+END
+nucleon.nrrd
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/38/voreen-snapshot/data/volumes/nucleon.nrrd
+END
+heart.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/public/!svn/ver/41/voreen-snapshot/data/volumes/heart.dat
+END
+nucleon.dat
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/public/!svn/ver/36/voreen-snapshot/data/volumes/nucleon.dat
+END
+heart.raw
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/public/!svn/ver/41/voreen-snapshot/data/volumes/heart.raw
+END
+nucleon.raw
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/public/!svn/ver/36/voreen-snapshot/data/volumes/nucleon.raw
+END

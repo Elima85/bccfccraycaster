@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/modules/flowreen/converter/raw2flow
+END
+stringutility.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/41/voreen-snapshot/modules/flowreen/converter/raw2flow/stringutility.h
+END
+raw2flowconverter.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/public/!svn/ver/41/voreen-snapshot/modules/flowreen/converter/raw2flow/raw2flowconverter.h
+END
+raw2flow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/modules/flowreen/converter/raw2flow/raw2flow.cpp
+END
+stringutility.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/41/voreen-snapshot/modules/flowreen/converter/raw2flow/stringutility.cpp
+END
+raw2flowconverter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/public/!svn/ver/41/voreen-snapshot/modules/flowreen/converter/raw2flow/raw2flowconverter.cpp
+END

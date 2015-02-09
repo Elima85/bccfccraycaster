@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/lib/win32
+END
+avutil-50.dll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/lib/win32/avutil-50.dll
+END
+avcodec-52.dll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/lib/win32/avcodec-52.dll
+END
+avdevice-52.dll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/lib/win32/avdevice-52.dll
+END
+avformat.lib
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/lib/win32/avformat.lib
+END
+swscale.lib
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/lib/win32/swscale.lib
+END
+swscale-0.dll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/lib/win32/swscale-0.dll
+END
+avcodec.lib
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/lib/win32/avcodec.lib
+END
+avutil.lib
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/lib/win32/avutil.lib
+END
+avdevice.lib
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/lib/win32/avdevice.lib
+END
+Revision.txt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/lib/win32/Revision.txt
+END
+avformat-52.dll
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/lib/win32/avformat-52.dll
+END

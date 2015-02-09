@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/public/!svn/ver/36/voreen-snapshot/src/core/utils/GLSLparser/grammars
+END
+annotation grammar.txt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/public/!svn/ver/36/voreen-snapshot/src/core/utils/GLSLparser/grammars/annotation%20grammar.txt
+END
+annotation parser table.html
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/public/!svn/ver/36/voreen-snapshot/src/core/utils/GLSLparser/grammars/annotation%20parser%20table.html
+END
+glsl grammar.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/36/voreen-snapshot/src/core/utils/GLSLparser/grammars/glsl%20grammar.txt
+END
+glsl parser table.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/36/voreen-snapshot/src/core/utils/GLSLparser/grammars/glsl%20parser%20table.html
+END
+preprocessor grammar.txt
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/36/voreen-snapshot/src/core/utils/GLSLparser/grammars/preprocessor%20grammar.txt
+END
+preprocessor parser table.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/public/!svn/ver/36/voreen-snapshot/src/core/utils/GLSLparser/grammars/preprocessor%20parser%20table.html
+END

@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/public/!svn/ver/42/voreen-snapshot/modules/base/glsl/image
+END
+imagemorphology.frag
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/imagemorphology.frag
+END
+colordepth.frag
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/colordepth.frag
+END
+nonminmax.frag
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/nonminmax.frag
+END
+unsharpmaskingmask.frag
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/unsharpmaskingmask.frag
+END
+depthpeeling.frag
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/depthpeeling.frag
+END
+canny.frag
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/canny.frag
+END
+depthpeeling.vert
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/depthpeeling.vert
+END
+brickcompositor.frag
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/brickcompositor.frag
+END
+grayscale.frag
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/grayscale.frag
+END
+gaussian.frag
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/gaussian.frag
+END
+texturetotarget.frag
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/texturetotarget.frag
+END
+labeling.frag
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/labeling.frag
+END
+convolution.frag
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/convolution.frag
+END
+background.frag
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/background.frag
+END
+unsharpmaskingblur.frag
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/unsharpmaskingblur.frag
+END
+mean.frag
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/mean.frag
+END
+tonemapping.frag
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/42/voreen-snapshot/modules/base/glsl/image/tonemapping.frag
+END
+binary.frag
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/binary.frag
+END
+scale.frag
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/scale.frag
+END
+depthdarkening.frag
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/depthdarkening.frag
+END
+distance.frag
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/distance.frag
+END
+mask.frag
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/mask.frag
+END
+edgedetect.frag
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/edgedetect.frag
+END
+median.frag
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/median.frag
+END
+orientationoverlay.frag
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/orientationoverlay.frag
+END
+compositor.frag
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/compositor.frag
+END
+pipethrough.frag
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/pipethrough.frag
+END
+unary.frag
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/unary.frag
+END
+fade.frag
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/fade.frag
+END
+imagethreshold.frag
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/modules/base/glsl/image/imagethreshold.frag
+END

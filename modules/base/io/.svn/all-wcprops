@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/public/!svn/ver/41/voreen-snapshot/modules/base/io
+END
+quadhidacvolumereader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/quadhidacvolumereader.cpp
+END
+tuvvolumereader.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/tuvvolumereader.h
+END
+nrrdvolumewriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/nrrdvolumewriter.h
+END
+philipsusvolumereader.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/philipsusvolumereader.h
+END
+rawvoxvolumereader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/rawvoxvolumereader.cpp
+END
+interfilevolumereader.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/interfilevolumereader.h
+END
+mhdvolumewriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/mhdvolumewriter.h
+END
+quadhidacvolumereader.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/quadhidacvolumereader.h
+END
+multivolumereader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/multivolumereader.cpp
+END
+brukervolumereader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/brukervolumereader.cpp
+END
+rawvoxvolumereader.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/rawvoxvolumereader.h
+END
+multivolumereader.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/multivolumereader.h
+END
+brukervolumereader.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/brukervolumereader.h
+END
+ecat7volumereader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/ecat7volumereader.cpp
+END
+analyzevolumereader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/analyzevolumereader.cpp
+END
+synth2dreader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/synth2dreader.cpp
+END
+nrrdvolumereader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/nrrdvolumereader.cpp
+END
+synth2dreader.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/synth2dreader.h
+END
+analyzevolumereader.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/analyzevolumereader.h
+END
+ecat7volumereader.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/ecat7volumereader.h
+END
+mhdvolumereader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/mhdvolumereader.cpp
+END
+nrrdvolumereader.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/nrrdvolumereader.h
+END
+mhdvolumereader.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/mhdvolumereader.h
+END
+tuvvolumereader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/tuvvolumereader.cpp
+END
+nrrdvolumewriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/nrrdvolumewriter.cpp
+END
+philipsusvolumereader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/philipsusvolumereader.cpp
+END
+interfilevolumereader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/interfilevolumereader.cpp
+END
+mhdvolumewriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/public/!svn/ver/41/voreen-snapshot/modules/base/io/mhdvolumewriter.cpp
+END

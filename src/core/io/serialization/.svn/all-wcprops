@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/41/voreen-snapshot/src/core/io/serialization
+END
+xmldeserializer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/src/core/io/serialization/xmldeserializer.cpp
+END
+xmlserializerbase.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/public/!svn/ver/41/voreen-snapshot/src/core/io/serialization/xmlserializerbase.cpp
+END
+xmlserializer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/public/!svn/ver/41/voreen-snapshot/src/core/io/serialization/xmlserializer.cpp
+END
+xmlserializationconstants.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/public/!svn/ver/41/voreen-snapshot/src/core/io/serialization/xmlserializationconstants.cpp
+END

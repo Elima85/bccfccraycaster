@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/public/!svn/ver/41/voreen-snapshot/modules/pvm/io
+END
+pvmvolumereader.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/public/!svn/ver/41/voreen-snapshot/modules/pvm/io/pvmvolumereader.h
+END
+ddsbase.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/public/!svn/ver/41/voreen-snapshot/modules/pvm/io/ddsbase.cpp
+END
+codebase.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/public/!svn/ver/41/voreen-snapshot/modules/pvm/io/codebase.h
+END
+ddsbase.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/public/!svn/ver/41/voreen-snapshot/modules/pvm/io/ddsbase.h
+END
+pvmvolumereader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/public/!svn/ver/41/voreen-snapshot/modules/pvm/io/pvmvolumereader.cpp
+END

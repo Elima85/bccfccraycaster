@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume
+END
+volumegl.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/volumegl.h
+END
+volumerepresentation.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/volumerepresentation.h
+END
+volumefusion.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/volumefusion.h
+END
+volumederiveddatafactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/volumederiveddatafactory.h
+END
+histogram.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/histogram.h
+END
+gradient.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/gradient.h
+END
+volumefactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/volumefactory.h
+END
+volumederiveddata.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/volumederiveddata.h
+END
+volumeatomic.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/volumeatomic.h
+END
+volume.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/volume.h
+END
+volumecontainer.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/volumecontainer.h
+END
+volumehash.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/volumehash.h
+END
+diskrepresentation.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/diskrepresentation.h
+END
+volumeelement.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/volumeelement.h
+END
+modality.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/modality.h
+END
+volumeoperator.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/volumeoperator.h
+END
+volumecollection.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/volumecollection.h
+END
+volumehandle.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/volumehandle.h
+END
+volumehandledecorator.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/volumehandledecorator.h
+END
+volumetexture.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/public/!svn/ver/41/voreen-snapshot/include/voreen/core/datastructures/volume/volumetexture.h
+END

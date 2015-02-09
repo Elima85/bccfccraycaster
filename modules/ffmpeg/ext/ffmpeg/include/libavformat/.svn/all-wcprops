@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/libavformat
+END
+avio.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/libavformat/avio.h
+END
+avformat.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/public/!svn/ver/41/voreen-snapshot/modules/ffmpeg/ext/ffmpeg/include/libavformat/avformat.h
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/navigation
+END
+navigation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/navigation/navigation.cpp
+END
+trackball.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/navigation/trackball.cpp
+END
+navigation.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/navigation/navigation.h
+END
+trackball.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/public/!svn/ver/41/voreen-snapshot/ext/tgt/navigation/trackball.h
+END
