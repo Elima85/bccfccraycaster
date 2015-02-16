@@ -1,0 +1,5 @@
+ObjectFileName: ml_2m_bcc_1.raw
+Resolution:     100 100 100
+SliceThickness: 1 1 1
+Format:         USHORT
+ObjectModel:    I

@@ -1,0 +1,5 @@
+ObjectFileName: ml_2m_cc_1.raw
+Resolution:     126 126 126
+SliceThickness: 1 1 1
+Format:         USHORT
+ObjectModel:    I

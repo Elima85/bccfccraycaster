@@ -1,0 +1,5 @@
+ObjectFileName: ml_2m_fcc_1.raw
+Resolution:     80 80 80
+SliceThickness: 1 1 1
+Format:         USHORT
+ObjectModel:    I
