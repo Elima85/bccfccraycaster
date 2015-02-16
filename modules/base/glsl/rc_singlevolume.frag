@@ -66,7 +66,8 @@ void rayTraversal(in vec3 first, in vec3 last) {
     raySetup(first, last, volumeStruct_.datasetDimensions_, rayDirection, tIncr, tEnd);
 
     RC_BEGIN_LOOP {
-        vec3 samplePos = first + t * rayDirection;
+        //vec3 samplePos = first + t * rayDirection;
+		vec3 samplePos = first + t * rayDirection; /* + 0.5 / volumeStruct_.datasetDimensions_; */
         vec4 voxel = getVoxel(volumeStruct_, samplePos);
 
         // calculate gradients

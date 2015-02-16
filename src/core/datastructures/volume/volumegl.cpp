@@ -159,7 +159,7 @@ void VolumeGL::generateTexture(const Volume* volume)
         internalFormat = GL_ALPHA;
         dataType = GL_UNSIGNED_INT;
     }
-    else if (dynamic_cast<const VolumeAtomic<int32_t>*>(volume)) {
+    /*else if (dynamic_cast<const VolumeAtomic<int32_t>*>(volume)) {
         format = GL_ALPHA;
         internalFormat = GL_ALPHA;
         dataType = GL_INT;
@@ -168,7 +168,7 @@ void VolumeGL::generateTexture(const Volume* volume)
         std::string message = "VolumeUInt64 not supported as OpenGL volume.";
         LERROR(message);
         throw VoreenException(message);
-    }
+    }*/
     else if (dynamic_cast<const VolumeAtomic<int64_t>*>(volume)) {
         std::string message = "VolumeInt64 not supported as OpenGL volume.";
         LERROR(message);
@@ -186,33 +186,45 @@ void VolumeGL::generateTexture(const Volume* volume)
     }
     // vec2
     else if (dynamic_cast<const VolumeAtomic<tgt::Vector2<uint8_t> >*>(volume)) {
-        format = GL_LUMINANCE_ALPHA;
-        internalFormat = GL_LUMINANCE_ALPHA;
+        //format = GL_LUMINANCE_ALPHA;
+        //internalFormat = GL_LUMINANCE_ALPHA;
+		format = GL_RG;
+		internalFormat = GL_RG8;
         dataType = GL_UNSIGNED_BYTE;
     }
     else if (dynamic_cast<const VolumeAtomic<tgt::Vector2<int8_t> >*>(volume)) {
-        format = GL_LUMINANCE_ALPHA;
-        internalFormat = GL_LUMINANCE_ALPHA;
+        //format = GL_LUMINANCE_ALPHA;
+        //internalFormat = GL_LUMINANCE_ALPHA;
+		format = GL_RG;
+		internalFormat = GL_RGB8;
         dataType = GL_BYTE;
     }
     else if (dynamic_cast<const VolumeAtomic<tgt::Vector2<uint16_t> >*>(volume)) {
-        format = GL_LUMINANCE_ALPHA;
-        internalFormat = GL_LUMINANCE_ALPHA;
+        //format = GL_LUMINANCE_ALPHA;
+        //internalFormat = GL_LUMINANCE_ALPHA;
+		format = GL_RG;
+		internalFormat = GL_RG16;
         dataType = GL_UNSIGNED_SHORT;
     }
     else if (dynamic_cast<const VolumeAtomic<tgt::Vector2<int16_t> >*>(volume)) {
-        format = GL_LUMINANCE_ALPHA;
-        internalFormat = GL_LUMINANCE_ALPHA;
+        //format = GL_LUMINANCE_ALPHA;
+        //internalFormat = GL_LUMINANCE_ALPHA;
+		format = GL_RG;
+		internalFormat = GL_RG16;
         dataType = GL_SHORT;
     }
     else if (dynamic_cast<const VolumeAtomic<tgt::Vector2<uint32_t> >*>(volume)) {
-        format = GL_LUMINANCE_ALPHA;
-        internalFormat = GL_LUMINANCE_ALPHA;
+        //format = GL_LUMINANCE_ALPHA;
+        //internalFormat = GL_LUMINANCE_ALPHA;
+		format = GL_RG;
+		internalFormat = GL_RG;
         dataType = GL_UNSIGNED_INT;
     }
     else if (dynamic_cast<const VolumeAtomic<tgt::Vector2<int32_t> >*>(volume)) {
-        format = GL_LUMINANCE_ALPHA;
-        internalFormat = GL_LUMINANCE_ALPHA;
+        //format = GL_LUMINANCE_ALPHA;
+        //internalFormat = GL_LUMINANCE_ALPHA;
+		format = GL_RG;
+		internalFormat = GL_RG;
         dataType = GL_INT;
     }
     else if (dynamic_cast<const VolumeAtomic<tgt::Vector2<uint64_t> >*>(volume)) {

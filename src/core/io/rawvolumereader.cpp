@@ -208,7 +208,8 @@ VolumeCollection* RawVolumeReader::readSlices(const std::string &url, size_t fir
             throw tgt::CorruptedFileException("Format '" + h.format_ + "' not supported", fileName);
         }
     }
-    else if (h.objectModel_ == "LA") { // luminance alpha
+    //else if (h.objectModel_ == "LA") { // luminance alpha
+	else if (h.objectModel_ == "LA" || h.objectModel_ == "RG") { // luminance alpha
         if (h.format_ == "UCHAR") {
             LINFO(info << "(2x8 bit dataset)");
             Volume2xUInt8* v = new Volume2xUInt8(h.dimensions_);
@@ -636,6 +637,21 @@ VolumeCollection* RawVolumeReader::readBrick(const std::string &url, tgt::ivec3 
             throw tgt::CorruptedFileException("Format '" + h.format_ + "' not supported for object model RGB", fileName);
         }
     }
+		else if (h.objectModel_ == "RG") { // 2 x intensity
+        //LINFO("Reading 2x16 bit dataset");
+        if (h.format_ == "UCHAR") {
+            Volume2xUInt8* v = new Volume2xUInt8(h.dimensions_);
+            volume = v;
+        }
+        else if (h.format_ == "USHORT") {
+            Volume2xUInt16* v = new Volume2xUInt16(h.dimensions_);
+            volume = v;
+        }
+        else {
+            fclose(fin);
+            throw tgt::CorruptedFileException("Format '" + h.format_ + "' not supported for object model RG", fileName);
+        }
+	}
     else if (h.objectModel_ == "LA") { // luminance alpha
         //LINFO("Reading luminance16 alpha16 dataset");
         Volume4xUInt8* v = new Volume4xUInt8(h.dimensions_);

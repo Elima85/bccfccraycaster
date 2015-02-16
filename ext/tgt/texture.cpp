@@ -217,6 +217,7 @@ int Texture::calcNumChannels(GLint format) {
         break;
 
     case 2:
+	case GL_RG:
     case GL_LUMINANCE_ALPHA:
         return 2;
         break;

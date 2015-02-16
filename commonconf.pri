@@ -328,6 +328,9 @@ unix {
     QMAKE_RPATHDIR += $${INSTALLPATH_LIB}
   }
 
+  INCLUDEPATH += $${GLEW_DIR}
+  LIBS += $${GLEW_LIBS}
+
   LIBDIR += $${VRN_HOME}/bin
 
   for(dir, LIBDIR) {

@@ -123,6 +123,7 @@ SOURCES += \
     $${VRN_MODULE_DIR}/base/processors/volume/volumeformatconversion.cpp \
     $${VRN_MODULE_DIR}/base/processors/volume/volumegradient.cpp \
     $${VRN_MODULE_DIR}/base/processors/volume/volumehalfsample.cpp \
+	$${VRN_MODULE_DIR}/base/processors/volume/volumeinterleave.cpp \
     $${VRN_MODULE_DIR}/base/processors/volume/volumeinversion.cpp \
     $${VRN_MODULE_DIR}/base/processors/volume/volumemasking.cpp \
     $${VRN_MODULE_DIR}/base/processors/volume/volumemirror.cpp \
@@ -274,6 +275,7 @@ HEADERS += \
     $${VRN_MODULE_DIR}/base/processors/volume/volumeformatconversion.h \
     $${VRN_MODULE_DIR}/base/processors/volume/volumegradient.h \
     $${VRN_MODULE_DIR}/base/processors/volume/volumehalfsample.h \
+	$${VRN_MODULE_DIR}/base/processors/volume/volumeinterleave.h \
     $${VRN_MODULE_DIR}/base/processors/volume/volumeinversion.h \
     $${VRN_MODULE_DIR}/base/processors/volume/volumemasking.h \
     $${VRN_MODULE_DIR}/base/processors/volume/volumemirror.h \
