@@ -1,0 +1,2 @@
+modules/bcc/bccmodule.xml
+modules/bcc/glsl:modules/bcc

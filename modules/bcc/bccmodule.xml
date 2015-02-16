@@ -1,0 +1,7 @@
+<ModuleDescription>Provides processors for rendering BCC and FCC volumes.</ModuleDescription>
+<Processor name="BCCVolumeRaycaster">
+    <Description>Raycaster similar to SingleVolumeRaycaster for BCC volumes.</Description>
+</Processor>
+<Processor name="FCCVolumeRaycaster">
+    <Description>Raycaster similar to SingleVolumeRaycaster for FCC volumes.</Description>
+</Processor>
