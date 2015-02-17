@@ -56,27 +56,27 @@ vec4 reconstructDC(in vec3 p)
 	         vec3(0.0, 0.0, sign(v1.z - v0.z)));
 
 	/* Interpolate unknown points that we need. */
-	vec3 sample_;
+	vec3 samp;
 
-	sample_ = v0 + flipMatrix * vec3(0.5, 0.0, 0.0) + 0.5;
-	SAMPLE p100 = (TEX0(sample_) + 
-	               TEX3(sample_) +
-	               TEX2(sample_)) / 3.0;
+	samp = v0 + flipMatrix * vec3(0.5, 0.0, 0.0) + 0.5;
+	SAMPLE p100 = (TEX0(samp) + 
+	               TEX3(samp) +
+	               TEX2(samp)) / 3.0;
 
-	sample_ = v0 + flipMatrix * vec3(0.0, 0.5, 0.0) + 0.5;
-	SAMPLE p010 = (TEX0(sample_) +
-	               TEX3(sample_) +
-	               TEX1(sample_)) / 3.0;
+	samp = v0 + flipMatrix * vec3(0.0, 0.5, 0.0) + 0.5;
+	SAMPLE p010 = (TEX0(samp) +
+	               TEX3(samp) +
+	               TEX1(samp)) / 3.0;
 
-	sample_ = v0 + flipMatrix * vec3(0.0, 0.0, 0.5) + 0.5;
-	SAMPLE p001 = (TEX0(sample_) +
-	               TEX2(sample_) + 
-	               TEX1(sample_)) / 3.0;
+	samp = v0 + flipMatrix * vec3(0.0, 0.0, 0.5) + 0.5;
+	SAMPLE p001 = (TEX0(samp) +
+	               TEX2(samp) + 
+	               TEX1(samp)) / 3.0;
 
-	sample_ = v0 + flipMatrix * vec3(0.5, 0.5, 0.5) + 0.5;
-	SAMPLE p111 = (TEX2(sample_) +
-	               TEX1(sample_) +
-	               TEX3(sample_)) / 3.0;
+	samp = v0 + flipMatrix * vec3(0.5, 0.5, 0.5) + 0.5;
+	SAMPLE p111 = (TEX2(samp) +
+	               TEX1(samp) +
+	               TEX3(samp)) / 3.0;
 
 	SAMPLE p000 = TEX0(v0 + 0.5);
 	SAMPLE p011 = TEX1(v1 + 0.5);

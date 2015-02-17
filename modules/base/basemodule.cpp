@@ -150,7 +150,7 @@
 #include "modules/base/processors/volume/volumecollectionsave.h"
 #include "modules/base/processors/volume/volumecrop.h"
 #include "modules/base/processors/volume/volumedistancetransform.h"
-//#include "modules/base/processors/volume/volumeinterleave.h"
+#include "modules/base/processors/volume/volumeinterleave.h"
 #include "modules/base/processors/volume/volumeinversion.h"
 #include "modules/base/processors/volume/volumecombine.h"
 #include "modules/base/processors/volume/volumecomposer.h"
@@ -328,7 +328,7 @@ BaseModule::BaseModule() : VoreenModule() {
     addProcessor(new VolumeFormatConversion());
     addProcessor(new VolumeGradient());
     addProcessor(new VolumeHalfsample());
-	//addProcessor(new VolumeInterleave());
+	addProcessor(new VolumeInterleave());
     addProcessor(new VolumeInversion());
     addProcessor(new VolumeMasking());
     addProcessor(new VolumeMirror());
