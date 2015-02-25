@@ -1,6 +1,7 @@
 #include "modules/bcc/bccmodule.h"
 #include "modules/bcc/bccvolumeraycaster.h"
 #include "modules/bcc/fccvolumeraycaster.h"
+#include "modules/bcc/bccinterleavedvolumeraycaster.h"
 
 namespace voreen {
 
@@ -14,6 +15,7 @@ BccModule::BccModule()
 
     addProcessor(new BccVolumeRaycaster());
     addProcessor(new FccVolumeRaycaster());
+	addProcessor(new BccInterleavedVolumeRaycaster());
 
 	addShaderPath(getModulesPath("bcc/glsl"));
 }
