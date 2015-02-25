@@ -1,12 +1,10 @@
 #include "modules/vrn_shaderincludes.frag"
 
-#define NORM(v) ((v) / volumeStruct_.datasetDimensions_)
-
-const vec3 g0_off = vec3(0.0, 0.0, 0.0);
-const vec3 g1_off = vec3(0.5, 0.5, 0.5);
-
-#define TEX0(p) textureLookup3D(volumeStruct_, NORM((p) - g0_off)).r
-#define TEX1(p) textureLookup3D(volumeStruct_, NORM((p) - g1_off)).g
+#ifndef NO_SHADING
+	#define SAMPLE vec4
+#else
+	#define SAMPLE float
+#endif
 
 vec4 result  = vec4(0.0);
 vec4 result1 = vec4(0.0);
@@ -29,7 +27,7 @@ vec3 size_volume = vec3(2*volumeStruct_.datasetDimensions_.x-1.0, 2*volumeStruct
 vec4 reconstructLinbox(vec3 p)
 {
 	vec3 P1, P2, P3, P4;
-	float D1, D2, D3, D4;
+	vec4 D1, D2, D3, D4;
 	
 	vec3 posOS = (p * size_volume);
 
@@ -60,29 +58,31 @@ vec4 reconstructLinbox(vec3 p)
 	P4 += (int(sorting.z == abc.x) * vec3(-2.0,  0.0, 2.0) +
 	       int(sorting.z == abc.y) * vec3(-2.0,  2.0, 0.0));
 	
-	D1 = textureLookup3D(volumeStruct_, (floor(P1*convert)) * oneOverVoxels).a;
-	D2 = textureLookup3D(volumeStruct_, (floor(P2*convert)) * oneOverVoxels).a;
-	D3 = textureLookup3D(volumeStruct_, (floor(P3*convert)) * oneOverVoxels).a;
-	D4 = textureLookup3D(volumeStruct_, (floor(P4*convert)) * oneOverVoxels).a;
+	D1 = textureLookup3D(volumeStruct_, (floor(P1*convert)) * oneOverVoxels);
+	D2 = textureLookup3D(volumeStruct_, (floor(P2*convert)) * oneOverVoxels);
+	D3 = textureLookup3D(volumeStruct_, (floor(P3*convert)) * oneOverVoxels);
+	D4 = textureLookup3D(volumeStruct_, (floor(P4*convert)) * oneOverVoxels);
 	
-	/*D1 = texture(volumeStruct_.volume_, (P1*convert) * oneOverVoxels).a;
-	D2 = texture(volumeStruct_.volume_, (P2*convert) * oneOverVoxels).a;
-	D3 = texture(volumeStruct_.volume_, (P3*convert) * oneOverVoxels).a;
-	D4 = texture(volumeStruct_.volume_, (P4*convert) * oneOverVoxels).a;*/
-	
-	vec4 values = vec4(D1, D3-D1, D2-D4, D4-D3);
-	return vec4(0.0, 0.0, 0.0, dot(sorting, values));
-	
+	#ifndef NO_SHADING
+		vec4 value = vec4(dot(sorting, vec4(D1[0], D3[0] - D1[0], D2[0] - D4[0], D4[0] - D3[0])),
+			              dot(sorting, vec4(D1[1], D3[1] - D1[1], D2[1] - D4[1], D4[1] - D3[1])),
+						  dot(sorting, vec4(D1[2], D3[2] - D1[2], D2[2] - D4[2], D4[2] - D3[2])),
+			              dot(sorting, vec4(D1[3], D3[3] - D1[3], D2[3] - D4[3], D4[3] - D3[3])));
+		value.xyz = (value.xyz - 0.5) * 2.0;
+		return value;
+	#else
+		vec4 values = vec4(D1.a, D3.a - D1.a, D2.a - D4.a, D4.a - D3.a);
+		return vec4(0.0, 0.0, 0.0, dot(sorting, values));
+	#endif
 }
 
 vec4 reconstructNearest(in vec3 p)
 {
-	//vec3 pw = p * volumeStruct_.datasetDimensions_ - 0.5;
-	vec3 pw = p * size_volume;
+	vec3 pw = p * (size_volume);
 	
-	vec4 value = textureLookup3D(volumeStruct_, (floor(pw*convert)) * oneOverVoxels);
-
-	return value;
+	float value = textureLookup3D(volumeStruct_, (floor(pw*convert)) * oneOverVoxels).a;
+	
+	return vec4(0.0, 0.0, 0.0, value);
 }
 
 void rayTraversal(in vec3 first, in vec3 last)
@@ -100,8 +100,7 @@ void rayTraversal(in vec3 first, in vec3 last)
 		
         vec4 color = RC_APPLY_CLASSIFICATION(transferFunc_, voxel);
 
-        color.rgb = RC_APPLY_SHADING(voxel.xyz, samplePos, volumeStruct_, color.rgb, color.rgb, vec3(1.0,1.0,1.0));
-		//color.rgb = samplePos;
+        color.rgb = RC_APPLY_SHADING(voxel.xyz, floor(samplePos*convert)*oneOverVoxels, volumeStruct_, color.rgb, color.rgb, vec3(1.0,1.0,1.0));
 
         if (color.a > 0.0) {
             RC_BEGIN_COMPOSITING

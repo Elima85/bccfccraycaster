@@ -38,7 +38,7 @@ VRN_MODULES += devil
 #VRN_MODULES += fontrendering
 
 # Python bindings, allowing scripts to access Voreen API.
-#VRN_MODULES += python
+VRN_MODULES += python
 
 # Volume reader for multi-image TIFF files, requires the libtiff library.
 #VRN_MODULES += tiff
@@ -169,8 +169,10 @@ VRN_HOME = $$PWD
 
 unix {
   FREETYPE_DIR = /usr/include/freetype2
-  PYTHON_DIR = /usr/include/python
+  PYTHON_DIR = C:\Exjobb\Kod\voreen-3.01-bcc\modules\python\ext\python27
   PYTHON_LIBS = -lpython2.6
+  #PYTHON_DIR = /usr/include/python
+  #PYTHON_LIBS = -lpython2.6
 }
 
 macx {

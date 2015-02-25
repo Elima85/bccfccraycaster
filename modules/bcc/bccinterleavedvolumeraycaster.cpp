@@ -196,7 +196,7 @@ void BccInterleavedVolumeRaycaster::process() {
         filterMode = GL_NEAREST;
     // bind volume
 	tgt::TextureUnit volUnit;
-	if (volumeInport1_.isReady() && volumeInport2_.isReady()) {
+	if (convertedVolume_ && volumeInport1_.isReady() && volumeInport2_.isReady()) {
 		volumeTextures.push_back(VolumeStruct(
 			convertedVolume_,
 			&volUnit,
@@ -247,40 +247,73 @@ void BccInterleavedVolumeRaycaster::process() {
 }
 
 VolumeHandle* BccInterleavedVolumeRaycaster::convertVolume(){
+
 	const VolumeHandleBase* inputHandle1 = volumeInport1_.getData();
 	const VolumeHandleBase* inputHandle2 = volumeInport2_.getData();
 	const Volume* inputVolume1 = inputHandle1->getRepresentation<Volume>();
 	const Volume* inputVolume2 = inputHandle2->getRepresentation<Volume>();
-	
-	const VolumeAtomic<uint16_t> *inputIntensity1 = static_cast<const VolumeAtomic<uint16_t> *>(inputVolume1);
-	const VolumeAtomic<uint16_t> *inputIntensity2 = static_cast<const VolumeAtomic<uint16_t> *>(inputVolume2);
-	tgt::ivec3 dim = inputIntensity1->getDimensions();
-	VolumeAtomic<uint16_t>* output = new VolumeAtomic<uint16_t>(tgt::vec3(dim.x,dim.y,dim.z*2.0));
-	
-	tgt::ivec3 pos;
 
-	int zz = 0;
-	for (pos.z = 0; pos.z < dim.z; pos.z+=1)
-	{
-		for (pos.y = 0; pos.y < dim.y; pos.y++) 
-		{
-			
-			for (pos.x = 0; pos.x < dim.x; pos.x++) 
-			{
-				//might need to handle case for uneven dims
-				output->voxel(pos.x, pos.y, zz) = inputIntensity1->voxel(pos);
-				output->voxel(pos.x, pos.y, zz+1) = inputIntensity2->voxel(pos);
-				
-			}					
+	if (inputHandle1->getNumChannels() != inputHandle2->getNumChannels()) {
+		LERROR("Number of channels not same for all inputs: " << inputHandle1->getNumChannels() <<
+		" and " << inputHandle1->getNumChannels() << ".");
+		return 0;
+	}
+	else if (inputHandle1->getNumChannels() == 1) {
+
+		const VolumeAtomic<uint16_t> *inputIntensity1 = static_cast<const VolumeAtomic<uint16_t> *>(inputVolume1);
+		const VolumeAtomic<uint16_t> *inputIntensity2 = static_cast<const VolumeAtomic<uint16_t> *>(inputVolume2);
+		tgt::ivec3 dim = inputIntensity1->getDimensions();
+		VolumeAtomic<uint16_t>* output = new VolumeAtomic<uint16_t>(tgt::vec3(dim.x,dim.y,dim.z*2.0));
+		
+		tgt::ivec3 pos;
+		int zz = 0;
+		for (pos.z = 0; pos.z < dim.z; pos.z+=1) {
+			for (pos.y = 0; pos.y < dim.y; pos.y++) {				
+				for (pos.x = 0; pos.x < dim.x; pos.x++) {
+					//might need to handle case for uneven dims
+					output->voxel(pos.x, pos.y, zz) = inputIntensity1->voxel(pos);
+					output->voxel(pos.x, pos.y, zz+1) = inputIntensity2->voxel(pos);					
+				}
+			}
+			zz+=2;
 		}
-		zz+=2;
+		return new VolumeHandle(output, inputHandle1);
+	}
+	else if (inputHandle1->getNumChannels() == 4) {
+
+		// indata should be a vector4 of gradients xyz and intensity w
+		const VolumeAtomic<tgt::Vector4<uint16_t> >* inputData1 = static_cast<const VolumeAtomic<tgt::Vector4<uint16_t> > *>(inputVolume1);
+		const VolumeAtomic<tgt::Vector4<uint16_t> >* inputData2 = static_cast<const VolumeAtomic<tgt::Vector4<uint16_t> > *>(inputVolume2);
+
+		tgt::ivec3 dim = inputData1->getDimensions();
+		VolumeAtomic<tgt::Vector4<uint16_t> >* output = new VolumeAtomic<tgt::Vector4<uint16_t> >(tgt::vec3(dim.x,dim.y,dim.z*2.0));
+		
+		tgt::ivec3 pos;
+		int zz = 0;
+		for (pos.z = 0; pos.z < dim.z; pos.z+=1) {
+			for (pos.y = 0; pos.y < dim.y; pos.y++) {				
+				for (pos.x = 0; pos.x < dim.x; pos.x++) {
+					//might need to handle case for uneven dims
+					output->voxel(pos.x, pos.y, zz) = inputData1->voxel(pos);
+					output->voxel(pos.x, pos.y, zz+1) = inputData2->voxel(pos);
+				}
+			}
+			zz+=2;
+		}
+		return new VolumeHandle(output, inputHandle1);
 	}
 
-	return new VolumeHandle(output, inputHandle1);
+	LERROR("The number of input channels are not 1 or 4, but " << inputHandle1->getNumChannels() <<
+		" and " << inputHandle1->getNumChannels() << ".");
+	return 0;
 }
 
 std::string BccInterleavedVolumeRaycaster::generateHeader() {
     std::string headerSource = VolumeRaycaster::generateHeader();
+
+	if(shadeMode_.isSelected("none")){
+		headerSource += "#define NO_SHADING\n";
+	}
 
     headerSource += transferFunc_.get()->getShaderDefines();
 
