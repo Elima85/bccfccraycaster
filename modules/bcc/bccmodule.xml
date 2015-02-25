@@ -5,3 +5,6 @@
 <Processor name="FCCVolumeRaycaster">
     <Description>Raycaster similar to SingleVolumeRaycaster for FCC volumes.</Description>
 </Processor>
+<Processor name="BCCInterleavedVolumeRaycaster">
+  <Description>Raycaster similar to SingleVolumeRaycaster for interleaved BCC volumes.</Description>
+</Processor>

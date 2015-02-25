@@ -92,6 +92,7 @@ void VolumeInterleave::applyOperator() {
 			progressBar_->setProgress(1.0f);
 
 		outputVolume = new VolumeHandle(output, inputHandle1);
+		
 	}
     else {
         LERROR("Unknown technique");

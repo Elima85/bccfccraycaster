@@ -260,7 +260,6 @@ BaseModule::BaseModule() : VoreenModule() {
     addProcessor(new OrientationOverlay());
     addProcessor(new QuadView());
     addProcessor(new RegionOfInterest2D());
-    addProcessor(new TargetToTexture);
     addProcessor(new TextureToTarget());
     addProcessor(new ToneMapping());
     addProcessor(new UnaryImageProcessor());
