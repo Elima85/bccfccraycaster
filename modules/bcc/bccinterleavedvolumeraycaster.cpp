@@ -1,4 +1,4 @@
-#include "BccInterleavedVolumeRaycaster.h"
+#include "bccinterleavedvolumeraycaster.h"
 
 #include "tgt/textureunit.h"
 #include "voreen/core/ports/conditions/portconditionvolumetype.h"
