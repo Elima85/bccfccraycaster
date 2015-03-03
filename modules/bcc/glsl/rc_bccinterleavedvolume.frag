@@ -99,9 +99,11 @@ void rayTraversal(in vec3 first, in vec3 last)
         vec4 voxel = RC_APPLY_RECONSTRUCTION(samplePos);
 		
         vec4 color = RC_APPLY_CLASSIFICATION(transferFunc_, voxel);
-
-        color.rgb = RC_APPLY_SHADING(voxel.xyz, floor(samplePos*convert)*oneOverVoxels, volumeStruct_, color.rgb, color.rgb, vec3(1.0,1.0,1.0));
-
+		
+		samplePos.z *= .5; //needed to make shading work correctly
+		
+		color.rgb = RC_APPLY_SHADING(voxel.xyz, samplePos, volumeStruct_, color.rgb, color.rgb, vec3(1.0,1.0,1.0));
+		
         if (color.a > 0.0) {
             RC_BEGIN_COMPOSITING
             result = RC_APPLY_COMPOSITING(result, color, samplePos, voxel.xyz, t, tDepth)

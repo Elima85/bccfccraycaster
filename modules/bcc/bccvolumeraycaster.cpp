@@ -48,6 +48,7 @@ BccVolumeRaycaster::BccVolumeRaycaster()
 	reconstruction_.addOption("dc", "DC-spline");
 	reconstruction_.addOption("linbox", "Linear box-spline");
 	reconstruction_.addOption("nearest", "Nearest neighbor");
+	reconstruction_.addOption("cwb", "Cosine-Weighted B-spline");
 	reconstruction_.selectByKey("dc");
 	addProperty(reconstruction_);
 
@@ -106,7 +107,9 @@ Processor* BccVolumeRaycaster::create() const {
 void BccVolumeRaycaster::initialize() throw (tgt::Exception) {
     VolumeRaycaster::initialize();
 
-    raycastPrg_ = ShdrMgr.loadSeparate("passthrough.vert", "rc_bccvolume.frag",
+    /*raycastPrg_ = ShdrMgr.loadSeparate("passthrough.vert", "rc_bccvolume.frag",
+        generateHeader(), false);*/
+	raycastPrg_ = ShdrMgr.loadSeparate("passthrough.vert", "rc_bccvolume.frag",
         generateHeader(), false);
 
     portGroup_.initialize();
@@ -315,6 +318,8 @@ std::string BccVolumeRaycaster::generateHeader() {
         headerSource += "reconstructLinbox(p);\n";
     else if (reconstruction_.isSelected("nearest"))
         headerSource += "reconstructNearest(p);\n";
+	else if (reconstruction_.isSelected("cwb"))
+		headerSource += "reconstructCWB(p);\n";
 
     portGroup_.reattachTargets();
     headerSource += portGroup_.generateHeader(raycastPrg_);

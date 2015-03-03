@@ -3,7 +3,6 @@
 #include "tgt/textureunit.h"
 #include "voreen/core/ports/conditions/portconditionvolumetype.h"
 
-
 using tgt::vec3;
 using tgt::TextureUnit;
 
@@ -263,19 +262,20 @@ VolumeHandle* BccInterleavedVolumeRaycaster::convertVolume(){
 		const VolumeAtomic<uint16_t> *inputIntensity1 = static_cast<const VolumeAtomic<uint16_t> *>(inputVolume1);
 		const VolumeAtomic<uint16_t> *inputIntensity2 = static_cast<const VolumeAtomic<uint16_t> *>(inputVolume2);
 		tgt::ivec3 dim = inputIntensity1->getDimensions();
-		VolumeAtomic<uint16_t>* output = new VolumeAtomic<uint16_t>(tgt::vec3(dim.x,dim.y,dim.z*2.0));
+		VolumeAtomic<uint16_t>* output = new VolumeAtomic<uint16_t>(tgt::ivec3(dim.x,dim.y,dim.z*2));
 		
 		tgt::ivec3 pos;
-		int zz = 0;
-		for (pos.z = 0; pos.z < dim.z; pos.z+=1) {
-			for (pos.y = 0; pos.y < dim.y; pos.y++) {				
-				for (pos.x = 0; pos.x < dim.x; pos.x++) {
+		
+		for (pos.x = 0; pos.x < dim.x; pos.x+=1) {
+			for (pos.y = 0; pos.y < dim.y; pos.y++) {	
+				int zz = 0;
+				for (pos.z = 0; pos.z < dim.z; pos.z++) {
 					//might need to handle case for uneven dims
 					output->voxel(pos.x, pos.y, zz) = inputIntensity1->voxel(pos);
-					output->voxel(pos.x, pos.y, zz+1) = inputIntensity2->voxel(pos);					
+					output->voxel(pos.x, pos.y, zz+1) = inputIntensity2->voxel(pos);
+					zz+=2;
 				}
 			}
-			zz+=2;
 		}
 		return new VolumeHandle(output, inputHandle1);
 	}
@@ -286,19 +286,20 @@ VolumeHandle* BccInterleavedVolumeRaycaster::convertVolume(){
 		const VolumeAtomic<tgt::Vector4<uint16_t> >* inputData2 = static_cast<const VolumeAtomic<tgt::Vector4<uint16_t> > *>(inputVolume2);
 
 		tgt::ivec3 dim = inputData1->getDimensions();
-		VolumeAtomic<tgt::Vector4<uint16_t> >* output = new VolumeAtomic<tgt::Vector4<uint16_t> >(tgt::vec3(dim.x,dim.y,dim.z*2.0));
+		VolumeAtomic<tgt::Vector4<uint16_t> >* output = new VolumeAtomic<tgt::Vector4<uint16_t> >(tgt::ivec3(dim.x,dim.y,dim.z*2));
 		
 		tgt::ivec3 pos;
-		int zz = 0;
-		for (pos.z = 0; pos.z < dim.z; pos.z+=1) {
+		
+		for (pos.x = 0; pos.x < dim.x; pos.x+=1) {
 			for (pos.y = 0; pos.y < dim.y; pos.y++) {				
-				for (pos.x = 0; pos.x < dim.x; pos.x++) {
+				int zz = 0;
+				for (pos.z = 0; pos.z < dim.z; pos.z++) {
 					//might need to handle case for uneven dims
-					output->voxel(pos.x, pos.y, zz) = inputData1->voxel(pos);
 					output->voxel(pos.x, pos.y, zz+1) = inputData2->voxel(pos);
+					output->voxel(pos.x, pos.y, zz) = inputData1->voxel(pos);					
+					zz+=2;
 				}
 			}
-			zz+=2;
 		}
 		return new VolumeHandle(output, inputHandle1);
 	}
