@@ -2,8 +2,10 @@
 
 #ifndef NO_SHADING
 	#define SAMPLE vec4
+	#define TEX(p) textureLookup3D(volumeStruct_, (floor(p*convert)) * oneOverVoxels)
 #else
 	#define SAMPLE float
+	#define TEX(p) textureLookup3D(volumeStruct_, (floor(p*convert)) * oneOverVoxels).a
 #endif
 
 vec4 result  = vec4(0.0);
@@ -27,7 +29,7 @@ vec3 size_volume = vec3(2*volumeStruct_.datasetDimensions_.x-1.0, 2*volumeStruct
 vec4 reconstructLinbox(vec3 p)
 {
 	vec3 P1, P2, P3, P4;
-	vec4 D1, D2, D3, D4;
+	SAMPLE D1, D2, D3, D4;
 	
 	vec3 posOS = (p * size_volume);
 
@@ -58,20 +60,20 @@ vec4 reconstructLinbox(vec3 p)
 	P4 += (int(sorting.z == abc.x) * vec3(-2.0,  0.0, 2.0) +
 	       int(sorting.z == abc.y) * vec3(-2.0,  2.0, 0.0));
 	
-	D1 = textureLookup3D(volumeStruct_, (floor(P1*convert)) * oneOverVoxels);
-	D2 = textureLookup3D(volumeStruct_, (floor(P2*convert)) * oneOverVoxels);
-	D3 = textureLookup3D(volumeStruct_, (floor(P3*convert)) * oneOverVoxels);
-	D4 = textureLookup3D(volumeStruct_, (floor(P4*convert)) * oneOverVoxels);
+	D1 = TEX(P1);
+	D2 = TEX(P2);
+	D3 = TEX(P3);
+	D4 = TEX(P4);
 	
 	#ifndef NO_SHADING
 		vec4 value = vec4(dot(sorting, vec4(D1[0], D3[0] - D1[0], D2[0] - D4[0], D4[0] - D3[0])),
 			              dot(sorting, vec4(D1[1], D3[1] - D1[1], D2[1] - D4[1], D4[1] - D3[1])),
 						  dot(sorting, vec4(D1[2], D3[2] - D1[2], D2[2] - D4[2], D4[2] - D3[2])),
 			              dot(sorting, vec4(D1[3], D3[3] - D1[3], D2[3] - D4[3], D4[3] - D3[3])));
-		value.xyz = (value.xyz - 0.5) * 2.0;
+		value.rgb = (value.rgb - 0.5) * 2.0;
 		return value;
 	#else
-		vec4 values = vec4(D1.a, D3.a - D1.a, D2.a - D4.a, D4.a - D3.a);
+		vec4 values = vec4(D1, D3 - D1, D2 - D4, D4 - D3);
 		return vec4(0.0, 0.0, 0.0, dot(sorting, values));
 	#endif
 }
@@ -80,9 +82,14 @@ vec4 reconstructNearest(in vec3 p)
 {
 	vec3 pw = p * (size_volume);
 	
-	float value = textureLookup3D(volumeStruct_, (floor(pw*convert)) * oneOverVoxels).a;
-	
-	return vec4(0.0, 0.0, 0.0, value);
+	#ifndef NO_SHADING
+		vec4 value = textureLookup3D(volumeStruct_, (floor(pw*convert)) * oneOverVoxels);
+		value.rgb = (value.rgb - 0.5) * 2.0;
+		return value;
+	#else
+		float value = textureLookup3D(volumeStruct_, (floor(pw*convert)) * oneOverVoxels).a;
+		return vec4(0.0, 0.0, 0.0, value);
+	#endif	
 }
 
 void rayTraversal(in vec3 first, in vec3 last)

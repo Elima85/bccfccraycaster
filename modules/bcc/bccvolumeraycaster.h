@@ -36,7 +36,8 @@ protected:
 
 private:
     void adjustPropertyVisibilities();
-    void adjustPropertyReconstruction();
+	void adjustPropertyReconstruction();
+	VolumeHandle* convertVolume();			///< converts volume to z interleaved format
 
     VolumePort volumeInport1_;
     VolumePort volumeInport2_;
@@ -52,7 +53,14 @@ private:
 
     TransFuncProperty transferFunc_;        ///< transfer function to apply to volume
 
-    StringOptionProperty reconstruction_;   ///< reconstruction algorithm to use
+	StringOptionProperty volumeFormat_;		///< volume format to send to shader
+
+	VolumeHandle* convertedVolume_;			///< holds volume for z interleaved format
+
+	FloatProperty lambdaValue_;				///< lambda value for CWB reconstruction
+
+    StringOptionProperty reconstruction_;   ///< reconstruction algorithm to use with normal volume format
+	StringOptionProperty zreconstruction_;   ///< reconstruction algorithm to use with z interleaved volume format
 
     CameraProperty camera_;                 ///< the camera used for lighting calculations
 

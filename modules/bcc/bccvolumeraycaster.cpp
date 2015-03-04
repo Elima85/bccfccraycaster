@@ -21,9 +21,13 @@ BccVolumeRaycaster::BccVolumeRaycaster()
     , outport_(Port::OUTPORT, "image.output", true, Processor::INVALID_PROGRAM)
     , outport1_(Port::OUTPORT, "image.output1", true, Processor::INVALID_PROGRAM)
     , outport2_(Port::OUTPORT, "image.output2", true, Processor::INVALID_PROGRAM)
+	, convertedVolume_()
+	, lambdaValue_("lambdaValue", "Lambda", 1.0, 0.01, 1.0)
     , raycastPrg_(0)
     , transferFunc_("transferFunction", "Transfer Function")
+	, volumeFormat_("volumeFormat", "Shader Volume Format")
     , reconstruction_("reconstruction_", "Reconstruction")
+	, zreconstruction_("zreconstruction_", "Reconstruction")
     , camera_("camera", "Camera", tgt::Camera(vec3(0.f, 0.f, 3.5f), vec3(0.f, 0.f, 0.f), vec3(0.f, 1.f, 0.f)))
     , compositingMode1_("compositing1", "Compositing (OP2)", Processor::INVALID_PROGRAM)
     , compositingMode2_("compositing2", "Compositing (OP3)", Processor::INVALID_PROGRAM)
@@ -44,13 +48,29 @@ BccVolumeRaycaster::BccVolumeRaycaster()
     addProperty(camera_);
     addProperty(classificationMode_);
 
+	// volume formats for the shader
+	volumeFormat_.addOption("normal", "Normal");
+	volumeFormat_.addOption("zint", "Z-interleave");
+	volumeFormat_.selectByKey("normal");
+	addProperty(volumeFormat_);
+
 	// reconstruction algorithms
 	reconstruction_.addOption("dc", "DC-spline");
 	reconstruction_.addOption("linbox", "Linear box-spline");
-	reconstruction_.addOption("nearest", "Nearest neighbor");
 	reconstruction_.addOption("cwb", "Cosine-Weighted B-spline");
+	reconstruction_.addOption("nearest", "Nearest neighbor");
 	reconstruction_.selectByKey("dc");
+	reconstruction_.setVisible(true);
 	addProperty(reconstruction_);
+
+	addProperty(lambdaValue_);
+
+	zreconstruction_.addOption("linbox", "Linear box-spline");
+	zreconstruction_.addOption("nearest", "Nearest neighbor");
+	zreconstruction_.selectByKey("linbox");
+	zreconstruction_.setVisible(false);
+	addProperty(zreconstruction_);
+	
 
     // shading properties
     addProperty(shadeMode_);
@@ -91,7 +111,9 @@ BccVolumeRaycaster::BccVolumeRaycaster()
     setPropertyGroupGuiName("lighting", "Lighting Parameters");
 
     // listen to changes of properties that influence the GUI state (i.e. visibility of other props)
+	volumeFormat_.onChange(CallMemberAction<BccVolumeRaycaster>(this, &BccVolumeRaycaster::adjustPropertyReconstruction));
 	reconstruction_.onChange(CallMemberAction<BccVolumeRaycaster>(this, &BccVolumeRaycaster::adjustPropertyReconstruction));
+	zreconstruction_.onChange(CallMemberAction<BccVolumeRaycaster>(this, &BccVolumeRaycaster::adjustPropertyReconstruction));
     classificationMode_.onChange(CallMemberAction<BccVolumeRaycaster>(this, &BccVolumeRaycaster::adjustPropertyVisibilities));
     shadeMode_.onChange(CallMemberAction<BccVolumeRaycaster>(this, &BccVolumeRaycaster::adjustPropertyVisibilities));
     compositingMode_.onChange(CallMemberAction<BccVolumeRaycaster>(this, &BccVolumeRaycaster::adjustPropertyVisibilities));
@@ -107,9 +129,7 @@ Processor* BccVolumeRaycaster::create() const {
 void BccVolumeRaycaster::initialize() throw (tgt::Exception) {
     VolumeRaycaster::initialize();
 
-    /*raycastPrg_ = ShdrMgr.loadSeparate("passthrough.vert", "rc_bccvolume.frag",
-        generateHeader(), false);*/
-	raycastPrg_ = ShdrMgr.loadSeparate("passthrough.vert", "rc_bccvolume.frag",
+    raycastPrg_ = ShdrMgr.loadSeparate("passthrough.vert", "rc_bccvolume.frag",
         generateHeader(), false);
 
     portGroup_.initialize();
@@ -123,6 +143,8 @@ void BccVolumeRaycaster::initialize() throw (tgt::Exception) {
 		transferFunc_.get()->getTexture();
 		transferFunc_.get()->invalidateTexture();
 	}
+
+	convertedVolume_ = 0;
 }
 
 void BccVolumeRaycaster::deinitialize() throw (tgt::Exception) {
@@ -191,35 +213,65 @@ void BccVolumeRaycaster::process() {
 
 	// set appropriate filter mode for selected reconstruction method
 	GLint filterMode = GL_LINEAR;
-    if (reconstruction_.isSelected("dc"))
-        filterMode = GL_LINEAR;
-    else if (reconstruction_.isSelected("linbox"))
-        filterMode = GL_NEAREST;
-    else if (reconstruction_.isSelected("nearest"))
-        filterMode = GL_NEAREST;
+	if (volumeFormat_.isSelected("normal")) {
+		if (reconstruction_.isSelected("dc"))
+			filterMode = GL_LINEAR;
+		else if (reconstruction_.isSelected("linbox"))
+			filterMode = GL_NEAREST;
+		else if (reconstruction_.isSelected("nearest"))
+			filterMode = GL_NEAREST;
+		else if (reconstruction_.isSelected("cwb"))
+			filterMode = GL_LINEAR;
+	}
+	else if (volumeFormat_.isSelected("zint")) {
+		if (zreconstruction_.isSelected("linbox"))
+			filterMode = GL_NEAREST;
+		else if (zreconstruction_.isSelected("nearest"))
+			filterMode = GL_NEAREST;
+	}
+    
 
-    // bind volumes
-    tgt::TextureUnit volUnit1, volUnit2;
-    if (volumeInport1_.isReady()) {
-        volumeTextures.push_back(VolumeStruct(
-                    volumeInport1_.getData(),
-                    &volUnit1,
-                    "volumeStruct1_",
-                    GL_CLAMP_TO_BORDER,
-                    tgt::vec4(0.0),
-                    filterMode)
-                );
-    }
-    if (volumeInport2_.isReady()) {
-        volumeTextures.push_back(VolumeStruct(
-                    volumeInport2_.getData(),
-                    &volUnit2,
-                    "volumeStruct2_",
-                    GL_CLAMP_TO_BORDER,
-                    tgt::vec4(0.0),
-                    filterMode)
-                );
-    }
+    // bind volume(s)
+	tgt::TextureUnit volUnit1, volUnit2;
+	if (volumeFormat_.isSelected("normal")) {
+		if (volumeInport1_.isReady()) {
+			volumeTextures.push_back(VolumeStruct(
+						volumeInport1_.getData(),
+						&volUnit1,
+						"volumeStruct1_",
+						GL_CLAMP_TO_BORDER,
+						tgt::vec4(0.0),
+						filterMode)
+					);
+		}
+		if (volumeInport2_.isReady()) {
+			volumeTextures.push_back(VolumeStruct(
+						volumeInport2_.getData(),
+						&volUnit2,
+						"volumeStruct2_",
+						GL_CLAMP_TO_BORDER,
+						tgt::vec4(0.0),
+						filterMode)
+					);
+		}
+	}
+	else if (volumeFormat_.isSelected("zint")) {
+		if (volumeInport1_.isReady() && volumeInport2_.isReady()) {
+			if (!convertedVolume_ || (volumeInport1_.hasChanged() || volumeInport2_.hasChanged()))
+				convertedVolume_ = convertVolume();
+
+			if (convertedVolume_ && volumeInport1_.isReady() && volumeInport2_.isReady()) {
+				volumeTextures.push_back(VolumeStruct(
+						convertedVolume_,
+						&volUnit1,
+						"volumeStruct1_",
+						GL_CLAMP_TO_BORDER,
+						tgt::vec4(0.0),
+						filterMode)
+				);
+			}
+		}
+	}
 
     // initialize shader
     raycastPrg_->activate();
@@ -242,6 +294,9 @@ void BccVolumeRaycaster::process() {
         compositingMode1_.get() == "iso" ||
         compositingMode2_.get() == "iso")
         raycastPrg_->setUniform("isoValue_", isoValue_.get());
+	
+	if (reconstruction_.isSelected("cwb"))
+		raycastPrg_->setUniform("lambda_", lambdaValue_.get());
 
 	if (classificationMode_.get() == "transfer-function")
         transferFunc_.get()->setUniform(raycastPrg_, "transferFunc_", transferUnit.getUnitNumber());
@@ -268,6 +323,10 @@ std::string BccVolumeRaycaster::generateHeader() {
     if(!(volumeInport1_.isReady() &&
          volumeInport2_.isReady()))
         headerSource += "#define VOLUME_FORMAT_INTERLEAVED\n";
+
+	if (volumeFormat_.isSelected("zint")) {
+		headerSource += "#define Z_INTERLEAVED\n";
+	}
 
     headerSource += transferFunc_.get()->getShaderDefines();
 
@@ -312,14 +371,23 @@ std::string BccVolumeRaycaster::generateHeader() {
 
     // configure reconstruction function
     headerSource += "#define RC_APPLY_RECONSTRUCTION(p) ";
-    if (reconstruction_.isSelected("dc"))
-        headerSource += "reconstructDC(p);\n";
-    else if (reconstruction_.isSelected("linbox"))
-        headerSource += "reconstructLinbox(p);\n";
-    else if (reconstruction_.isSelected("nearest"))
-        headerSource += "reconstructNearest(p);\n";
-	else if (reconstruction_.isSelected("cwb"))
-		headerSource += "reconstructCWB(p);\n";
+
+	if (volumeFormat_.isSelected("normal")) {
+		if (reconstruction_.isSelected("dc"))
+			headerSource += "reconstructDC(p);\n";
+		else if (reconstruction_.isSelected("linbox"))
+			headerSource += "reconstructLinbox(p);\n";
+		else if (reconstruction_.isSelected("nearest"))
+			headerSource += "reconstructNearest(p);\n";
+		else if (reconstruction_.isSelected("cwb"))
+			headerSource += "reconstructCWB(p);\n";
+	}
+	else if (volumeFormat_.isSelected("zint")) {
+		if (zreconstruction_.isSelected("linbox"))
+			headerSource += "reconstructLinbox(p);\n";
+		else if (zreconstruction_.isSelected("nearest"))
+			headerSource += "reconstructNearest(p);\n";
+	}
 
     portGroup_.reattachTargets();
     headerSource += portGroup_.generateHeader(raycastPrg_);
@@ -327,7 +395,8 @@ std::string BccVolumeRaycaster::generateHeader() {
 }
 
 void BccVolumeRaycaster::adjustPropertyReconstruction() {
-    invalidate(Processor::INVALID_PROGRAM);
+	adjustPropertyVisibilities();
+    invalidate(Processor::INVALID_PROGRAM);	
 }
 
 void BccVolumeRaycaster::adjustPropertyVisibilities() {
@@ -340,6 +409,88 @@ void BccVolumeRaycaster::adjustPropertyVisibilities() {
     isoValue_.setVisible(useIsovalue);
 
     lightAttenuation_.setVisible(applyLightAttenuation_.get());
+
+	lambdaValue_.setVisible(reconstruction_.isSelected("cwb"));
+
+	if (volumeFormat_.isSelected("zint"))
+	{
+		if (!(reconstruction_.isSelected("linbox") || reconstruction_.isSelected("nearest"))) {
+			reconstruction_.select("linbox");
+			invalidate(Processor::INVALID_PROGRAM);
+		}
+		reconstruction_.setVisible(false);
+		zreconstruction_.setVisible(true);
+	}
+	else
+	{
+		reconstruction_.setVisible(true);
+		zreconstruction_.setVisible(false);
+	}
+
+}
+
+VolumeHandle* BccVolumeRaycaster::convertVolume(){
+
+	const VolumeHandleBase* inputHandle1 = volumeInport1_.getData();
+	const VolumeHandleBase* inputHandle2 = volumeInport2_.getData();
+	const Volume* inputVolume1 = inputHandle1->getRepresentation<Volume>();
+	const Volume* inputVolume2 = inputHandle2->getRepresentation<Volume>();
+
+	if (inputHandle1->getNumChannels() != inputHandle2->getNumChannels()) {
+		LERROR("Number of channels not same for all inputs: " << inputHandle1->getNumChannels() <<
+		" and " << inputHandle1->getNumChannels() << ".");
+		return 0;
+	}
+	else if (inputHandle1->getNumChannels() == 1) {
+
+		const VolumeAtomic<uint16_t> *inputIntensity1 = static_cast<const VolumeAtomic<uint16_t> *>(inputVolume1);
+		const VolumeAtomic<uint16_t> *inputIntensity2 = static_cast<const VolumeAtomic<uint16_t> *>(inputVolume2);
+		tgt::ivec3 dim = inputIntensity1->getDimensions();
+		VolumeAtomic<uint16_t>* output = new VolumeAtomic<uint16_t>(tgt::ivec3(dim.x,dim.y,dim.z*2));
+		
+		tgt::ivec3 pos;
+		
+		for (pos.x = 0; pos.x < dim.x; pos.x+=1) {
+			for (pos.y = 0; pos.y < dim.y; pos.y++) {	
+				int zz = 0;
+				for (pos.z = 0; pos.z < dim.z; pos.z++) {
+					//might need to handle case for uneven dims
+					output->voxel(pos.x, pos.y, zz) = inputIntensity1->voxel(pos);
+					output->voxel(pos.x, pos.y, zz+1) = inputIntensity2->voxel(pos);
+					zz+=2;
+				}
+			}
+		}
+		return new VolumeHandle(output, inputHandle1);
+	}
+	else if (inputHandle1->getNumChannels() == 4) {
+
+		// indata should be a vector4 of gradients xyz and intensity w
+		const VolumeAtomic<tgt::Vector4<uint16_t> >* inputData1 = static_cast<const VolumeAtomic<tgt::Vector4<uint16_t> > *>(inputVolume1);
+		const VolumeAtomic<tgt::Vector4<uint16_t> >* inputData2 = static_cast<const VolumeAtomic<tgt::Vector4<uint16_t> > *>(inputVolume2);
+
+		tgt::ivec3 dim = inputData1->getDimensions();
+		VolumeAtomic<tgt::Vector4<uint16_t> >* output = new VolumeAtomic<tgt::Vector4<uint16_t> >(tgt::ivec3(dim.x,dim.y,dim.z*2));
+		
+		tgt::ivec3 pos;
+		
+		for (pos.x = 0; pos.x < dim.x; pos.x+=1) {
+			for (pos.y = 0; pos.y < dim.y; pos.y++) {				
+				int zz = 0;
+				for (pos.z = 0; pos.z < dim.z; pos.z++) {
+					//might need to handle case for uneven dims
+					output->voxel(pos.x, pos.y, zz+1) = inputData2->voxel(pos);
+					output->voxel(pos.x, pos.y, zz) = inputData1->voxel(pos);
+					zz+=2;
+				}
+			}
+		}
+		return new VolumeHandle(output, inputHandle1);
+	}
+
+	LERROR("The number of input channels are not 1 or 4, but " << inputHandle1->getNumChannels() <<
+		" and " << inputHandle1->getNumChannels() << ".");
+	return 0;
 }
 
 } // namespace

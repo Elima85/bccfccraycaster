@@ -12,6 +12,10 @@
 	#define TEX1(p) textureLookup3D(volumeStruct1_, NORM((p) - g1_off)).g
 #endif
 
+#ifdef Z_INTERLEAVED
+	#define TEX(p) textureLookup3D(volumeStruct1_, (floor(p*convert)) * oneOverVoxels)
+#endif
+
 const vec3 g0_off = vec3(0.0, 0.0, 0.0);
 const vec3 g1_off = vec3(0.5, 0.5, 0.5);
 
@@ -26,9 +30,18 @@ uniform SAMPLER2D_TYPE     exitPoints_;
 uniform SAMPLER2D_TYPE     exitPointsDepth_;
 uniform TEXTURE_PARAMETERS exitParameters_;
 
+uniform float lambda_; //used for CWB
+
 uniform VOLUME_STRUCT volumeStruct1_;
 #ifndef VOLUME_FORMAT_INTERLEAVED
 	uniform VOLUME_STRUCT volumeStruct2_;
+#endif
+
+#ifdef Z_INTERLEAVED
+	vec3 convert = vec3(0.5, 0.5, 1.0);
+	vec3 oneOverVoxels = vec3(1.0)/vec3(volumeStruct1_.datasetDimensions_-1.0);
+	vec3 size_volume = vec3(2*volumeStruct1_.datasetDimensions_.x-1.0, 2*volumeStruct1_.datasetDimensions_.y-1.0,
+		volumeStruct1_.datasetDimensions_.z-1.0);
 #endif
 
 vec4 reconstructDC(in vec3 p)
@@ -72,10 +85,14 @@ vec4 reconstructDC(in vec3 p)
 vec4 reconstructLinbox(vec3 p)
 {
 	vec3 P1, P2, P3, P4;
-	vec3 posOS = (p * volumeStruct1_.datasetDimensions_) * 2.0;
-
 	SAMPLE D1, D2, D3, D4;
-
+	
+	#ifndef Z_INTERLEAVED
+		vec3 posOS = (p * volumeStruct1_.datasetDimensions_) * 2.0;
+	#else
+		vec3 posOS = (p * size_volume);
+	#endif
+	
 	vec3 abc = vec3(posOS.x + posOS.y,
 	                posOS.x + posOS.z,
 	                posOS.y + posOS.z) * 0.5;
@@ -103,10 +120,17 @@ vec4 reconstructLinbox(vec3 p)
 	P4 += (float(sorting.z == abc.x) * vec3(-2.0,  0.0, 2.0) +
 	       float(sorting.z == abc.y) * vec3(-2.0,  2.0, 0.0));
 
-	D1 = (bool(int(P1.x) % 2) ? TEX0(P1 / 2.0) : TEX1(P1 / 2.0));
-	D2 = (bool(int(P2.x) % 2) ? TEX0(P2 / 2.0) : TEX1(P2 / 2.0));
-	D3 = (bool(int(P3.x) % 2) ? TEX0(P3 / 2.0) : TEX1(P3 / 2.0));
-	D4 = (bool(int(P4.x) % 2) ? TEX0(P4 / 2.0) : TEX1(P4 / 2.0));
+	#ifndef Z_INTERLEAVED
+		D1 = (bool(int(P1.x) % 2) ? TEX0(P1 / 2.0) : TEX1(P1 / 2.0));
+		D2 = (bool(int(P2.x) % 2) ? TEX0(P2 / 2.0) : TEX1(P2 / 2.0));
+		D3 = (bool(int(P3.x) % 2) ? TEX0(P3 / 2.0) : TEX1(P3 / 2.0));
+		D4 = (bool(int(P4.x) % 2) ? TEX0(P4 / 2.0) : TEX1(P4 / 2.0));
+	#else
+		D1 = TEX(P1);
+		D2 = TEX(P2);
+		D3 = TEX(P3);
+		D4 = TEX(P4);
+	#endif
 
 	#ifndef VOLUME_FORMAT_INTERLEAVED
 		vec4 value = vec4(dot(sorting, vec4(D1[0], D3[0] - D1[0], D2[0] - D4[0], D4[0] - D3[0])),
@@ -123,29 +147,60 @@ vec4 reconstructLinbox(vec3 p)
 
 vec4 reconstructNearest(in vec3 p)
 {
-	const vec3 offsets[2] = vec3[2](g0_off, g1_off);
+	#ifndef Z_INTERLEAVED
+		const vec3 offsets[2] = vec3[2](g0_off, g1_off);
 
-	vec3 pw = p * volumeStruct1_.datasetDimensions_ - 0.5;
+		vec3 pw = p * volumeStruct1_.datasetDimensions_ - 0.5;
 
-	vec3 v0 = round(pw + g0_off) - g0_off;
-	vec3 v1 = round(pw + g1_off) - g1_off;
+		vec3 v0 = round(pw + g0_off) - g0_off;
+		vec3 v1 = round(pw + g1_off) - g1_off;
 
-	SAMPLE values[2] = SAMPLE[2](TEX1(v1 + 0.5), TEX0(v0 + 0.5));
-	SAMPLE value = values[int(distance(pw, v0) < distance(pw, v1))];
+		SAMPLE values[2] = SAMPLE[2](TEX1(v1 + 0.5), TEX0(v0 + 0.5));
+		SAMPLE value = values[int(distance(pw, v0) < distance(pw, v1))];
 
-    value *= volumeStruct1_.bitDepthScale_;
+		value *= volumeStruct1_.bitDepthScale_;
+		#ifndef VOLUME_FORMAT_INTERLEAVED
+			value.a *= volumeStruct1_.rwmScale_;
+			value.a += volumeStruct1_.rwmOffset_;
+
+			value.xyz = (value.xyz - vec3(0.5)) * 2.0;
+			return value;
+		#else
+			value *= volumeStruct1_.rwmScale_;
+			value += volumeStruct1_.rwmOffset_;
+
+			return vec4(0.0, 0.0, 0.0, value);
+		#endif
+	#else
+		vec3 pw = p * (size_volume);
+		vec4 value = TEX(pw);
+		value.rgb = (value.rgb - 0.5) * 2.0;
+		return value;
+	#endif
+}
+
+vec4 reconstructCWB(in vec3 p)
+{
+	const float size = volumeStruct1_.datasetDimensions_-1;
+	const float pi2 = 6.283185;
+	
+	vec3 pw = p*size + 0.5;
+	
+	SAMPLE sample0 = TEX0(pw);
+	SAMPLE sample1 = TEX1(pw);
+	
+	vec3 p0 = NORM(pw)*size;
+	vec3 c = cos(p0*pi2);
+	float w = 0.5 + (c.x + c.y + c.z) / 6.0 * lambda_;
+	
+	SAMPLE value = mix(sample1, sample0, w);
+	
 	#ifndef VOLUME_FORMAT_INTERLEAVED
-	    value.a *= volumeStruct1_.rwmScale_;
-	    value.a += volumeStruct1_.rwmOffset_;
-
 		value.xyz = (value.xyz - vec3(0.5)) * 2.0;
 		return value;
 	#else
-	    value *= volumeStruct1_.rwmScale_;
-	    value += volumeStruct1_.rwmOffset_;
-
-	    return vec4(0.0, 0.0, 0.0, value);
-	#endif
+		return vec4(0.0, 0.0, 0.0, value);
+	#endif	
 }
 
 void rayTraversal(in vec3 first, in vec3 last)
@@ -163,6 +218,10 @@ void rayTraversal(in vec3 first, in vec3 last)
 
         vec4 color = RC_APPLY_CLASSIFICATION(transferFunc_, voxel);
 
+		#ifdef Z_INTERLEAVED
+			samplePos.z *= 0.5;
+		#endif
+		
         color.rgb = RC_APPLY_SHADING(voxel.xyz, samplePos, volumeStruct1_, color.rgb, color.rgb, vec3(1.0,1.0,1.0));
 
         if (color.a > 0.0) {

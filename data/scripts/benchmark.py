@@ -8,9 +8,9 @@ import math
 frames    = 100
 canvasDim = (512, 512)
 
-processor  = "SingleVolumeRaycaster"
+processor  = "BCCVolumeRaycaster"
 cameraProp = "camera"
-canvas     = "Canvas"
+canvas     = "BCC"
 initCam    = ((0.0, 0.0, 3.5), (0.0, 0.0, 0.0), (0.0, 1.0, 0.0))
 rotAxis    = (0.0, 1.0, 0.0)
 # --- configuration ---

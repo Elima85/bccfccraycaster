@@ -3,106 +3,43 @@
     <Workspace version="2" GlobalDescription="">
         <VolumeContainer>
             <VolumeHandles>
-                <VolumeHandle id="ref26">
+                <VolumeHandle id="ref13">
                     <Origin url="../../volumes/bcc/ml_2m_bcc_1.dat?timeframe=0" />
                 </VolumeHandle>
-                <VolumeHandle id="ref27">
+                <VolumeHandle id="ref14">
                     <Origin url="../../volumes/bcc/ml_2m_bcc_2.dat?timeframe=0" />
+                </VolumeHandle>
+                <VolumeHandle>
+                    <Origin url="../../volumes/bcc/ml_2m_bcc_i_1.dat?timeframe=0" />
                 </VolumeHandle>
             </VolumeHandles>
         </VolumeContainer>
         <ProcessorNetwork version="11">
             <MetaData>
+                <MetaItem name="ProcessorSelection" type="SelectionMetaData::Processor">
+                    <values>
+                        <item type="BCCVolumeRaycaster" ref="ref1" />
+                    </values>
+                </MetaItem>
                 <MetaItem name="Zoom" type="ZoomMetaData">
-                    <transform.row0 x="0.76322007179260254" y="0" z="0" />
-                    <transform.row1 x="0" y="0.76322007179260254" z="0" />
-                    <transform.row2 x="-8806.2060546875" y="-4689.68212890625" z="1" />
+                    <transform.row0 x="0.60576814413070679" y="0" z="0" />
+                    <transform.row1 x="0" y="0.60576814413070679" z="0" />
+                    <transform.row2 x="-12635.7060546875" y="-7253.88623046875" z="1" />
                 </MetaItem>
             </MetaData>
             <Processors>
-                <Processor type="MeshEntryExitPoints" name="BBCIEntryExit" id="ref0">
+                <Processor type="MeshEntryExitPoints" name="BCCEntryExit" id="ref0">
                     <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-1151" y="-731" />
+                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-916" y="-723" />
                     </MetaData>
                     <Properties>
-                        <Property name="camera" adjustProjectionToViewport="true" projectionMode="1" frustLeft="-0.04142136" frustRight="0.04142136" frustBottom="-0.04142136" frustTop="0.04142136" frustNear="0.1" frustFar="50" fovy="45" id="ref28">
-                            <MetaData>
-                                <MetaItem name="EditorWindow" type="WindowStateMetaData" visible="false" x="125" y="493" />
-                            </MetaData>
-                            <position x="-1.54653823" y="-1.64719844" z="3.40979886" />
-                            <focus x="0" y="0" z="0" />
-                            <upVector x="-0.03892186" y="0.99075693" z="0.12994574" />
-                        </Property>
-                        <Property name="jitterEntryPoints" value="false" />
-                        <Property name="jitterStepLength" value="0.005" />
-                        <Property name="supportCameraInsideVolume" value="true" />
-                        <Property name="useCulling" value="true" />
-                        <Property name="useFloatRenderTargets" value="true" />
-                    </Properties>
-                    <InteractionHandlers>
-                        <Handler name="cameraHandler">
-                            <Properties>
-                                <Property name="cameraHandler.interactionMetaphor" value="trackball" />
-                                <Property name="cameraHandler.moveBackward" lod="1" enabled="true" mouseAction="0" mouseButtons="0" keyCode="115" modifier="0" shareEvents="false" />
-                                <Property name="cameraHandler.moveDown" lod="1" enabled="true" mouseAction="0" mouseButtons="0" keyCode="102" modifier="0" shareEvents="false" />
-                                <Property name="cameraHandler.moveForward" lod="1" enabled="true" mouseAction="0" mouseButtons="0" keyCode="119" modifier="0" shareEvents="false" />
-                                <Property name="cameraHandler.moveLeft" lod="1" enabled="true" mouseAction="0" mouseButtons="0" keyCode="97" modifier="0" shareEvents="false" />
-                                <Property name="cameraHandler.moveRight" lod="1" enabled="true" mouseAction="0" mouseButtons="0" keyCode="100" modifier="0" shareEvents="false" />
-                                <Property name="cameraHandler.moveUp" lod="1" enabled="true" mouseAction="0" mouseButtons="0" keyCode="114" modifier="0" shareEvents="false" />
-                                <Property name="cameraHandler.rotate" lod="1" enabled="true" mouseAction="127" mouseButtons="1" keyCode="0" modifier="0" shareEvents="false" />
-                                <Property name="cameraHandler.shift" lod="1" enabled="true" mouseAction="127" mouseButtons="1" keyCode="0" modifier="1" shareEvents="false" />
-                                <Property name="cameraHandler.wheelZoom" lod="1" enabled="true" mouseAction="16" mouseButtons="96" keyCode="0" modifier="0" shareEvents="false" />
-                                <Property name="cameraHandler.zoom" lod="1" enabled="true" mouseAction="127" mouseButtons="4" keyCode="0" modifier="0" shareEvents="false" />
-                            </Properties>
-                        </Handler>
-                    </InteractionHandlers>
-                </Processor>
-                <Processor type="CubeMeshProxyGeometry" name="BBCIProxyGeometry" id="ref2">
-                    <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-1150" y="-829" />
-                    </MetaData>
-                    <Properties>
-                        <Property name="backClippingPlane" value="99" />
-                        <Property name="bottomClippingPlane" value="0" />
-                        <Property name="frontClippingPlane" value="0" />
-                        <Property name="leftClippingPlane" value="99" />
-                        <Property name="resetClipPlanes" />
-                        <Property name="rightClippingPlane" value="0" />
-                        <Property name="topClippingPlane" value="99" />
-                        <Property name="useClipping" value="false" />
-                    </Properties>
-                    <InteractionHandlers />
-                </Processor>
-                <Processor type="Background" name="Background" id="ref3">
-                    <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-1253" y="-394" />
-                    </MetaData>
-                    <Properties>
-                        <Property name="angle" value="0" />
-                        <Property name="backgroundModeAsString" value="monochrome" />
-                        <Property name="color1">
-                            <value x="0" y="0" z="0" w="1" />
-                        </Property>
-                        <Property name="color2">
-                            <value x="0.2" y="0.2" z="0.2" w="1" />
-                        </Property>
-                        <Property name="repeat" value="1" />
-                        <Property name="texture" value="" />
-                    </Properties>
-                    <InteractionHandlers />
-                </Processor>
-                <Processor type="MeshEntryExitPoints" name="BCCEntryExit" id="ref5">
-                    <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-662" y="-687" />
-                    </MetaData>
-                    <Properties>
-                        <Property name="camera" adjustProjectionToViewport="true" projectionMode="1" frustLeft="-0.04142136" frustRight="0.04142136" frustBottom="-0.04142136" frustTop="0.04142136" frustNear="0.1" frustFar="50" fovy="45" id="ref29">
+                        <Property name="camera" adjustProjectionToViewport="true" projectionMode="1" frustLeft="-0.04142136" frustRight="0.04142136" frustBottom="-0.04142136" frustTop="0.04142136" frustNear="0.1" frustFar="50" fovy="45" id="ref15">
                             <MetaData>
                                 <MetaItem name="EditorWindow" type="WindowStateMetaData" visible="false" x="133" y="501" />
                             </MetaData>
-                            <position x="-1.54653823" y="-1.64719844" z="3.40979886" />
+                            <position x="-3.26784515" y="0.7881723" z="3.47379875" />
                             <focus x="0" y="0" z="0" />
-                            <upVector x="-0.03892186" y="0.99075693" z="0.12994574" />
+                            <upVector x="0.84803826" y="-0.24570812" z="0.46953034" />
                         </Property>
                         <Property name="jitterEntryPoints" value="false" />
                         <Property name="jitterStepLength" value="0.005" />
@@ -128,9 +65,9 @@
                         </Handler>
                     </InteractionHandlers>
                 </Processor>
-                <Processor type="CubeMeshProxyGeometry" name="BCCProxyGeom" id="ref7">
+                <Processor type="CubeMeshProxyGeometry" name="BCCProxyGeom" id="ref2">
                     <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-672" y="-779" />
+                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-926" y="-815" />
                     </MetaData>
                     <Properties>
                         <Property name="backClippingPlane" value="99" />
@@ -144,19 +81,19 @@
                     </Properties>
                     <InteractionHandlers />
                 </Processor>
-                <Processor type="BCCVolumeRaycaster" name="BCCVolumeRaycaster" id="ref6">
+                <Processor type="BCCVolumeRaycaster" name="BCCVolumeRaycaster" id="ref1">
                     <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-866" y="-564" />
+                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-1126" y="-602" />
                     </MetaData>
                     <Properties>
                         <Property name="applyLightAttenuation" value="false" />
-                        <Property name="camera" adjustProjectionToViewport="true" projectionMode="1" frustLeft="-0.04142136" frustRight="0.04142136" frustBottom="-0.04142136" frustTop="0.04142136" frustNear="0.1" frustFar="50" fovy="45" id="ref30">
+                        <Property name="camera" adjustProjectionToViewport="true" projectionMode="1" frustLeft="-0.04142136" frustRight="0.04142136" frustBottom="-0.04142136" frustTop="0.04142136" frustNear="0.1" frustFar="50" fovy="45" id="ref16">
                             <MetaData>
-                                <MetaItem name="EditorWindow" type="WindowStateMetaData" visible="false" x="282" y="387" />
+                                <MetaItem name="EditorWindow" type="WindowStateMetaData" visible="false" x="316" y="387" />
                             </MetaData>
-                            <position x="-1.54653823" y="-1.64719844" z="3.40979886" />
+                            <position x="-3.26784515" y="0.7881723" z="3.47379875" />
                             <focus x="0" y="0" z="0" />
-                            <upVector x="-0.03892186" y="0.99075693" z="0.12994574" />
+                            <upVector x="0.84803826" y="-0.24570812" z="0.46953034" />
                         </Property>
                         <Property name="classification" value="transfer-function" />
                         <Property name="compositing" value="dvr" />
@@ -166,6 +103,7 @@
                         <Property name="interactionQuality" value="1" />
                         <Property name="interpolation.coarseness" value="false" />
                         <Property name="isoValue" value="0.5" />
+                        <Property name="lambdaValue" value="1" />
                         <Property name="lightAmbient">
                             <value x="0.40000001" y="0.40000001" z="0.40000001" w="1" />
                         </Property>
@@ -175,21 +113,21 @@
                         <Property name="lightDiffuse">
                             <value x="0.80000001" y="0.80000001" z="0.80000001" w="1" />
                         </Property>
-                        <Property name="lightPosition" id="ref43">
+                        <Property name="lightPosition" id="ref18">
                             <MetaData>
                                 <MetaItem name="FollowCamera" type="BoolMetaData" value="false" />
-                                <MetaItem name="UseBackHemisphere" type="BoolMetaData" value="true" />
+                                <MetaItem name="UseBackHemisphere" type="BoolMetaData" value="false" />
                             </MetaData>
-                            <value x="0.94999999" y="1.20000005" z="0.80000001" w="1" />
+                            <value x="0.91366231" y="-0.65443206" z="1.91195011" w="1" />
                         </Property>
                         <Property name="lightSpecular">
                             <value x="0.60000002" y="0.60000002" z="0.60000002" w="1" />
                         </Property>
                         <Property name="materialShininess" value="60" />
-                        <Property name="reconstruction_" value="linbox" />
-                        <Property name="samplingRate" value="2" id="ref36" />
-                        <Property name="shading" value="phong-diffuse" id="ref34" />
-                        <Property name="transferFunction" id="ref38">
+                        <Property name="reconstruction_" value="cwb" />
+                        <Property name="samplingRate" value="2" />
+                        <Property name="shading" value="none" />
+                        <Property name="transferFunction">
                             <MetaData>
                                 <MetaItem name="EditorWindow" type="WindowStateMetaData" visible="false" />
                             </MetaData>
@@ -205,12 +143,14 @@
                                 <domain x="0" y="1" />
                             </TransferFunction>
                         </Property>
+                        <Property name="volumeFormat" value="normal" />
+                        <Property name="zreconstruction_" value="linbox" />
                     </Properties>
                     <InteractionHandlers />
                 </Processor>
-                <Processor type="Background" name="Background 2" id="ref9">
+                <Processor type="Background" name="Background 2" id="ref4">
                     <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-754" y="-377" />
+                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-1008" y="-413" />
                     </MetaData>
                     <Properties>
                         <Property name="angle" value="0" />
@@ -226,10 +166,10 @@
                     </Properties>
                     <InteractionHandlers />
                 </Processor>
-                <Processor type="Canvas" name="BCC" id="ref10">
+                <Processor type="Canvas" name="BCC" id="ref5">
                     <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-747" y="-283" />
-                        <MetaItem name="ProcessorWidget" type="WindowStateMetaData" visible="true" x="-404" y="473" width="512" height="512" />
+                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-1001" y="-321" />
+                        <MetaItem name="ProcessorWidget" type="WindowStateMetaData" visible="true" x="-572" y="289" width="512" height="512" />
                     </MetaData>
                     <Properties>
                         <Property name="canvasSize">
@@ -239,40 +179,31 @@
                     </Properties>
                     <InteractionHandlers />
                 </Processor>
-                <Processor type="VolumeGradient" name="VolGradCC" id="ref11">
+                <Processor type="LightWidgetRenderer" name="LightWidgetRenderer" id="ref12">
                     <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-1455" y="-844" />
+                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-1212" y="-503" />
                     </MetaData>
                     <Properties>
-                        <Property name="technique" value="central-differences" />
-                    </Properties>
-                    <InteractionHandlers />
-                </Processor>
-                <Processor type="LightWidgetRenderer" name="LightWidgetRenderer" id="ref24">
-                    <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-958" y="-467" />
-                    </MetaData>
-                    <Properties>
-                        <Property name="lightPosition" id="ref42">
-                            <value x="0.94999999" y="1.20000005" z="0.80000001" w="1" />
+                        <Property name="lightPosition" id="ref17">
+                            <value x="0.91366231" y="-0.65443206" z="1.91195011" w="1" />
                         </Property>
                         <Property name="mouseEvent.moveSphere" lod="1" enabled="true" mouseAction="7" mouseButtons="1" keyCode="0" modifier="0" shareEvents="false" />
                         <Property name="set.showLightWidget" value="true" />
                     </Properties>
                     <InteractionHandlers />
                 </Processor>
-                <Processor type="GeometryProcessor" name="GeometryProcessor" id="ref8">
+                <Processor type="GeometryProcessor" name="GeometryProcessor" id="ref3">
                     <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-773" y="-467" />
+                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-1027" y="-503" />
                     </MetaData>
                     <Properties>
-                        <Property name="camera" adjustProjectionToViewport="true" projectionMode="1" frustLeft="-0.04142136" frustRight="0.04142136" frustBottom="-0.04142136" frustTop="0.04142136" frustNear="0.1" frustFar="50" fovy="45" id="ref31">
+                        <Property name="camera" adjustProjectionToViewport="true" projectionMode="1" frustLeft="-0.04142136" frustRight="0.04142136" frustBottom="-0.04142136" frustTop="0.04142136" frustNear="0.1" frustFar="50" fovy="45">
                             <MetaData>
                                 <MetaItem name="EditorWindow" type="WindowStateMetaData" visible="false" x="534" y="357" />
                             </MetaData>
-                            <position x="-1.54653823" y="-1.64719844" z="3.40979886" />
+                            <position x="1.25597227" y="2.33733964" z="3.44773412" />
                             <focus x="0" y="0" z="0" />
-                            <upVector x="-0.03892186" y="0.99075693" z="0.12994574" />
+                            <upVector x="0.12384987" y="-0.9585669" z="0.2565358" />
                         </Property>
                         <Property name="renderGeometries" value="true" />
                     </Properties>
@@ -294,154 +225,9 @@
                         </Handler>
                     </InteractionHandlers>
                 </Processor>
-                <Processor type="LightWidgetRenderer" name="LightWidgetRenderer 2" id="ref25">
+                <Processor type="VolumeInterleave" name="VolumeInterleave 3" id="ref6">
                     <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-1484" y="-489" />
-                    </MetaData>
-                    <Properties>
-                        <Property name="lightPosition" id="ref41">
-                            <value x="0.94999999" y="1.20000005" z="0.80000001" w="1" />
-                        </Property>
-                        <Property name="mouseEvent.moveSphere" lod="1" enabled="true" mouseAction="7" mouseButtons="1" keyCode="0" modifier="0" shareEvents="false" />
-                        <Property name="set.showLightWidget" value="true" />
-                    </Properties>
-                    <InteractionHandlers />
-                </Processor>
-                <Processor type="GeometryProcessor" name="GeometryProcessor 2" id="ref13">
-                    <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-1290" y="-493" />
-                    </MetaData>
-                    <Properties>
-                        <Property name="camera" adjustProjectionToViewport="true" projectionMode="1" frustLeft="-0.04142136" frustRight="0.04142136" frustBottom="-0.04142136" frustTop="0.04142136" frustNear="0.1" frustFar="50" fovy="45" id="ref32">
-                            <MetaData>
-                                <MetaItem name="EditorWindow" type="WindowStateMetaData" visible="false" x="534" y="357" />
-                            </MetaData>
-                            <position x="-1.54653823" y="-1.64719844" z="3.40979886" />
-                            <focus x="0" y="0" z="0" />
-                            <upVector x="-0.03892186" y="0.99075693" z="0.12994574" />
-                        </Property>
-                        <Property name="renderGeometries" value="true" />
-                    </Properties>
-                    <InteractionHandlers>
-                        <Handler name="cameraHandler">
-                            <Properties>
-                                <Property name="cameraHandler.interactionMetaphor" value="trackball" />
-                                <Property name="cameraHandler.moveBackward" lod="1" enabled="false" mouseAction="0" mouseButtons="0" keyCode="115" modifier="0" shareEvents="false" />
-                                <Property name="cameraHandler.moveDown" lod="1" enabled="false" mouseAction="0" mouseButtons="0" keyCode="102" modifier="0" shareEvents="false" />
-                                <Property name="cameraHandler.moveForward" lod="1" enabled="false" mouseAction="0" mouseButtons="0" keyCode="119" modifier="0" shareEvents="false" />
-                                <Property name="cameraHandler.moveLeft" lod="1" enabled="false" mouseAction="0" mouseButtons="0" keyCode="97" modifier="0" shareEvents="false" />
-                                <Property name="cameraHandler.moveRight" lod="1" enabled="false" mouseAction="0" mouseButtons="0" keyCode="100" modifier="0" shareEvents="false" />
-                                <Property name="cameraHandler.moveUp" lod="1" enabled="false" mouseAction="0" mouseButtons="0" keyCode="114" modifier="0" shareEvents="false" />
-                                <Property name="cameraHandler.rotate" lod="1" enabled="false" mouseAction="127" mouseButtons="1" keyCode="0" modifier="0" shareEvents="false" />
-                                <Property name="cameraHandler.shift" lod="1" enabled="false" mouseAction="127" mouseButtons="1" keyCode="0" modifier="1" shareEvents="false" />
-                                <Property name="cameraHandler.wheelZoom" lod="1" enabled="false" mouseAction="16" mouseButtons="96" keyCode="0" modifier="0" shareEvents="false" />
-                                <Property name="cameraHandler.zoom" lod="1" enabled="false" mouseAction="127" mouseButtons="4" keyCode="0" modifier="0" shareEvents="false" />
-                            </Properties>
-                        </Handler>
-                    </InteractionHandlers>
-                </Processor>
-                <Processor type="BCCInterleavedVolumeRaycaster" name="BCCInterleavedVolumeRaycaster" id="ref1">
-                    <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-1317" y="-583" />
-                    </MetaData>
-                    <Properties>
-                        <Property name="applyLightAttenuation" value="false" />
-                        <Property name="camera" adjustProjectionToViewport="true" projectionMode="1" frustLeft="-0.04142136" frustRight="0.04142136" frustBottom="-0.04142136" frustTop="0.04142136" frustNear="0.1" frustFar="50" fovy="45" id="ref33">
-                            <MetaData>
-                                <MetaItem name="EditorWindow" type="WindowStateMetaData" visible="false" x="-315" y="331" />
-                            </MetaData>
-                            <position x="-1.54653823" y="-1.64719844" z="3.40979886" />
-                            <focus x="0" y="0" z="0" />
-                            <upVector x="-0.03892186" y="0.99075693" z="0.12994574" />
-                        </Property>
-                        <Property name="classification" value="transfer-function" />
-                        <Property name="compositing" value="dvr" />
-                        <Property name="compositing1" value="dvr" />
-                        <Property name="compositing2" value="dvr" />
-                        <Property name="interactionCoarseness" value="4" />
-                        <Property name="interactionQuality" value="1" />
-                        <Property name="interpolation.coarseness" value="false" />
-                        <Property name="isoValue" value="0.5" />
-                        <Property name="lightAmbient">
-                            <value x="0.40000001" y="0.40000001" z="0.40000001" w="1" />
-                        </Property>
-                        <Property name="lightAttenuation">
-                            <value x="1" y="0" z="0" />
-                        </Property>
-                        <Property name="lightDiffuse">
-                            <value x="0.80000001" y="0.80000001" z="0.80000001" w="1" />
-                        </Property>
-                        <Property name="lightPosition" id="ref40">
-                            <MetaData>
-                                <MetaItem name="FollowCamera" type="BoolMetaData" value="false" />
-                                <MetaItem name="UseBackHemisphere" type="BoolMetaData" value="true" />
-                            </MetaData>
-                            <value x="0.94999999" y="1.20000005" z="0.80000001" w="1" />
-                        </Property>
-                        <Property name="lightSpecular">
-                            <value x="0.60000002" y="0.60000002" z="0.60000002" w="1" />
-                        </Property>
-                        <Property name="materialShininess" value="60" />
-                        <Property name="reconstruction_" value="linbox" />
-                        <Property name="samplingRate" value="2" id="ref37" />
-                        <Property name="shading" value="phong-diffuse" id="ref35" />
-                        <Property name="transferFunction" id="ref39">
-                            <MetaData>
-                                <MetaItem name="EditorWindow" type="WindowStateMetaData" visible="false" />
-                            </MetaData>
-                            <TransferFunction type="TransFuncIntensity" lower="0" upper="1">
-                                <Keys>
-                                    <key type="TransFuncMappingKey" intensity="0.49662161" split="false">
-                                        <colorL r="255" g="0" b="4" a="0" />
-                                    </key>
-                                    <key type="TransFuncMappingKey" intensity="0.5608108" split="false">
-                                        <colorL r="0" g="0" b="0" a="222" />
-                                    </key>
-                                </Keys>
-                                <domain x="0" y="1" />
-                            </TransferFunction>
-                        </Property>
-                    </Properties>
-                    <InteractionHandlers />
-                </Processor>
-                <Processor type="VolumeSource" name="VolumeSource" id="ref14">
-                    <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-1438" y="-949" />
-                    </MetaData>
-                    <Properties>
-                        <Property name="volumeHandle">
-                            <value ref="ref26" />
-                        </Property>
-                    </Properties>
-                    <InteractionHandlers />
-                </Processor>
-                <Processor type="VolumeSource" name="VolumeSource 2" id="ref15">
-                    <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-1296" y="-949" />
-                    </MetaData>
-                    <Properties>
-                        <Property name="volumeHandle">
-                            <value ref="ref27" />
-                        </Property>
-                    </Properties>
-                    <InteractionHandlers />
-                </Processor>
-                <Processor type="Canvas" name="BCCI" id="ref4">
-                    <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-1253" y="-305" />
-                        <MetaItem name="ProcessorWidget" type="WindowStateMetaData" visible="true" x="-934" y="473" width="512" height="514" />
-                    </MetaData>
-                    <Properties>
-                        <Property name="canvasSize">
-                            <value x="512" y="514" />
-                        </Property>
-                        <Property name="showCursor" value="true" />
-                    </Properties>
-                    <InteractionHandlers />
-                </Processor>
-                <Processor type="VolumeInterleave" name="VolumeInterleave" id="ref12">
-                    <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-1464" y="-727" />
+                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-1248" y="-706" />
                     </MetaData>
                     <Properties>
                         <Property name="clearCache" />
@@ -449,9 +235,9 @@
                     </Properties>
                     <InteractionHandlers />
                 </Processor>
-                <Processor type="VolumeInterleave" name="VolumeInterleave 2" id="ref16">
+                <Processor type="VolumeInterleave" name="VolumeInterleave 4" id="ref7">
                     <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-1303" y="-731" />
+                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-1086" y="-730" />
                     </MetaData>
                     <Properties>
                         <Property name="clearCache" />
@@ -459,71 +245,42 @@
                     </Properties>
                     <InteractionHandlers />
                 </Processor>
-                <Processor type="VolumeGradient" name="VolumeGradient" id="ref17">
+                <Processor type="VolumeGradient" name="VolumeGradient 2" id="ref8">
                     <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-1339" y="-840" />
+                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-1246" y="-831" />
                     </MetaData>
                     <Properties>
                         <Property name="technique" value="central-differences" />
                     </Properties>
                     <InteractionHandlers />
                 </Processor>
-                <Processor type="VolumeInterleave" name="VolumeInterleave 3" id="ref18">
+                <Processor type="VolumeGradient" name="VolumeGradient 3" id="ref9">
                     <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-994" y="-670" />
-                    </MetaData>
-                    <Properties>
-                        <Property name="clearCache" />
-                        <Property name="useCaching" value="true" />
-                    </Properties>
-                    <InteractionHandlers />
-                </Processor>
-                <Processor type="VolumeInterleave" name="VolumeInterleave 4" id="ref19">
-                    <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-832" y="-694" />
-                    </MetaData>
-                    <Properties>
-                        <Property name="clearCache" />
-                        <Property name="useCaching" value="true" />
-                    </Properties>
-                    <InteractionHandlers />
-                </Processor>
-                <Processor type="VolumeGradient" name="VolumeGradient 2" id="ref20">
-                    <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-992" y="-795" />
+                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-1098" y="-848" />
                     </MetaData>
                     <Properties>
                         <Property name="technique" value="central-differences" />
                     </Properties>
                     <InteractionHandlers />
                 </Processor>
-                <Processor type="VolumeGradient" name="VolumeGradient 3" id="ref21">
+                <Processor type="VolumeSource" name="VolumeSource 3" id="ref10">
                     <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-844" y="-812" />
-                    </MetaData>
-                    <Properties>
-                        <Property name="technique" value="central-differences" />
-                    </Properties>
-                    <InteractionHandlers />
-                </Processor>
-                <Processor type="VolumeSource" name="VolumeSource 3" id="ref22">
-                    <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-970" y="-938" />
+                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-1236" y="-995" />
                     </MetaData>
                     <Properties>
                         <Property name="volumeHandle">
-                            <value ref="ref26" />
+                            <value ref="ref13" />
                         </Property>
                     </Properties>
                     <InteractionHandlers />
                 </Processor>
-                <Processor type="VolumeSource" name="VolumeSource 4" id="ref23">
+                <Processor type="VolumeSource" name="VolumeSource 4" id="ref11">
                     <MetaData>
-                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-795" y="-948" />
+                        <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-1049" y="-980" />
                     </MetaData>
                     <Properties>
                         <Property name="volumeHandle">
-                            <value ref="ref27" />
+                            <value ref="ref14" />
                         </Property>
                     </Properties>
                     <InteractionHandlers />
@@ -535,7 +292,7 @@
                         <Processor type="MeshEntryExitPoints" ref="ref0" />
                     </Outport>
                     <Inport name="image.entrypoints">
-                        <Processor type="BCCInterleavedVolumeRaycaster" ref="ref1" />
+                        <Processor type="BCCVolumeRaycaster" ref="ref1" />
                     </Inport>
                 </Connection>
                 <Connection>
@@ -543,7 +300,7 @@
                         <Processor type="MeshEntryExitPoints" ref="ref0" />
                     </Outport>
                     <Inport name="image.exitpoints">
-                        <Processor type="BCCInterleavedVolumeRaycaster" ref="ref1" />
+                        <Processor type="BCCVolumeRaycaster" ref="ref1" />
                     </Inport>
                 </Connection>
                 <Connection>
@@ -556,378 +313,130 @@
                 </Connection>
                 <Connection>
                     <Outport name="image.output">
-                        <Processor type="Background" ref="ref3" />
+                        <Processor type="BCCVolumeRaycaster" ref="ref1" />
                     </Outport>
                     <Inport name="image.input">
-                        <Processor type="Canvas" ref="ref4" />
-                    </Inport>
-                </Connection>
-                <Connection>
-                    <Outport name="image.entrypoints">
-                        <Processor type="MeshEntryExitPoints" ref="ref5" />
-                    </Outport>
-                    <Inport name="image.entrypoints">
-                        <Processor type="BCCVolumeRaycaster" ref="ref6" />
-                    </Inport>
-                </Connection>
-                <Connection>
-                    <Outport name="image.exitpoints">
-                        <Processor type="MeshEntryExitPoints" ref="ref5" />
-                    </Outport>
-                    <Inport name="image.exitpoints">
-                        <Processor type="BCCVolumeRaycaster" ref="ref6" />
-                    </Inport>
-                </Connection>
-                <Connection>
-                    <Outport name="proxygeometry.geometry">
-                        <Processor type="CubeMeshProxyGeometry" ref="ref7" />
-                    </Outport>
-                    <Inport name="proxgeometry.geometry">
-                        <Processor type="MeshEntryExitPoints" ref="ref5" />
+                        <Processor type="GeometryProcessor" ref="ref3" />
                     </Inport>
                 </Connection>
                 <Connection>
                     <Outport name="image.output">
-                        <Processor type="BCCVolumeRaycaster" ref="ref6" />
+                        <Processor type="Background" ref="ref4" />
                     </Outport>
                     <Inport name="image.input">
-                        <Processor type="GeometryProcessor" ref="ref8" />
+                        <Processor type="Canvas" ref="ref5" />
                     </Inport>
                 </Connection>
                 <Connection>
                     <Outport name="image.output">
-                        <Processor type="Background" ref="ref9" />
+                        <Processor type="GeometryProcessor" ref="ref3" />
                     </Outport>
                     <Inport name="image.input">
-                        <Processor type="Canvas" ref="ref10" />
+                        <Processor type="Background" ref="ref4" />
                     </Inport>
                 </Connection>
                 <Connection>
                     <Outport name="volumehandle.output">
-                        <Processor type="VolumeGradient" ref="ref11" />
+                        <Processor type="VolumeInterleave" ref="ref6" />
+                    </Outport>
+                    <Inport name="volume1">
+                        <Processor type="BCCVolumeRaycaster" ref="ref1" />
+                    </Inport>
+                </Connection>
+                <Connection>
+                    <Outport name="volumehandle.output">
+                        <Processor type="VolumeInterleave" ref="ref7" />
+                    </Outport>
+                    <Inport name="volume2">
+                        <Processor type="BCCVolumeRaycaster" ref="ref1" />
+                    </Inport>
+                </Connection>
+                <Connection>
+                    <Outport name="volumehandle.output">
+                        <Processor type="VolumeGradient" ref="ref8" />
                     </Outport>
                     <Inport name="volumehandle.input1">
-                        <Processor type="VolumeInterleave" ref="ref12" />
+                        <Processor type="VolumeInterleave" ref="ref6" />
                     </Inport>
                 </Connection>
                 <Connection>
-                    <Outport name="image.output">
-                        <Processor type="GeometryProcessor" ref="ref8" />
+                    <Outport name="volumehandle.output">
+                        <Processor type="VolumeGradient" ref="ref9" />
                     </Outport>
-                    <Inport name="image.input">
-                        <Processor type="Background" ref="ref9" />
-                    </Inport>
-                </Connection>
-                <Connection>
-                    <Outport name="image.output">
-                        <Processor type="GeometryProcessor" ref="ref13" />
-                    </Outport>
-                    <Inport name="image.input">
-                        <Processor type="Background" ref="ref3" />
-                    </Inport>
-                </Connection>
-                <Connection>
-                    <Outport name="image.output">
-                        <Processor type="BCCInterleavedVolumeRaycaster" ref="ref1" />
-                    </Outport>
-                    <Inport name="image.input">
-                        <Processor type="GeometryProcessor" ref="ref13" />
+                    <Inport name="volumehandle.input1">
+                        <Processor type="VolumeInterleave" ref="ref7" />
                     </Inport>
                 </Connection>
                 <Connection>
                     <Outport name="volumehandle.volumehandle">
-                        <Processor type="VolumeSource" ref="ref14" />
-                    </Outport>
-                    <Inport name="volumehandle.input">
-                        <Processor type="VolumeGradient" ref="ref11" />
-                    </Inport>
-                </Connection>
-                <Connection>
-                    <Outport name="volumehandle.volumehandle">
-                        <Processor type="VolumeSource" ref="ref14" />
-                    </Outport>
-                    <Inport name="volumehandle.input2">
-                        <Processor type="VolumeInterleave" ref="ref12" />
-                    </Inport>
-                </Connection>
-                <Connection>
-                    <Outport name="volumehandle.volumehandle">
-                        <Processor type="VolumeSource" ref="ref15" />
-                    </Outport>
-                    <Inport name="volumehandle.input2">
-                        <Processor type="VolumeInterleave" ref="ref16" />
-                    </Inport>
-                </Connection>
-                <Connection>
-                    <Outport name="volumehandle.volumehandle">
-                        <Processor type="VolumeSource" ref="ref15" />
-                    </Outport>
-                    <Inport name="volumehandle.input">
-                        <Processor type="VolumeGradient" ref="ref17" />
-                    </Inport>
-                </Connection>
-                <Connection>
-                    <Outport name="volumehandle.volumehandle">
-                        <Processor type="VolumeSource" ref="ref15" />
+                        <Processor type="VolumeSource" ref="ref10" />
                     </Outport>
                     <Inport name="volumehandle.volumehandle">
                         <Processor type="CubeMeshProxyGeometry" ref="ref2" />
                     </Inport>
                 </Connection>
                 <Connection>
-                    <Outport name="volumehandle.output">
-                        <Processor type="VolumeInterleave" ref="ref12" />
-                    </Outport>
-                    <Inport name="volume1">
-                        <Processor type="BCCInterleavedVolumeRaycaster" ref="ref1" />
-                    </Inport>
-                </Connection>
-                <Connection>
-                    <Outport name="volumehandle.output">
-                        <Processor type="VolumeInterleave" ref="ref16" />
-                    </Outport>
-                    <Inport name="volume2">
-                        <Processor type="BCCInterleavedVolumeRaycaster" ref="ref1" />
-                    </Inport>
-                </Connection>
-                <Connection>
-                    <Outport name="volumehandle.output">
-                        <Processor type="VolumeGradient" ref="ref17" />
-                    </Outport>
-                    <Inport name="volumehandle.input1">
-                        <Processor type="VolumeInterleave" ref="ref16" />
-                    </Inport>
-                </Connection>
-                <Connection>
-                    <Outport name="volumehandle.output">
-                        <Processor type="VolumeInterleave" ref="ref18" />
-                    </Outport>
-                    <Inport name="volume1">
-                        <Processor type="BCCVolumeRaycaster" ref="ref6" />
-                    </Inport>
-                </Connection>
-                <Connection>
-                    <Outport name="volumehandle.output">
-                        <Processor type="VolumeInterleave" ref="ref19" />
-                    </Outport>
-                    <Inport name="volume2">
-                        <Processor type="BCCVolumeRaycaster" ref="ref6" />
-                    </Inport>
-                </Connection>
-                <Connection>
-                    <Outport name="volumehandle.output">
-                        <Processor type="VolumeGradient" ref="ref20" />
-                    </Outport>
-                    <Inport name="volumehandle.input1">
-                        <Processor type="VolumeInterleave" ref="ref18" />
-                    </Inport>
-                </Connection>
-                <Connection>
-                    <Outport name="volumehandle.output">
-                        <Processor type="VolumeGradient" ref="ref21" />
-                    </Outport>
-                    <Inport name="volumehandle.input1">
-                        <Processor type="VolumeInterleave" ref="ref19" />
-                    </Inport>
-                </Connection>
-                <Connection>
                     <Outport name="volumehandle.volumehandle">
-                        <Processor type="VolumeSource" ref="ref22" />
+                        <Processor type="VolumeSource" ref="ref10" />
                     </Outport>
                     <Inport name="volumehandle.input">
-                        <Processor type="VolumeGradient" ref="ref20" />
+                        <Processor type="VolumeGradient" ref="ref8" />
                     </Inport>
                 </Connection>
                 <Connection>
                     <Outport name="volumehandle.volumehandle">
-                        <Processor type="VolumeSource" ref="ref22" />
-                    </Outport>
-                    <Inport name="volumehandle.volumehandle">
-                        <Processor type="CubeMeshProxyGeometry" ref="ref7" />
-                    </Inport>
-                </Connection>
-                <Connection>
-                    <Outport name="volumehandle.volumehandle">
-                        <Processor type="VolumeSource" ref="ref22" />
+                        <Processor type="VolumeSource" ref="ref10" />
                     </Outport>
                     <Inport name="volumehandle.input2">
-                        <Processor type="VolumeInterleave" ref="ref18" />
+                        <Processor type="VolumeInterleave" ref="ref6" />
                     </Inport>
                 </Connection>
                 <Connection>
                     <Outport name="volumehandle.volumehandle">
-                        <Processor type="VolumeSource" ref="ref23" />
+                        <Processor type="VolumeSource" ref="ref11" />
                     </Outport>
                     <Inport name="volumehandle.input">
-                        <Processor type="VolumeGradient" ref="ref21" />
+                        <Processor type="VolumeGradient" ref="ref9" />
                     </Inport>
                 </Connection>
                 <Connection>
                     <Outport name="volumehandle.volumehandle">
-                        <Processor type="VolumeSource" ref="ref23" />
+                        <Processor type="VolumeSource" ref="ref11" />
                     </Outport>
                     <Inport name="volumehandle.input2">
-                        <Processor type="VolumeInterleave" ref="ref19" />
+                        <Processor type="VolumeInterleave" ref="ref7" />
                     </Inport>
                 </Connection>
             </Connections>
             <CoProcessorConnections>
                 <CoProcessorConnection>
                     <Outport name="coprocessor.geometryrenderer">
-                        <Processor type="LightWidgetRenderer" ref="ref24" />
+                        <Processor type="LightWidgetRenderer" ref="ref12" />
                     </Outport>
                     <Inport name="coprocessor.geometryrenderers">
-                        <Processor type="GeometryProcessor" ref="ref8" />
-                    </Inport>
-                </CoProcessorConnection>
-                <CoProcessorConnection>
-                    <Outport name="coprocessor.geometryrenderer">
-                        <Processor type="LightWidgetRenderer" ref="ref25" />
-                    </Outport>
-                    <Inport name="coprocessor.geometryrenderers">
-                        <Processor type="GeometryProcessor" ref="ref13" />
+                        <Processor type="GeometryProcessor" ref="ref3" />
                     </Inport>
                 </CoProcessorConnection>
             </CoProcessorConnections>
             <PropertyLinks>
                 <PropertyLink>
-                    <SourceProperty type="CameraProperty" ref="ref28" />
-                    <DestinationProperty type="CameraProperty" ref="ref29" />
+                    <SourceProperty type="CameraProperty" ref="ref15" />
+                    <DestinationProperty type="CameraProperty" ref="ref16" />
                     <Evaluator type="LinkEvaluatorId" />
                 </PropertyLink>
                 <PropertyLink>
-                    <SourceProperty type="CameraProperty" ref="ref29" />
-                    <DestinationProperty type="CameraProperty" ref="ref28" />
+                    <SourceProperty type="CameraProperty" ref="ref16" />
+                    <DestinationProperty type="CameraProperty" ref="ref15" />
                     <Evaluator type="LinkEvaluatorId" />
                 </PropertyLink>
                 <PropertyLink>
-                    <SourceProperty type="CameraProperty" ref="ref28" />
-                    <DestinationProperty type="CameraProperty" ref="ref30" />
+                    <SourceProperty type="FloatVec4Property" ref="ref17" />
+                    <DestinationProperty type="FloatVec4Property" ref="ref18" />
                     <Evaluator type="LinkEvaluatorId" />
                 </PropertyLink>
                 <PropertyLink>
-                    <SourceProperty type="CameraProperty" ref="ref30" />
-                    <DestinationProperty type="CameraProperty" ref="ref28" />
-                    <Evaluator type="LinkEvaluatorId" />
-                </PropertyLink>
-                <PropertyLink>
-                    <SourceProperty type="CameraProperty" ref="ref29" />
-                    <DestinationProperty type="CameraProperty" ref="ref30" />
-                    <Evaluator type="LinkEvaluatorId" />
-                </PropertyLink>
-                <PropertyLink>
-                    <SourceProperty type="CameraProperty" ref="ref30" />
-                    <DestinationProperty type="CameraProperty" ref="ref29" />
-                    <Evaluator type="LinkEvaluatorId" />
-                </PropertyLink>
-                <PropertyLink>
-                    <SourceProperty type="CameraProperty" ref="ref28" />
-                    <DestinationProperty type="CameraProperty" ref="ref31" />
-                    <Evaluator type="LinkEvaluatorId" />
-                </PropertyLink>
-                <PropertyLink>
-                    <SourceProperty type="CameraProperty" ref="ref31" />
-                    <DestinationProperty type="CameraProperty" ref="ref28" />
-                    <Evaluator type="LinkEvaluatorId" />
-                </PropertyLink>
-                <PropertyLink>
-                    <SourceProperty type="CameraProperty" ref="ref28" />
-                    <DestinationProperty type="CameraProperty" ref="ref32" />
-                    <Evaluator type="LinkEvaluatorId" />
-                </PropertyLink>
-                <PropertyLink>
-                    <SourceProperty type="CameraProperty" ref="ref32" />
-                    <DestinationProperty type="CameraProperty" ref="ref28" />
-                    <Evaluator type="LinkEvaluatorId" />
-                </PropertyLink>
-                <PropertyLink>
-                    <SourceProperty type="CameraProperty" ref="ref31" />
-                    <DestinationProperty type="CameraProperty" ref="ref32" />
-                    <Evaluator type="LinkEvaluatorId" />
-                </PropertyLink>
-                <PropertyLink>
-                    <SourceProperty type="CameraProperty" ref="ref32" />
-                    <DestinationProperty type="CameraProperty" ref="ref31" />
-                    <Evaluator type="LinkEvaluatorId" />
-                </PropertyLink>
-                <PropertyLink>
-                    <SourceProperty type="CameraProperty" ref="ref28" />
-                    <DestinationProperty type="CameraProperty" ref="ref33" />
-                    <Evaluator type="LinkEvaluatorId" />
-                </PropertyLink>
-                <PropertyLink>
-                    <SourceProperty type="CameraProperty" ref="ref33" />
-                    <DestinationProperty type="CameraProperty" ref="ref28" />
-                    <Evaluator type="LinkEvaluatorId" />
-                </PropertyLink>
-                <PropertyLink>
-                    <SourceProperty type="CameraProperty" ref="ref32" />
-                    <DestinationProperty type="CameraProperty" ref="ref33" />
-                    <Evaluator type="LinkEvaluatorId" />
-                </PropertyLink>
-                <PropertyLink>
-                    <SourceProperty type="CameraProperty" ref="ref33" />
-                    <DestinationProperty type="CameraProperty" ref="ref32" />
-                    <Evaluator type="LinkEvaluatorId" />
-                </PropertyLink>
-                <PropertyLink>
-                    <SourceProperty type="StringOptionProperty" ref="ref34" />
-                    <DestinationProperty type="StringOptionProperty" ref="ref35" />
-                    <Evaluator type="LinkEvaluatorId" />
-                </PropertyLink>
-                <PropertyLink>
-                    <SourceProperty type="StringOptionProperty" ref="ref35" />
-                    <DestinationProperty type="StringOptionProperty" ref="ref34" />
-                    <Evaluator type="LinkEvaluatorId" />
-                </PropertyLink>
-                <PropertyLink>
-                    <SourceProperty type="FloatProperty" ref="ref36" />
-                    <DestinationProperty type="FloatProperty" ref="ref37" />
-                    <Evaluator type="LinkEvaluatorId" />
-                </PropertyLink>
-                <PropertyLink>
-                    <SourceProperty type="FloatProperty" ref="ref37" />
-                    <DestinationProperty type="FloatProperty" ref="ref36" />
-                    <Evaluator type="LinkEvaluatorId" />
-                </PropertyLink>
-                <PropertyLink>
-                    <SourceProperty type="TransFuncProperty" ref="ref38" />
-                    <DestinationProperty type="TransFuncProperty" ref="ref39" />
-                    <Evaluator type="LinkEvaluatorId" />
-                </PropertyLink>
-                <PropertyLink>
-                    <SourceProperty type="TransFuncProperty" ref="ref39" />
-                    <DestinationProperty type="TransFuncProperty" ref="ref38" />
-                    <Evaluator type="LinkEvaluatorId" />
-                </PropertyLink>
-                <PropertyLink>
-                    <SourceProperty type="FloatVec4Property" ref="ref40" />
-                    <DestinationProperty type="FloatVec4Property" ref="ref41" />
-                    <Evaluator type="LinkEvaluatorId" />
-                </PropertyLink>
-                <PropertyLink>
-                    <SourceProperty type="FloatVec4Property" ref="ref41" />
-                    <DestinationProperty type="FloatVec4Property" ref="ref40" />
-                    <Evaluator type="LinkEvaluatorId" />
-                </PropertyLink>
-                <PropertyLink>
-                    <SourceProperty type="FloatVec4Property" ref="ref42" />
-                    <DestinationProperty type="FloatVec4Property" ref="ref43" />
-                    <Evaluator type="LinkEvaluatorId" />
-                </PropertyLink>
-                <PropertyLink>
-                    <SourceProperty type="FloatVec4Property" ref="ref43" />
-                    <DestinationProperty type="FloatVec4Property" ref="ref42" />
-                    <Evaluator type="LinkEvaluatorId" />
-                </PropertyLink>
-                <PropertyLink>
-                    <SourceProperty type="FloatVec4Property" ref="ref42" />
-                    <DestinationProperty type="FloatVec4Property" ref="ref41" />
-                    <Evaluator type="LinkEvaluatorId" />
-                </PropertyLink>
-                <PropertyLink>
-                    <SourceProperty type="FloatVec4Property" ref="ref41" />
-                    <DestinationProperty type="FloatVec4Property" ref="ref42" />
+                    <SourceProperty type="FloatVec4Property" ref="ref18" />
+                    <DestinationProperty type="FloatVec4Property" ref="ref17" />
                     <Evaluator type="LinkEvaluatorId" />
                 </PropertyLink>
             </PropertyLinks>

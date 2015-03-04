@@ -359,8 +359,8 @@ std::string BccInterleavedVolumeRaycaster::generateHeader() {
 
     // configure reconstruction function
     headerSource += "#define RC_APPLY_RECONSTRUCTION(p) ";
-    if (reconstruction_.isSelected("linbox"))
-        headerSource += "reconstructLinbox(p);\n";
+    if (reconstruction_.isSelected("linbox"))	
+        headerSource += "reconstructLinbox(p);\n";	
     else if (reconstruction_.isSelected("nearest"))
         headerSource += "reconstructNearest(p);\n";
 

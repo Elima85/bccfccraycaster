@@ -3,8 +3,8 @@ rem Uncomment and edit, if qt is not in your path
 rem set path=C:\Qt\2010.05-vc\qt\bin
 
 rem Select your Visual Studio version
-set QMAKESPEC=win32-msvc2008
-rem set QMAKESPEC=win32-msvc2008
+set QMAKESPEC=win32-msvc2010
+rem set QMAKESPEC=win32-msvc2010
 
 rem Generate Solution File if it does not exist.
 rem Project Dependency Needs to be set before compilation.
