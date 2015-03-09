@@ -34,10 +34,14 @@ protected:
     virtual std::string generateHeader();
     virtual void compile();
 
+	virtual void bindVolumes(tgt::Shader* shader, const std::vector<VolumeStruct> &volumes,
+        const tgt::Camera* camera = 0, const tgt::vec4& lightPosition = tgt::vec4(0.f));
+
 private:
     void adjustPropertyVisibilities();
 	void adjustPropertyReconstruction();
 	VolumeHandle* convertVolume();			///< converts volume to z interleaved format
+	
 
     VolumePort volumeInport1_;
     VolumePort volumeInport2_;

@@ -99,7 +99,7 @@ BccVolumeRaycaster::BccVolumeRaycaster()
     addProperty(materialShininess_);
     addProperty(applyLightAttenuation_);
     addProperty(lightAttenuation_);
-
+	
     // assign lighting properties to property group
     lightPosition_.setGroupID("lighting");
     lightAmbient_.setGroupID("lighting");
@@ -152,6 +152,7 @@ void BccVolumeRaycaster::deinitialize() throw (tgt::Exception) {
 
     ShdrMgr.dispose(raycastPrg_);
     raycastPrg_ = 0;
+	convertedVolume_ = 0;
     LGL_ERROR;
 
     VolumeRaycaster::deinitialize();
@@ -163,6 +164,7 @@ void BccVolumeRaycaster::compile() {
 }
 
 bool BccVolumeRaycaster::isReady() const {
+
     //check if all inports are connected:
     if(!entryPort_.isReady() || !exitPort_.isReady() || !volumeInport1_.isReady())
         return false;
@@ -184,14 +186,22 @@ void BccVolumeRaycaster::beforeProcess() {
     }
     LGL_ERROR;
 
-    transferFunc_.setVolumeHandle(volumeInport1_.getData());
+	if (volumeFormat_.isSelected("normal"))
+		transferFunc_.setVolumeHandle(volumeInport1_.getData());
+	else if (volumeFormat_.isSelected("zint")) {
+		if (!convertedVolume_)
+			convertedVolume_ = convertVolume();
+		transferFunc_.setVolumeHandle(convertedVolume_);
+	}	
 }
 
 void BccVolumeRaycaster::process() {
     // bind transfer function
+
     tgt::TextureUnit transferUnit;
     transferUnit.activate();
     LGL_ERROR;
+
     if (transferFunc_.get())
         transferFunc_.get()->bind();
 
@@ -225,6 +235,7 @@ void BccVolumeRaycaster::process() {
 	}
 	else if (volumeFormat_.isSelected("zint")) {
 		if (zreconstruction_.isSelected("linbox"))
+
 			filterMode = GL_NEAREST;
 		else if (zreconstruction_.isSelected("nearest"))
 			filterMode = GL_NEAREST;
@@ -241,8 +252,7 @@ void BccVolumeRaycaster::process() {
 						"volumeStruct1_",
 						GL_CLAMP_TO_BORDER,
 						tgt::vec4(0.0),
-						filterMode)
-					);
+						filterMode));
 		}
 		if (volumeInport2_.isReady()) {
 			volumeTextures.push_back(VolumeStruct(
@@ -251,28 +261,27 @@ void BccVolumeRaycaster::process() {
 						"volumeStruct2_",
 						GL_CLAMP_TO_BORDER,
 						tgt::vec4(0.0),
-						filterMode)
-					);
+						filterMode));
 		}
 	}
 	else if (volumeFormat_.isSelected("zint")) {
 		if (volumeInport1_.isReady() && volumeInport2_.isReady()) {
-			if (!convertedVolume_ || (volumeInport1_.hasChanged() || volumeInport2_.hasChanged()))
+			//convert volume to z-interleaved format
+			if ((volumeInport1_.hasChanged() || volumeInport2_.hasChanged()))
 				convertedVolume_ = convertVolume();
 
-			if (convertedVolume_ && volumeInport1_.isReady() && volumeInport2_.isReady()) {
+			if (convertedVolume_) {
 				volumeTextures.push_back(VolumeStruct(
 						convertedVolume_,
 						&volUnit1,
 						"volumeStruct1_",
 						GL_CLAMP_TO_BORDER,
 						tgt::vec4(0.0),
-						filterMode)
-				);
+						filterMode));
 			}
 		}
 	}
-
+	
     // initialize shader
     raycastPrg_->activate();
 
@@ -289,7 +298,7 @@ void BccVolumeRaycaster::process() {
     raycastPrg_->setUniform("exitPoints_", exitUnit.getUnitNumber());
     raycastPrg_->setUniform("exitPointsDepth_", exitDepthUnit.getUnitNumber());
     exitPort_.setTextureParameters(raycastPrg_, "exitParameters_");
-
+	
     if (compositingMode_.get() ==  "iso" ||
         compositingMode1_.get() == "iso" ||
         compositingMode2_.get() == "iso")
@@ -299,7 +308,9 @@ void BccVolumeRaycaster::process() {
 		raycastPrg_->setUniform("lambda_", lambdaValue_.get());
 
 	if (classificationMode_.get() == "transfer-function")
+	{
         transferFunc_.get()->setUniform(raycastPrg_, "transferFunc_", transferUnit.getUnitNumber());
+	}
 
 	LGL_ERROR;
 
@@ -318,10 +329,9 @@ void BccVolumeRaycaster::process() {
 std::string BccVolumeRaycaster::generateHeader() {
     std::string headerSource = VolumeRaycaster::generateHeader();
 
-    headerSource += transferFunc_.get()->getShaderDefines();
+    //headerSource += transferFunc_.get()->getShaderDefines();
 
-    if(!(volumeInport1_.isReady() &&
-         volumeInport2_.isReady()))
+    if(!(volumeInport1_.isReady() && volumeInport2_.isReady()))
         headerSource += "#define VOLUME_FORMAT_INTERLEAVED\n";
 
 	if (volumeFormat_.isSelected("zint")) {
@@ -396,7 +406,7 @@ std::string BccVolumeRaycaster::generateHeader() {
 
 void BccVolumeRaycaster::adjustPropertyReconstruction() {
 	adjustPropertyVisibilities();
-    invalidate(Processor::INVALID_PROGRAM);	
+    invalidate(Processor::INVALID_PROGRAM);
 }
 
 void BccVolumeRaycaster::adjustPropertyVisibilities() {
@@ -426,10 +436,42 @@ void BccVolumeRaycaster::adjustPropertyVisibilities() {
 		reconstruction_.setVisible(true);
 		zreconstruction_.setVisible(false);
 	}
-
 }
 
-VolumeHandle* BccVolumeRaycaster::convertVolume(){
+//override that checks if z-interleave is used and adjusts volume dimension accordingly
+void BccVolumeRaycaster::bindVolumes(tgt::Shader* shader, const std::vector<VolumeStruct> &volumes,
+	const tgt::Camera* camera, const tgt::vec4& lightPosition) {
+	VolumeRenderer::bindVolumes(shader, volumes, camera, lightPosition);
+
+	shader->setIgnoreUniformLocationError(true);
+
+	if (volumes.size() > 0) {
+		if (!volumes[0].volume_ || !volumes[0].volume_->getRepresentation<VolumeGL>()->getTexture()) {
+			LWARNING("No volume texture");
+		}
+		else {
+			tgt::vec3 dim = volumes[0].volume_->getOriginalDimensions();
+			
+			if(volumeFormat_.isSelected("zint"))
+				dim.z *= 0.5;				
+
+			// use dimension with the highest resolution for calculating the sampling step size
+			float samplingRate = samplingRate_.get();
+			float samplingStepSize = 1.f / (tgt::max(dim) * samplingRate);
+
+			if (interactionMode())
+				samplingStepSize /= interactionQuality_.get();
+
+			shader->setUniform("samplingStepSize_", samplingStepSize);
+			shader->setUniform("samplingRate_", samplingRate);
+            
+			LGL_ERROR;
+		}
+	}
+	shader->setIgnoreUniformLocationError(false);
+}
+
+VolumeHandle* BccVolumeRaycaster::convertVolume() {
 
 	const VolumeHandleBase* inputHandle1 = volumeInport1_.getData();
 	const VolumeHandleBase* inputHandle2 = volumeInport2_.getData();
@@ -452,16 +494,15 @@ VolumeHandle* BccVolumeRaycaster::convertVolume(){
 		
 		for (pos.x = 0; pos.x < dim.x; pos.x+=1) {
 			for (pos.y = 0; pos.y < dim.y; pos.y++) {	
-				int zz = 0;
-				for (pos.z = 0; pos.z < dim.z; pos.z++) {
+				int zz;
+				for (pos.z = 0, zz = 0; pos.z < dim.z; pos.z++, zz+=2) {
 					//might need to handle case for uneven dims
 					output->voxel(pos.x, pos.y, zz) = inputIntensity1->voxel(pos);
 					output->voxel(pos.x, pos.y, zz+1) = inputIntensity2->voxel(pos);
-					zz+=2;
 				}
 			}
 		}
-		return new VolumeHandle(output, inputHandle1);
+		return new VolumeHandle(output, inputHandle1);		
 	}
 	else if (inputHandle1->getNumChannels() == 4) {
 
@@ -475,13 +516,12 @@ VolumeHandle* BccVolumeRaycaster::convertVolume(){
 		tgt::ivec3 pos;
 		
 		for (pos.x = 0; pos.x < dim.x; pos.x+=1) {
-			for (pos.y = 0; pos.y < dim.y; pos.y++) {				
-				int zz = 0;
-				for (pos.z = 0; pos.z < dim.z; pos.z++) {
+			for (pos.y = 0; pos.y < dim.y; pos.y++) {			
+				int zz;
+				for (pos.z = 0, zz = 0; pos.z < dim.z; pos.z++, zz+=2) {
 					//might need to handle case for uneven dims
-					output->voxel(pos.x, pos.y, zz+1) = inputData2->voxel(pos);
 					output->voxel(pos.x, pos.y, zz) = inputData1->voxel(pos);
-					zz+=2;
+					output->voxel(pos.x, pos.y, zz+1) = inputData2->voxel(pos);
 				}
 			}
 		}
