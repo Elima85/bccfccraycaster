@@ -32,9 +32,9 @@
                             <MetaData>
                                 <MetaItem name="EditorWindow" type="WindowStateMetaData" visible="false" x="133" y="501" />
                             </MetaData>
-                            <position x="-2.93128228" y="0.18881549" z="2.54861379" />
+                            <position x="-1.49094892" y="1.30151451" z="3.34763026" />
                             <focus x="0" y="0" z="0" />
-                            <upVector x="0.5864048" y="-0.40043324" z="0.70411843" />
+                            <upVector x="0.54196066" y="-0.67317945" z="0.50309855" />
                         </Property>
                         <Property name="jitterEntryPoints" value="false" />
                         <Property name="jitterStepLength" value="0.005" />
@@ -86,9 +86,9 @@
                             <MetaData>
                                 <MetaItem name="EditorWindow" type="WindowStateMetaData" visible="false" x="329" y="447" />
                             </MetaData>
-                            <position x="-2.93128228" y="0.18881549" z="2.54861379" />
+                            <position x="-1.49094892" y="1.30151451" z="3.34763026" />
                             <focus x="0" y="0" z="0" />
-                            <upVector x="0.5864048" y="-0.40043324" z="0.70411843" />
+                            <upVector x="0.54196066" y="-0.67317945" z="0.50309855" />
                         </Property>
                         <Property name="classification" value="transfer-function" />
                         <Property name="compositing" value="dvr" />
@@ -98,7 +98,7 @@
                         <Property name="interactionQuality" value="1" />
                         <Property name="interpolation.coarseness" value="false" />
                         <Property name="isoValue" value="0.5" />
-                        <Property name="lambdaValue" value="0.01" />
+                        <Property name="lambdaValue" value="1" />
                         <Property name="lightAmbient">
                             <value x="0.40000001" y="0.40000001" z="0.40000001" w="1" />
                         </Property>
@@ -138,7 +138,7 @@
                                 <domain x="0" y="1" />
                             </TransferFunction>
                         </Property>
-                        <Property name="volumeFormat" value="zint" />
+                        <Property name="volumeFormat" value="normal" />
                         <Property name="zreconstruction_" value="linbox" />
                     </Properties>
                     <InteractionHandlers />
@@ -164,7 +164,7 @@
                 <Processor type="Canvas" name="BCC" id="ref5">
                     <MetaData>
                         <MetaItem name="ProcessorGraphicsItem" type="PositionMetaData" x="-652" y="-672" />
-                        <MetaItem name="ProcessorWidget" type="WindowStateMetaData" visible="false" x="-17" y="347" width="512" height="512" />
+                        <MetaItem name="ProcessorWidget" type="WindowStateMetaData" visible="false" x="-389" y="351" width="512" height="512" />
                     </MetaData>
                     <Properties>
                         <Property name="canvasSize">

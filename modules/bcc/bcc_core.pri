@@ -5,7 +5,7 @@
 SOURCES += \
     $${VRN_MODULE_DIR}/bcc/bccvolumeraycaster.cpp \
 	$${VRN_MODULE_DIR}/bcc/fccvolumeraycaster.cpp \
-	$${VRN_MODULE_DIR}/bcc/bccinterleavedvolumeraycaster.cpp \
+	$${VRN_MODULE_DIR}/bcc/volumeinterleave.cpp \
 
 # 
 # Processor headers
@@ -13,7 +13,7 @@ SOURCES += \
 HEADERS += \
     $${VRN_MODULE_DIR}/bcc/bccvolumeraycaster.h \
     $${VRN_MODULE_DIR}/bcc/fccvolumeraycaster.h \
-	$${VRN_MODULE_DIR}/bcc/bccinerleavedvolumeraycaster.h \
+	$${VRN_MODULE_DIR}/bcc/volumeinterleave.h \
 
 #
 # Shader sources

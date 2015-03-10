@@ -5,6 +5,6 @@
 <Processor name="FCCVolumeRaycaster">
     <Description>Raycaster similar to SingleVolumeRaycaster for FCC volumes.</Description>
 </Processor>
-<Processor name="BCCInterleavedVolumeRaycaster">
-  <Description>Raycaster similar to SingleVolumeRaycaster for interleaved BCC volumes.</Description>
+<Processor name="VolumeInterleave">
+  <Description>Interleaves intensity with pre-calculated volume gradients for BCC and FCC raycasting.</Description>
 </Processor>

@@ -3,7 +3,7 @@
 #include "voreen/core/datastructures/volume/volumeatomic.h"
 #include "voreen/core/datastructures/volume/volumehandle.h"
 #include "voreen/core/datastructures/volume/volumeoperator.h"
-//test
+
 namespace voreen {
 
 const std::string VolumeInterleave::loggerCat_("voreen.VolumeInterleave");
