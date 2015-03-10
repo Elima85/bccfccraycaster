@@ -40,7 +40,7 @@ protected:
 private:
     void adjustPropertyVisibilities();
 	void adjustPropertyReconstruction();
-	VolumeHandle* convertVolume();			///< converts volume to z interleaved format
+	VolumeHandle* convertZint();			///< converts volume to z interleaved format
 	
 
     VolumePort volumeInport1_;
@@ -59,7 +59,7 @@ private:
 
 	StringOptionProperty volumeFormat_;		///< volume format to send to shader
 
-	VolumeHandle* convertedVolume_;			///< holds volume for z interleaved format
+	VolumeHandle* zintVolume_;				///< holds volume for z interleaved format
 
 	FloatProperty lambdaValue_;				///< lambda value for CWB reconstruction
 

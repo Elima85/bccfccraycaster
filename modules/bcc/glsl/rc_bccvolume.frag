@@ -1,19 +1,17 @@
 #include "modules/vrn_shaderincludes.frag"
 
-#define NORM(v) ((v) / (volumeStruct1_.datasetDimensions_))
-
 #ifndef VOLUME_FORMAT_INTERLEAVED
 	#define SAMPLE vec4
-	#define TEX0(p) textureLookup3D(volumeStruct1_, NORM((p) - g0_off))
-	#define TEX1(p) textureLookup3D(volumeStruct2_, NORM((p) - g1_off))
+	#define TEX0(p) textureLookup3D(volumeStruct1_, (p - g0_off)*oneOverVoxels)
+	#define TEX1(p) textureLookup3D(volumeStruct2_, (p - g1_off)*oneOverVoxels)
 #else
 	#define SAMPLE float
-	#define TEX0(p) textureLookup3D(volumeStruct1_, NORM((p) - g0_off)).r
-	#define TEX1(p) textureLookup3D(volumeStruct1_, NORM((p) - g1_off)).g
+	#define TEX0(p) textureLookup3D(volumeStruct1_, (p - g0_off)*oneOverVoxels).r
+	#define TEX1(p) textureLookup3D(volumeStruct1_, (p - g1_off)*oneOverVoxels).g
 #endif
 
 #ifdef Z_INTERLEAVED
-	#define TEX(p) textureLookup3D(volumeStruct1_, floor(p*convert)*oneOverVoxels)
+	#define TEXZ(p) textureLookup3D(volumeStruct1_, floor(p*convert)*oneOverVoxels)
 #endif
 
 const vec3 g0_off = vec3(0.0, 0.0, 0.0);
@@ -39,7 +37,9 @@ uniform VOLUME_STRUCT volumeStruct1_;
 
 #ifdef Z_INTERLEAVED
 	vec3 oneOverVoxels = vec3(1.0)/(volumeStruct1_.datasetDimensions_ - 0.5);
-	vec3 convert = vec3(0.5, 0.5, 1.0);
+	vec3 convert = vec3(0.5, 0.5, 1.0); //volume index conversion vector
+#else
+	vec3 oneOverVoxels = vec3(1.0)/(volumeStruct1_.datasetDimensions_);
 #endif
 
 vec4 reconstructDC(in vec3 p)
@@ -119,16 +119,17 @@ vec4 reconstructLinbox(vec3 p)
 	P4 += (float(sorting.z == abc.x) * vec3(-2.0,  0.0, 2.0) +
 	       float(sorting.z == abc.y) * vec3(-2.0,  2.0, 0.0));
 
+	//texture lookups
 	#ifndef Z_INTERLEAVED
 		D1 = (bool(int(P1.x) % 2) ? TEX0(P1 / 2.0) : TEX1(P1 / 2.0));
 		D2 = (bool(int(P2.x) % 2) ? TEX0(P2 / 2.0) : TEX1(P2 / 2.0));
 		D3 = (bool(int(P3.x) % 2) ? TEX0(P3 / 2.0) : TEX1(P3 / 2.0));
 		D4 = (bool(int(P4.x) % 2) ? TEX0(P4 / 2.0) : TEX1(P4 / 2.0));
 	#else
-		D1 = TEX(P1);
-		D2 = TEX(P2);
-		D3 = TEX(P3);
-		D4 = TEX(P4);
+		D1 = TEXZ(P1);
+		D2 = TEXZ(P2);
+		D3 = TEXZ(P3);
+		D4 = TEXZ(P4);
 	#endif
 
 	#ifndef VOLUME_FORMAT_INTERLEAVED
@@ -174,7 +175,7 @@ vec4 reconstructNearest(in vec3 p)
 	#else
 		vec3 pw = p * vec3(2*volumeStruct1_.datasetDimensions_.xy-1.0,
 							volumeStruct1_.datasetDimensions_.z-1.0);
-		SAMPLE value = TEX(pw);
+		SAMPLE value = TEXZ(pw);
 		#ifndef VOLUME_FORMAT_INTERLEAVED
 			value.rgb = (value.rgb - 0.5) * 2.0;
 			return value;
@@ -188,16 +189,18 @@ vec4 reconstructCWB(in vec3 p)
 {
 	const float size = volumeStruct1_.datasetDimensions_;
 	const float pi2 = 6.283185;
-	
 	vec3 pw = p*size;
 	
+	//texture lookups
 	SAMPLE sample0 = TEX0(pw);
 	SAMPLE sample1 = TEX1(pw);
 	
-	vec3 p0 = NORM(pw)*size;
+	//calculate weighting function
+	vec3 p0 = pw*oneOverVoxels*size - 0.5;
 	vec3 c = cos(p0*pi2);
 	float w = 0.5 + (c.x + c.y + c.z) / 6.0 * lambda_;
 	
+	//linear interpolation
 	SAMPLE value = mix(sample0, sample1, w);
 	
 	#ifndef VOLUME_FORMAT_INTERLEAVED
@@ -216,6 +219,7 @@ void rayTraversal(in vec3 first, in vec3 last)
     vec3 rayDirection;
 	vec3 size = volumeStruct1_.datasetDimensions_;
 	
+	//adjust volume size for z-int format
 	#ifdef Z_INTERLEAVED
 		size.z *= 0.5;
 	#endif
@@ -231,6 +235,7 @@ void rayTraversal(in vec3 first, in vec3 last)
 		
         vec4 color = RC_APPLY_CLASSIFICATION(transferFunc_, voxel);
 
+		//adjust position for z-int format
 		#ifdef Z_INTERLEAVED
 			samplePos.z *= 0.5;
 		#endif

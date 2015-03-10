@@ -21,7 +21,7 @@ BccVolumeRaycaster::BccVolumeRaycaster()
     , outport_(Port::OUTPORT, "image.output", true, Processor::INVALID_PROGRAM)
     , outport1_(Port::OUTPORT, "image.output1", true, Processor::INVALID_PROGRAM)
     , outport2_(Port::OUTPORT, "image.output2", true, Processor::INVALID_PROGRAM)
-	, convertedVolume_()
+	, zintVolume_()
 	, lambdaValue_("lambdaValue", "Lambda", 1.0, 0.01, 1.0)
     , raycastPrg_(0)
     , transferFunc_("transferFunction", "Transfer Function")
@@ -54,7 +54,7 @@ BccVolumeRaycaster::BccVolumeRaycaster()
 	volumeFormat_.selectByKey("normal");
 	addProperty(volumeFormat_);
 
-	// reconstruction algorithms
+	// reconstruction algorithms for normal volume format
 	reconstruction_.addOption("dc", "DC-spline");
 	reconstruction_.addOption("linbox", "Linear box-spline");
 	reconstruction_.addOption("cwb", "Cosine-Weighted B-spline");
@@ -63,8 +63,10 @@ BccVolumeRaycaster::BccVolumeRaycaster()
 	reconstruction_.setVisible(true);
 	addProperty(reconstruction_);
 
+	// Variable parameter for CWB reconstruction.
 	addProperty(lambdaValue_);
 
+	// reconstruction algorithms for z-interleaved volume format
 	zreconstruction_.addOption("linbox", "Linear box-spline");
 	zreconstruction_.addOption("nearest", "Nearest neighbor");
 	zreconstruction_.selectByKey("linbox");
@@ -144,7 +146,7 @@ void BccVolumeRaycaster::initialize() throw (tgt::Exception) {
 		transferFunc_.get()->invalidateTexture();
 	}
 
-	convertedVolume_ = 0;
+	zintVolume_ = 0;
 }
 
 void BccVolumeRaycaster::deinitialize() throw (tgt::Exception) {
@@ -152,7 +154,7 @@ void BccVolumeRaycaster::deinitialize() throw (tgt::Exception) {
 
     ShdrMgr.dispose(raycastPrg_);
     raycastPrg_ = 0;
-	convertedVolume_ = 0;
+	zintVolume_ = 0;
     LGL_ERROR;
 
     VolumeRaycaster::deinitialize();
@@ -186,12 +188,13 @@ void BccVolumeRaycaster::beforeProcess() {
     }
     LGL_ERROR;
 
+	//set transfer function volumehandle and converts z-int volume if needed
 	if (volumeFormat_.isSelected("normal"))
 		transferFunc_.setVolumeHandle(volumeInport1_.getData());
 	else if (volumeFormat_.isSelected("zint")) {
-		if (!convertedVolume_)
-			convertedVolume_ = convertVolume();
-		transferFunc_.setVolumeHandle(convertedVolume_);
+		if (!zintVolume_)
+			zintVolume_ = convertZint();
+		transferFunc_.setVolumeHandle(zintVolume_);
 	}	
 }
 
@@ -235,7 +238,6 @@ void BccVolumeRaycaster::process() {
 	}
 	else if (volumeFormat_.isSelected("zint")) {
 		if (zreconstruction_.isSelected("linbox"))
-
 			filterMode = GL_NEAREST;
 		else if (zreconstruction_.isSelected("nearest"))
 			filterMode = GL_NEAREST;
@@ -266,13 +268,13 @@ void BccVolumeRaycaster::process() {
 	}
 	else if (volumeFormat_.isSelected("zint")) {
 		if (volumeInport1_.isReady() && volumeInport2_.isReady()) {
-			//convert volume to z-interleaved format
+			//convert volume to z-interleaved format if needed
 			if ((volumeInport1_.hasChanged() || volumeInport2_.hasChanged()))
-				convertedVolume_ = convertVolume();
+				zintVolume_ = convertZint();
 
-			if (convertedVolume_) {
+			if (zintVolume_) {
 				volumeTextures.push_back(VolumeStruct(
-						convertedVolume_,
+						zintVolume_,
 						&volUnit1,
 						"volumeStruct1_",
 						GL_CLAMP_TO_BORDER,
@@ -308,9 +310,7 @@ void BccVolumeRaycaster::process() {
 		raycastPrg_->setUniform("lambda_", lambdaValue_.get());
 
 	if (classificationMode_.get() == "transfer-function")
-	{
         transferFunc_.get()->setUniform(raycastPrg_, "transferFunc_", transferUnit.getUnitNumber());
-	}
 
 	LGL_ERROR;
 
@@ -329,14 +329,13 @@ void BccVolumeRaycaster::process() {
 std::string BccVolumeRaycaster::generateHeader() {
     std::string headerSource = VolumeRaycaster::generateHeader();
 
-    //headerSource += transferFunc_.get()->getShaderDefines();
-
+	//Use interleaved format when only 1 inport is ready
     if(!(volumeInport1_.isReady() && volumeInport2_.isReady()))
         headerSource += "#define VOLUME_FORMAT_INTERLEAVED\n";
 
-	if (volumeFormat_.isSelected("zint")) {
+	if (volumeFormat_.isSelected("zint"))
 		headerSource += "#define Z_INTERLEAVED\n";
-	}
+	
 
     headerSource += transferFunc_.get()->getShaderDefines();
 
@@ -382,6 +381,7 @@ std::string BccVolumeRaycaster::generateHeader() {
     // configure reconstruction function
     headerSource += "#define RC_APPLY_RECONSTRUCTION(p) ";
 
+	//notice different stringoptionproperties being used depending on volume format
 	if (volumeFormat_.isSelected("normal")) {
 		if (reconstruction_.isSelected("dc"))
 			headerSource += "reconstructDC(p);\n";
@@ -422,6 +422,7 @@ void BccVolumeRaycaster::adjustPropertyVisibilities() {
 
 	lambdaValue_.setVisible(reconstruction_.isSelected("cwb"));
 
+	//sets reconstruction option visibilty depending on volume format selected
 	if (volumeFormat_.isSelected("zint"))
 	{
 		if (!(reconstruction_.isSelected("linbox") || reconstruction_.isSelected("nearest"))) {
@@ -438,7 +439,7 @@ void BccVolumeRaycaster::adjustPropertyVisibilities() {
 	}
 }
 
-//override that checks if z-interleave is used and adjusts volume dimension accordingly
+//override that adds a check for z-interleave and adjusts volume dimension accordingly
 void BccVolumeRaycaster::bindVolumes(tgt::Shader* shader, const std::vector<VolumeStruct> &volumes,
 	const tgt::Camera* camera, const tgt::vec4& lightPosition) {
 	VolumeRenderer::bindVolumes(shader, volumes, camera, lightPosition);
@@ -452,10 +453,11 @@ void BccVolumeRaycaster::bindVolumes(tgt::Shader* shader, const std::vector<Volu
 		else {
 			tgt::vec3 dim = volumes[0].volume_->getOriginalDimensions();
 			
-			if(volumeFormat_.isSelected("zint"))
-				dim.z *= 0.5;				
 
-			// use dimension with the highest resolution for calculating the sampling step size
+			//The check. Only part that is different to base function.
+			if(volumeFormat_.isSelected("zint"))
+				dim.z *= 0.5;
+
 			float samplingRate = samplingRate_.get();
 			float samplingStepSize = 1.f / (tgt::max(dim) * samplingRate);
 
@@ -471,7 +473,7 @@ void BccVolumeRaycaster::bindVolumes(tgt::Shader* shader, const std::vector<Volu
 	shader->setIgnoreUniformLocationError(false);
 }
 
-VolumeHandle* BccVolumeRaycaster::convertVolume() {
+VolumeHandle* BccVolumeRaycaster::convertZint() {
 
 	const VolumeHandleBase* inputHandle1 = volumeInport1_.getData();
 	const VolumeHandleBase* inputHandle2 = volumeInport2_.getData();
@@ -483,7 +485,7 @@ VolumeHandle* BccVolumeRaycaster::convertVolume() {
 		" and " << inputHandle1->getNumChannels() << ".");
 		return 0;
 	}
-	else if (inputHandle1->getNumChannels() == 1) {
+	else if (inputHandle1->getNumChannels() == 1) { //No shading
 
 		const VolumeAtomic<uint16_t> *inputIntensity1 = static_cast<const VolumeAtomic<uint16_t> *>(inputVolume1);
 		const VolumeAtomic<uint16_t> *inputIntensity2 = static_cast<const VolumeAtomic<uint16_t> *>(inputVolume2);
@@ -504,7 +506,7 @@ VolumeHandle* BccVolumeRaycaster::convertVolume() {
 		}
 		return new VolumeHandle(output, inputHandle1);		
 	}
-	else if (inputHandle1->getNumChannels() == 4) {
+	else if (inputHandle1->getNumChannels() == 4) { //Shading with pre calculated normals (VolumeInterleave)
 
 		// indata should be a vector4 of gradients xyz and intensity w
 		const VolumeAtomic<tgt::Vector4<uint16_t> >* inputData1 = static_cast<const VolumeAtomic<tgt::Vector4<uint16_t> > *>(inputVolume1);
