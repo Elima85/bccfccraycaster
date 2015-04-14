@@ -72,7 +72,6 @@ BccVolumeRaycaster::BccVolumeRaycaster()
 	zreconstruction_.selectByKey("linbox");
 	zreconstruction_.setVisible(false);
 	addProperty(zreconstruction_);
-	
 
     // shading properties
     addProperty(shadeMode_);
@@ -188,7 +187,7 @@ void BccVolumeRaycaster::beforeProcess() {
     }
     LGL_ERROR;
 
-	//set transfer function volumehandle and converts z-int volume if needed
+	//set transfer function volumehandle and convert z-int volume if needed
 	if (volumeFormat_.isSelected("normal"))
 		transferFunc_.setVolumeHandle(volumeInport1_.getData());
 	else if (volumeFormat_.isSelected("zint")) {
@@ -271,7 +270,6 @@ void BccVolumeRaycaster::process() {
 			//convert volume to z-interleaved format if needed
 			if ((volumeInport1_.hasChanged() || volumeInport2_.hasChanged()))
 				zintVolume_ = convertZint();
-
 			if (zintVolume_) {
 				volumeTextures.push_back(VolumeStruct(
 						zintVolume_,
@@ -453,7 +451,6 @@ void BccVolumeRaycaster::bindVolumes(tgt::Shader* shader, const std::vector<Volu
 		else {
 			tgt::vec3 dim = volumes[0].volume_->getOriginalDimensions();
 			
-
 			//The check. Only part that is different to base function.
 			if(volumeFormat_.isSelected("zint"))
 				dim.z *= 0.5;
@@ -487,15 +484,15 @@ VolumeHandle* BccVolumeRaycaster::convertZint() {
 	}
 	else if (inputHandle1->getNumChannels() == 1) { //No shading
 
-		const VolumeAtomic<uint16_t> *inputIntensity1 = static_cast<const VolumeAtomic<uint16_t> *>(inputVolume1);
-		const VolumeAtomic<uint16_t> *inputIntensity2 = static_cast<const VolumeAtomic<uint16_t> *>(inputVolume2);
+		const VolumeAtomic<uint16_t> *inputIntensity1, *inputIntensity2;
+		inputIntensity1 = static_cast<const VolumeAtomic<uint16_t> *>(inputVolume1);
+		inputIntensity2 = static_cast<const VolumeAtomic<uint16_t> *>(inputVolume2);
 		tgt::ivec3 dim = inputIntensity1->getDimensions();
 		VolumeAtomic<uint16_t>* output = new VolumeAtomic<uint16_t>(tgt::ivec3(dim.x,dim.y,dim.z*2));
 		
-		tgt::ivec3 pos;
-		
+		tgt::ivec3 pos;		
 		for (pos.x = 0; pos.x < dim.x; pos.x+=1) {
-			for (pos.y = 0; pos.y < dim.y; pos.y++) {	
+			for (pos.y = 0; pos.y < dim.y; pos.y++) {
 				int zz;
 				for (pos.z = 0, zz = 0; pos.z < dim.z; pos.z++, zz+=2) {
 					//might need to handle case for uneven dims
@@ -506,19 +503,18 @@ VolumeHandle* BccVolumeRaycaster::convertZint() {
 		}
 		return new VolumeHandle(output, inputHandle1);		
 	}
-	else if (inputHandle1->getNumChannels() == 4) { //Shading with pre calculated normals (VolumeInterleave)
+	else if (inputHandle1->getNumChannels() == 4) { //Shading with pre-calculated normals (VolumeInterleave)
 
 		// indata should be a vector4 of gradients xyz and intensity w
-		const VolumeAtomic<tgt::Vector4<uint16_t> >* inputData1 = static_cast<const VolumeAtomic<tgt::Vector4<uint16_t> > *>(inputVolume1);
-		const VolumeAtomic<tgt::Vector4<uint16_t> >* inputData2 = static_cast<const VolumeAtomic<tgt::Vector4<uint16_t> > *>(inputVolume2);
-
+		const VolumeAtomic<tgt::Vector4<uint16_t> > *inputData1, *inputData2;
+		inputData1 = static_cast<const VolumeAtomic<tgt::Vector4<uint16_t> > *>(inputVolume1);
+		inputData2 = static_cast<const VolumeAtomic<tgt::Vector4<uint16_t> > *>(inputVolume2);
 		tgt::ivec3 dim = inputData1->getDimensions();
 		VolumeAtomic<tgt::Vector4<uint16_t> >* output = new VolumeAtomic<tgt::Vector4<uint16_t> >(tgt::ivec3(dim.x,dim.y,dim.z*2));
 		
-		tgt::ivec3 pos;
-		
+		tgt::ivec3 pos;		
 		for (pos.x = 0; pos.x < dim.x; pos.x+=1) {
-			for (pos.y = 0; pos.y < dim.y; pos.y++) {			
+			for (pos.y = 0; pos.y < dim.y; pos.y++) {
 				int zz;
 				for (pos.z = 0, zz = 0; pos.z < dim.z; pos.z++, zz+=2) {
 					//might need to handle case for uneven dims

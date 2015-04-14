@@ -11,7 +11,7 @@
 #endif
 
 #ifdef Z_INTERLEAVED
-	#define TEXZ(p) textureLookup3D(volumeStruct1_, floor(p*convert)*oneOverVoxels)
+	#define TEXZ(p) textureLookup3D(volumeStruct1_, ((p + 0.5)*convert)*oneOverVoxels)
 #endif
 
 const vec3 g0_off = vec3(0.0, 0.0, 0.0);
@@ -35,11 +35,9 @@ uniform VOLUME_STRUCT volumeStruct1_;
 	uniform VOLUME_STRUCT volumeStruct2_;
 #endif
 
+vec3 oneOverVoxels = vec3(1.0)/(volumeStruct1_.datasetDimensions_);
 #ifdef Z_INTERLEAVED
-	vec3 oneOverVoxels = vec3(1.0)/(volumeStruct1_.datasetDimensions_ - 0.5);
 	vec3 convert = vec3(0.5, 0.5, 1.0); //volume index conversion vector
-#else
-	vec3 oneOverVoxels = vec3(1.0)/(volumeStruct1_.datasetDimensions_);
 #endif
 
 vec4 reconstructDC(in vec3 p)
@@ -173,8 +171,8 @@ vec4 reconstructNearest(in vec3 p)
 			return vec4(0.0, 0.0, 0.0, value);
 		#endif
 	#else
-		vec3 pw = p * vec3(2*volumeStruct1_.datasetDimensions_.xy-1.0,
-							volumeStruct1_.datasetDimensions_.z-1.0);
+		vec3 pw = p * vec3(2*volumeStruct1_.datasetDimensions_.xy,
+							volumeStruct1_.datasetDimensions_.z) - 1.0;
 		SAMPLE value = TEXZ(pw);
 		#ifndef VOLUME_FORMAT_INTERLEAVED
 			value.rgb = (value.rgb - 0.5) * 2.0;
@@ -187,8 +185,9 @@ vec4 reconstructNearest(in vec3 p)
 
 vec4 reconstructCWB(in vec3 p)
 {
-	const float size = volumeStruct1_.datasetDimensions_;
-	const float pi2 = 6.283185;
+	const vec3 size = volumeStruct1_.datasetDimensions_;
+	const float pi2 = 6.2831853;
+	
 	vec3 pw = p*size;
 	
 	//texture lookups
@@ -196,12 +195,12 @@ vec4 reconstructCWB(in vec3 p)
 	SAMPLE sample1 = TEX1(pw);
 	
 	//calculate weighting function
-	vec3 p0 = pw*oneOverVoxels*size - 0.5;
+	vec3 p0 = pw - 0.5;
 	vec3 c = cos(p0*pi2);
 	float w = 0.5 + (c.x + c.y + c.z) / 6.0 * lambda_;
 	
 	//linear interpolation
-	SAMPLE value = mix(sample0, sample1, w);
+	SAMPLE value = mix(sample1, sample0, w);
 	
 	#ifndef VOLUME_FORMAT_INTERLEAVED
 		value.rgb = (value.rgb - vec3(0.5)) * 2.0;
@@ -226,6 +225,7 @@ void rayTraversal(in vec3 first, in vec3 last)
 	
     raySetup(first, last, size, rayDirection, tIncr, tEnd);
 	
+	//adjust sampling rate for bcc by 2^(1/3) = 1.2599...
     tIncr /= 1.259921049894873;
 	
     RC_BEGIN_LOOP {

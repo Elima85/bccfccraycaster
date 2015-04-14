@@ -164,6 +164,8 @@ void rayTraversal(in vec3 first, in vec3 last)
     float tEnd  = 1.0;
     vec3 rayDirection;
     raySetup(first, last, volumeStruct1_.datasetDimensions_, rayDirection, tIncr, tEnd);
+	
+	//adjust sampling rate for FCC by 4^(1/3) = 1.5874...
 	tIncr /= 1.587401051968200;
 
     RC_BEGIN_LOOP {
