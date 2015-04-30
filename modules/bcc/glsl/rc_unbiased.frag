@@ -1,9 +1,9 @@
 #include "modules/vrn_shaderincludes.frag"
 
-#define TEX0(p) textureLookup3D(volumeStruct1_, (p - g0_off) * oneOverVoxels).a
-#define TEX1(p) textureLookup3D(volumeStruct2_, (p - g1_off) * oneOverVoxels).a
-#define TEX2(p) textureLookup3D(volumeStruct3_, (p - g2_off) * oneOverVoxels).a
-#define TEX3(p) textureLookup3D(volumeStruct4_, (p - g3_off) * oneOverVoxels).a
+#define TEX0(p) texture(volumeStruct1_.volume_, (p - g0_off) * oneOverVoxels).a
+#define TEX1(p) texture(volumeStruct2_.volume_, (p - g0_off) * oneOverVoxels).a
+#define TEX2(p) texture(volumeStruct3_.volume_, (p - g0_off) * oneOverVoxels).a
+#define TEX3(p) texture(volumeStruct4_.volume_, (p - g0_off) * oneOverVoxels).a
 
 const vec3 g0_off = vec3(0.0, 0.0, 0.0);
 #ifdef RECONSTRUCT_BCC
@@ -34,51 +34,39 @@ uniform VOLUME_STRUCT volumeStruct2_;
 uniform VOLUME_STRUCT volumeStruct3_;
 uniform VOLUME_STRUCT volumeStruct4_;
 
-const vec3 oneOverVoxels = vec3(1.0)/(volumeStruct1_.datasetDimensions_);
+#ifdef RECONSTRUCT_CC
+	vec3 oneOverVoxels = vec3(1.0)/(volumeStruct1_.datasetDimensions_);
+#else
+	vec3 oneOverVoxels = vec3(1.0)/(volumeStruct1_.datasetDimensions_-.5);
+#endif
+
 const float pi = 3.141592;
 const float pi2 = 6.2831853;
-const float adivide = 1/float(a_);
+float adivide = 1/float(a_);
 
 #ifdef RECONSTRUCT_BCC
-	/*const mat3 L = mat3(-1,  1,  1,
-						 1, -1,  1,
-						 1,  1, -1);*/
-						 
-	const float absDetL = 4; //abs(determinant(L)); //L = 4
-	
-	const vec3 xi_1 = 0.25 * vec3( 1, -1, -1);
-	const vec3 xi_2 = 0.25 * vec3(-1,  1, -1);
-	const vec3 xi_3 = 0.25 * vec3(-1, -1,  1);
-	const vec3 xi_4 = 0.25 * vec3( 1,  1,  1);
-	
-	/*const mat3 B[4] = mat3[](	mat3(xi[0], xi[1], xi[2]), 
-								mat3(xi[0], xi[1], xi[3]),
-								mat3(xi[0], xi[2], xi[3]),
-								mat3(xi[1], xi[2], xi[3]));*/
-	
-	const float det_B_1 = 0.0625; // abs(determinant(B[0])); // 0.0625
-	const float det_B_2 = 0.0625; // abs(determinant(B[1])); // 0.0625
-	const float det_B_3 = 0.0625; // abs(determinant(B[2])); // 0.0625
-	const float det_B_4 = 0.0625; // abs(determinant(B[3])); // 0.0625
-	
-	const vec3 tau_B_1 = -0.125 * vec3( 1,  1,  1);
-	const vec3 tau_B_2 = -0.125 * vec3(-1, -1,  1);
-	const vec3 tau_B_3 = -0.125 * vec3(-1,  1, -1);
-	const vec3 tau_B_4 = -0.125 * vec3( 1, -1, -1);
+	const vec3 xi[4] = vec3[](0.5 * vec3( 1,-1,-1), 0.5 * vec3(-1, 1,-1),
+							  0.5 * vec3(-1,-1, 1), 0.5 * vec3( 1, 1, 1));
 #endif
 
 #ifdef RECONSTRUCT_FCC
-	const mat3 L = mat3( 0,  1,  1,
-						 1,  0,  1,
-						 1,  1,  0);
-	const float detL = determinant(L);
-						 
-	const vec3 xi_1 = 0.25 * vec3( 1,  1,  0);
-	const vec3 xi_2 = 0.25 * vec3(-1,  1,  0);
-	const vec3 xi_3 = 0.25 * vec3( 1,  0,  1);
-	const vec3 xi_4 = 0.25 * vec3( 1,  0, -1);
-	const vec3 xi_5 = 0.25 * vec3( 0,  1,  1);
-	const vec3 xi_6 = 0.25 * vec3( 0, -1,  1);
+	const vec3 xi[6] = vec3[](0.5 * vec3( 1, 1, 0), 0.5 * vec3(-1, 1, 0), 0.5 * vec3( 1, 0, 1),
+							  0.5 * vec3( 1, 0,-1), 0.5 * vec3( 0, 1, 1), 0.5 * vec3( 0,-1, 1));
+	
+	const ivec3 bases[16] = ivec3[](ivec3(1,2,4)-1, ivec3(1,5,6)-1, ivec3(3,4,5)-1, ivec3(2,3,4)-1,
+									ivec3(1,2,6)-1, ivec3(3,5,6)-1, ivec3(1,3,5)-1, ivec3(1,4,6)-1,
+									ivec3(2,4,5)-1, ivec3(1,2,3)-1, ivec3(1,2,5)-1, ivec3(4,5,6)-1,
+									ivec3(3,4,6)-1, ivec3(2,5,6)-1, ivec3(1,3,4)-1, ivec3(2,3,6)-1);
+	
+	const vec3 tau_Bcpi[16] = vec3[](pi*0.5*vec3( 1, 0, 3), pi*0.5*vec3( 3,-1, 0),
+								     pi*0.5*vec3( 0,-3, 1), pi*0.5*vec3(-1,-1, 2),
+								     pi*0.5*vec3( 2, 1, 1), pi*0.5*vec3( 1,-2,-1),
+								     pi*0.5*vec3( 2, 0,-2), pi*0.5*vec3( 0, 2, 2),
+								     pi*0.5*vec3(-2,-2, 0), pi*0.5*vec3( 1, 2,-1),
+								     pi*0.5*vec3( 0, 1,-3), pi*0.5*vec3(-3, 0,-1),
+								     pi*0.5*vec3(-2, 1, 1), pi*0.5*vec3(-1,-1,-2),
+								     pi*0.5*vec3(-1, 3, 0), pi*0.5*vec3( 0, 0, 0));
+	
 #endif
 
 vec3 sinc(vec3 x)
@@ -95,10 +83,12 @@ float sinc(float x)
 	return sin(x*pi)/(x*pi);
 }
 
-vec3 cc_Windowed_Sinc_L(vec3 x)
-{
-	return (1 - step(a_, abs(x.x))) * (1 - step(a_, abs(x.y))) * (1 - step(a_, abs(x.z))) * sinc(x)
-		* pow(abs(sinc(x * adivide)), vec3(n_));
+vec3 cc_Windowed_Sinc(vec3 x)
+{	
+	if (length(x) <= float(a_))
+		return sinc(abs(x)) * pow(abs(sinc(x * adivide)), vec3(n_));
+	else
+		return vec3(0);
 }
 
 vec4 reconstructCC(in vec3 p)
@@ -108,6 +98,7 @@ vec4 reconstructCC(in vec3 p)
 	float sum = 0;
 	vec3 offset = fract(pv);
 	vec3 v;
+	
 	for (v.x = -a_; v.x <= a_; v.x++)
 	{
 		for (v.y = -a_; v.y <= a_; v.y++)
@@ -115,7 +106,7 @@ vec4 reconstructCC(in vec3 p)
 			for (v.z = -a_; v.z <= a_; v.z++)
 			{
 				float sample0 = TEX0(pv + v);
-				vec3 L = cc_Windowed_Sinc_L(offset - v);
+				vec3 L = cc_Windowed_Sinc(offset - v);
 				sum += sample0 * L.x * L.y * L.z;
 			}
 		}
@@ -124,71 +115,51 @@ vec4 reconstructCC(in vec3 p)
 }
 
 #ifdef RECONSTRUCT_BCC
-float bccSinc_L(vec3 x)
+float BCC_Sinc_L(vec3 x)
 {
-	float ret = 0;
-
-	ret += det_B_1 * cos(pi2 * dot(tau_B_1, x)) 
-		* sinc(dot(xi_1, x))
-		* sinc(dot(xi_2, x))
-		* sinc(dot(xi_3, x));
-		
-	ret += det_B_2 * cos(pi2 * dot(tau_B_2, x)) 
-		* sinc(dot(xi_1, x))
-		* sinc(dot(xi_2, x))
-		* sinc(dot(xi_4, x));
-	
-	ret += det_B_3 * cos(pi2 * dot(tau_B_3, x)) 
-		* sinc(dot(xi_1, x))
-		* sinc(dot(xi_3, x))
-		* sinc(dot(xi_4, x));
-	
-	ret += det_B_4 * cos(pi2 * dot(tau_B_4, x)) 
-		* sinc(dot(xi_2, x))
-		* sinc(dot(xi_3, x))
-		* sinc(dot(xi_4, x));
-		
-	ret *= absDetL;
-	
-	return ret;
+	float ret = 0;	
+	for (int i = 0; i < 4; i++)
+	{
+		float temp = 1;
+		for (int j = 0; j < 4; j++)
+			if (i != j)
+				temp *= sinc(xi[j].x*x.x + xi[j].y*x.y + xi[j].z*x.z);
+				
+		ret += temp * cos(pi*(xi[i].x*x.x + xi[i].y*x.y + xi[i].z*x.z));
+	}
+	return ret * 0.25;
 }
 
-float bcc_Windowed_Sinc_L(vec3 x, float aValue)
+float BCC_Windowed_Sinc_L(vec3 x)
 {
-	return (1 - step(aValue, abs(x.x))) * (1 - step(aValue, abs(x.y))) * (1 - step(aValue, abs(x.z))) * bccSinc_L(x)
-		* pow(abs(bccSinc_L(x / aValue)), float(n_));
+	if (abs(x.x) < a_)
+		if (abs(x.y) < a_)
+			if (abs(x.z) < a_)
+		return BCC_Sinc_L(x) * pow(abs(BCC_Sinc_L(x*adivide)), float(n_));
+	return 0;
 }
-
 
 vec4 reconstructBCC(in vec3 p)
-{	
+{
 	vec3 pv = p * volumeStruct1_.datasetDimensions_;
+	vec3 pr = floor(pv + 0.5);
+
+	vec3 offset0 = pv - pr;
+	vec3 offset1 = offset0 - g1_off;
 	
+	float side = float(a_) + 1;
 	float sum = 0;
-	vec3 offset = fract(pv);
 	vec3 v;
-	float aVal = float(a_) * 0.79;
-	float kernelSize = .5;
-	float stepLength = 1;
-	for (v.x = -kernelSize; v.x <= kernelSize; v.x += stepLength)
+	for (v.x = -side; v.x <= side; v.x++)
 	{
-		for (v.y = -kernelSize; v.y <= kernelSize; v.y += stepLength)
+		for (v.y = -side; v.y <= side; v.y++)
 		{
-			for (v.z = -kernelSize; v.z <= kernelSize; v.z += stepLength)
+			for (v.z = -side; v.z <= side; v.z++)
 			{
-				vec3 pw = pv + v;
-				vec3 v0 = round(pw + g0_off) - g0_off;
-				vec3 v1 = round(pw + g1_off) - g1_off;
-				int index = int(distance(pw, v0) < distance(pw, v1));
-				float values[2] = float[2](TEX1(v1 + 0.5), TEX0(v0 + 0.5));				
-				float L[2] = float [2](
-					bcc_Windowed_Sinc_L(offset - v - g1_off, aVal),
-					bcc_Windowed_Sinc_L(offset - v, aVal));
-				sum += values[index] * L[index];
-				
-				/*float sample0 = TEX0(pv + v);
-				float L = bcc_Windowed_Sinc_L(offset - v, aVal);
-				sum += sample0 * L;*/
+				float window0 = BCC_Windowed_Sinc_L(offset0 - v);
+				float window1 = BCC_Windowed_Sinc_L(offset1 - v);
+				sum += window0 * TEX0(pr + v);
+				sum += window1 * TEX1(pr + v);
 			}
 		}
 	}
@@ -196,11 +167,60 @@ vec4 reconstructBCC(in vec3 p)
 }
 #endif
 
+#ifdef RECONSTRUCT_FCC
+float FCC_Sinc_L(vec3 x)
+{
+	float ret = 0;
+	for (int i = 0; i < 16; i++)
+		ret += cos(tau_Bcpi[i].x*x.x + tau_Bcpi[i].y*x.y + tau_Bcpi[i].z*x.z)
+			* sinc(xi[bases[i].x].x*x.x + xi[bases[i].x].y*x.y + xi[bases[i].x].z*x.z)
+			* sinc(xi[bases[i].y].x*x.x + xi[bases[i].y].y*x.y + xi[bases[i].y].z*x.z)
+			* sinc(xi[bases[i].z].x*x.x + xi[bases[i].z].y*x.y + xi[bases[i].z].z*x.z);
+	return ret * 0.0625;
+}
+
+float FCC_Windowed_Sinc_L(vec3 x)
+{
+	if (abs(x.x) < a_)
+		if (abs(x.y) < a_)
+			if (abs(x.z) < a_)
+				return FCC_Sinc_L(x) * pow(abs(FCC_Sinc_L(x*adivide)), float(n_));
+	return 0;
+}
+
 vec4 reconstructFCC(in vec3 p)
 {
-	// not implemented yet
-	return vec4(0.8 * float(a_) * float(n_));
+	vec3 pv = p * volumeStruct1_.datasetDimensions_;
+	vec3 pr = floor(pv + 0.5);
+	
+	vec3 offset0 = pv - pr;
+	vec3 offset1 = offset0 - g1_off;
+	vec3 offset2 = offset0 - g2_off;
+	vec3 offset3 = offset0 - g3_off;
+	
+	float side = float(a_) + 1;
+	float sum = 0;
+	vec3 v;	
+	for (v.x = -side; v.x <= side; v.x++)
+	{
+		for (v.y = -side; v.y <= side; v.y++)
+		{
+			for (v.z = -side; v.z <= side; v.z++)
+			{
+				float window0 = FCC_Windowed_Sinc_L(offset0 - v);
+				float window1 = FCC_Windowed_Sinc_L(offset1 - v);
+				float window2 = FCC_Windowed_Sinc_L(offset2 - v);
+				float window3 = FCC_Windowed_Sinc_L(offset3 - v);
+				sum += window0 * TEX0(pr + v);
+				sum += window1 * TEX1(pr + v);
+				sum += window2 * TEX2(pr + v);
+				sum += window3 * TEX3(pr + v);
+			}
+		}
+	}
+	return vec4(0, 0, 0, sum);
 }
+#endif
 
 void rayTraversal(in vec3 first, in vec3 last)
 {
@@ -257,4 +277,3 @@ void main()
 		FragData2 = result2;
 	#endif
 }
-
