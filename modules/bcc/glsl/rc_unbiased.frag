@@ -71,14 +71,19 @@ float adivide = 1/float(a_);
 
 vec3 sinc(vec3 x)
 {
-	if (x == vec3(0))
-		return vec3(1);
-	return sin(x*pi)/(x*pi);
+	vec3 ret = sin(x*pi)/(x*pi);
+	if (abs(x).x < 0.0001)
+		ret.x = 1;
+	if (abs(x).y < 0.0001)
+		ret.y = 1;
+	if (abs(x).z < 0.0001)
+		ret.z = 1;
+	return ret;
 }
 
 float sinc(float x)
 {
-	if (x == 0)
+	if (abs(x) < 0.0001)
 		return 1;
 	return sin(x*pi)/(x*pi);
 }
@@ -142,7 +147,7 @@ float BCC_Windowed_Sinc_L(vec3 x)
 vec4 reconstructBCC(in vec3 p)
 {
 	vec3 pv = p * volumeStruct1_.datasetDimensions_;
-	vec3 pr = floor(pv + 0.5);
+	vec3 pr = floor(pv);
 
 	vec3 offset0 = pv - pr;
 	vec3 offset1 = offset0 - g1_off;
@@ -191,7 +196,7 @@ float FCC_Windowed_Sinc_L(vec3 x)
 vec4 reconstructFCC(in vec3 p)
 {
 	vec3 pv = p * volumeStruct1_.datasetDimensions_;
-	vec3 pr = floor(pv + 0.5);
+	vec3 pr = floor(pv);
 	
 	vec3 offset0 = pv - pr;
 	vec3 offset1 = offset0 - g1_off;
