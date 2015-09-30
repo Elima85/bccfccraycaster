@@ -76,11 +76,11 @@ VolumeIOHelper::VolumeIOHelper(VolumeContainer* vc, QWidget* parent)
     , readerSelectionDialog_(0)
     , volumeListingDialog_(0)
 {
-    progressBar_ = VoreenApplication::app()->createProgressDialog();
-    if (progressBar_) {
-        progressBar_->setTitle("Loading volume");
-        progressBar_->setMessage("Loading volume ...");
-    }
+    //progressBar_ = VoreenApplication::app()->createProgressDialog();
+    //if (progressBar_) {
+    //    progressBar_->setTitle("Loading volume");
+    //    progressBar_->setMessage("Loading volume ...");
+    //}
     volumeSerializerPopulator_ = new VolumeSerializerPopulator(progressBar_);
 
     readerSelectionDialog_ = new VolumeReaderSelectionDialog(VoreenApplicationQt::qtApp()->getMainWindow());
@@ -93,8 +93,8 @@ VolumeIOHelper::VolumeIOHelper(VolumeContainer* vc, QWidget* parent)
 }
 
 VolumeIOHelper::~VolumeIOHelper() {
-    delete progressBar_;
-    progressBar_ = 0;
+    //delete progressBar_;
+    //progressBar_ = 0;
 
     delete volumeSerializerPopulator_;
     volumeSerializerPopulator_ = 0; 
