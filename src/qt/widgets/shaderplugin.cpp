@@ -159,7 +159,7 @@ const QString ShaderPlugin::getOpenFileName(QString filter) {
     QFileDialog fileDialog(this);
     fileDialog.setWindowTitle(tr("Choose a shader to open"));
     fileDialog.setDirectory(VoreenApplication::app()->getShaderPath().c_str());
-    fileDialog.setFilter(filter);
+    fileDialog.setNameFilter(filter);
 
     QList<QUrl> urls;
     urls << QUrl::fromLocalFile(VoreenApplication::app()->getShaderPath().c_str());
@@ -176,7 +176,7 @@ const QString ShaderPlugin::getSaveFileName(QStringList filters) {
     QFileDialog fileDialog(this);
     fileDialog.setWindowTitle(tr("Choose a filename to save shader"));
     fileDialog.setDirectory(VoreenApplication::app()->getShaderPath().c_str());
-    fileDialog.setFilters(filters);
+    fileDialog.setNameFilters(filters);
     fileDialog.setAcceptMode(QFileDialog::AcceptSave);
 
     QList<QUrl> urls;
@@ -185,7 +185,7 @@ const QString ShaderPlugin::getSaveFileName(QStringList filters) {
 
     QStringList fileList;
     if (fileDialog.exec() && !fileDialog.selectedFiles().empty()) {
-        QString endingFilter = fileDialog.selectedFilter();
+        QString endingFilter = fileDialog.selectedNameFilter();
         int pos = endingFilter.lastIndexOf(".");
         //removes closing bracket
         endingFilter.chop(1);

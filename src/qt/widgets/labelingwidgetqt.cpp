@@ -31,6 +31,7 @@
 #include <QtGui>
 #include <QFrame>
 #include <QPushButton>
+#include <QInputDialog>
 
 #include "voreen/core/utils/voreenpainter.h"
 

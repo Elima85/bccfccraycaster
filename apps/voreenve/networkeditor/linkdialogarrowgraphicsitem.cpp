@@ -51,7 +51,7 @@ LinkDialogArrowGraphicsItem::LinkDialogArrowGraphicsItem(LinkDialogPropertyGraph
     tgtAssert(source, "passed null pointer");
 
     setFlag(ItemIsSelectable);
-    setAcceptsHoverEvents(true);
+    setAcceptHoverEvents(true);
 
     if (destination)
         setDestinationItem(destination);

@@ -176,14 +176,14 @@ void SnapshotElement::takeSnapshot() {
     filter << tr("JPEG image (*.jpg)");
     filter << tr("Windows Bitmap (*.bmp)");
     filter << tr("TIFF image (*.tif)");
-    filedialog.setFilters(filter);
+    filedialog.setNameFilters(filter);
     filedialog.setAcceptMode(QFileDialog::AcceptSave);
 
     QList<QUrl> urls;
     urls << QUrl::fromLocalFile(VoreenApplication::app()->getSnapshotPath().c_str());
     urls << QUrl::fromLocalFile(VoreenApplication::app()->getDocumentsPath().c_str());
-    urls << QUrl::fromLocalFile(QDesktopServices::storageLocation(QDesktopServices::DesktopLocation));
-    urls << QUrl::fromLocalFile(QDesktopServices::storageLocation(QDesktopServices::HomeLocation));
+    urls << QUrl::fromLocalFile(QStandardPaths::writableLocation(QStandardPaths::DesktopLocation));
+    urls << QUrl::fromLocalFile(QStandardPaths::writableLocation(QStandardPaths::HomeLocation));
     filedialog.setSidebarUrls(urls);
 
     struct tm* Tm;

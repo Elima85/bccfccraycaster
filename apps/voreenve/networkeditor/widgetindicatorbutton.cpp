@@ -62,7 +62,7 @@ WidgetIndicatorButton::WidgetIndicatorButton(QGraphicsItem* parent)
 #endif
     , widgets_(QList<ProcessorWidget*>())
 {
-    setAcceptsHoverEvents(true);
+    setAcceptHoverEvents(true);
     setToolTip(tr("show/hide processor widget"));
 }
 

@@ -61,7 +61,7 @@
 //#endif
 //{
 //    setFlag(ItemIsMovable);
-//    setAcceptsHoverEvents(true);
+//    setAcceptHoverEvents(true);
 //    //setZValue(ZValueAnnotationFenceHandleGraphicsItem);
 //    //setFlag(QGraphicsItem::ItemStacksBehindParent, false);
 //}

@@ -145,11 +145,11 @@ void PlotProcessorWidget::updateFileReleased() {
 
 void PlotProcessorWidget::updateObjectSwitch(int index) {
     if (index == 0) {
-        file_->setFilter(tr("SVG (*.svg);;All TextFiles (*.svg *.xml)",0));
+        file_->setNameFilter(tr("SVG (*.svg);;All TextFiles (*.svg *.xml)",0));
         //file_->
     }
     else {
-        file_->setFilter(tr("Latex (*.tex);;All TextFiles (*.tex *.txt)",0));
+        file_->setNameFilter(tr("Latex (*.tex);;All TextFiles (*.tex *.txt)",0));
     }
     if (updateFile_->isEnabled()) {
         svgFileName_ = file_->selectedFiles().at(0).toStdString();

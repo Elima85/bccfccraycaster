@@ -44,7 +44,6 @@
 #include <QTabWidget>
 #include <QWidget>
 #include <QLCDNumber>
-#include <QColorGroup>
 #include <QLabel>
 
 namespace voreen {

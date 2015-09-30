@@ -160,8 +160,8 @@ void VolumeIOHelper::showFileOpenDialog() {
     QList<QUrl> urls;
     urls << QUrl::fromLocalFile(VoreenApplication::app()->getVolumePath().c_str());
     urls << QUrl::fromLocalFile(VoreenApplication::app()->getDataPath().c_str());
-    urls << QUrl::fromLocalFile(QDesktopServices::storageLocation(QDesktopServices::DesktopLocation));
-    urls << QUrl::fromLocalFile(QDesktopServices::storageLocation(QDesktopServices::HomeLocation));
+    urls << QUrl::fromLocalFile(QStandardPaths::writableLocation(QStandardPaths::DesktopLocation));
+    urls << QUrl::fromLocalFile(QStandardPaths::writableLocation(QStandardPaths::HomeLocation));
 
     // create dialog
     QFileDialog fileDialog(parent_, tr("Load Volume..."), openDir.absolutePath(), "");
@@ -187,7 +187,7 @@ void VolumeIOHelper::showFileOpenDialog() {
     }
 
     // retrieve the user selected file filter
-    QString selectedFilter = fileDialog.selectedFilter();
+    QString selectedFilter = fileDialog.selectedNameFilter();
 
     // store dialog path
     settings.setValue("lastVolumePath", fileDialog.directory().absolutePath());
@@ -291,8 +291,8 @@ void VolumeIOHelper::showFileSaveDialog(VolumeHandleBase* volume) {
     QList<QUrl> urls;
     urls << QUrl::fromLocalFile(VoreenApplication::app()->getVolumePath().c_str());
     urls << QUrl::fromLocalFile(VoreenApplication::app()->getDataPath().c_str());
-    urls << QUrl::fromLocalFile(QDesktopServices::storageLocation(QDesktopServices::DesktopLocation));
-    urls << QUrl::fromLocalFile(QDesktopServices::storageLocation(QDesktopServices::HomeLocation));
+    urls << QUrl::fromLocalFile(QStandardPaths::writableLocation(QStandardPaths::DesktopLocation));
+    urls << QUrl::fromLocalFile(QStandardPaths::writableLocation(QStandardPaths::HomeLocation));
 
     // create dialog
     QFileDialog saveAsDialog(parent_, tr("Save Volume..."), openDir.absolutePath(), "");
@@ -320,7 +320,7 @@ void VolumeIOHelper::showFileSaveDialog(VolumeHandleBase* volume) {
     std::string filepath = lst.first().toStdString();
 
     // retrieve the user selected file filter
-    QString selectedFilter = saveAsDialog.selectedFilter();
+    QString selectedFilter = saveAsDialog.selectedNameFilter();
 
     // store dialog path
     settings.setValue("lastVolumePath", saveAsDialog.directory().absolutePath());

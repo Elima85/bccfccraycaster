@@ -65,7 +65,7 @@ OpenPropertyListButton::OpenPropertyListButton(QGraphicsItem* parent)
 #endif
 {
     setZValue(ZValueOpenPropertyListButton);
-    setAcceptsHoverEvents(true);
+    setAcceptHoverEvents(true);
     setToolTip(tr("show/hide list of properties"));
 }
 

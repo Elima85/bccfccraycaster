@@ -33,6 +33,11 @@
 
 #include <QtGui>
 #include <QSplashScreen>
+#include <QMdiSubWindow>
+#include <QMenuBar>
+#include <QToolBar>
+#include <QErrorMessage>
+#include <QMainWindow>
 
 #include <vector>
 

@@ -32,6 +32,7 @@
 #include <QMouseEvent>
 #include <QPainter>
 #include <QPaintEvent>
+#include <qdrawutil.h>
 
 namespace voreen {
 

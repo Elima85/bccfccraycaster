@@ -94,14 +94,14 @@ PortGraphicsItem::PortGraphicsItem(Port* port, RootGraphicsItem* parent)
     tgtAssert(parent, "passed null pointer");
 
     setFlag(ItemIsSelectable);
-    setAcceptsHoverEvents(true);
+    setAcceptHoverEvents(true);
 }
 
 void PortGraphicsItem::setLayer(NetworkEditorLayer layer) {
     switch (layer) {
     case NetworkEditorLayerDataflow:
         setFlag(ItemIsSelectable);
-        setAcceptsHoverEvents(true);
+        setAcceptHoverEvents(true);
 #if QT_VERSION >= 0x040600
         setGraphicsEffect(0);
 #else
@@ -110,7 +110,7 @@ void PortGraphicsItem::setLayer(NetworkEditorLayer layer) {
             break;
     case NetworkEditorLayerLinking:
         setFlag(ItemIsSelectable, false);
-        setAcceptsHoverEvents(false);
+        setAcceptHoverEvents(false);
 #if QT_VERSION >= 0x040600
         {
         QGraphicsOpacityEffect* effect = new QGraphicsOpacityEffect;
@@ -272,7 +272,8 @@ void PortGraphicsItem::mouseMoveEvent(QGraphicsSceneMouseEvent* event) {
         currentArrow_->setDestinationPoint(scenePos);
 
         if (currentArrow_->getOldPortGraphicsItem() == 0) {
-            QGraphicsItem* item = scene()->itemAt(scenePos);
+            QTransform transform;
+            QGraphicsItem* item = scene()->itemAt(scenePos, transform);
             if (item && (item != this)) {
                 switch (item->type()) {
                 case PortGraphicsItem::Type:
@@ -319,7 +320,8 @@ void PortGraphicsItem::mouseMoveEvent(QGraphicsSceneMouseEvent* event) {
 }
 
 void PortGraphicsItem::mouseReleaseEvent(QGraphicsSceneMouseEvent* event) {
-    QGraphicsItem* item = scene()->itemAt(event->scenePos());
+    QTransform transform;
+    QGraphicsItem* item = scene()->itemAt(event->scenePos(), transform);
 
     if (isOutport()) {
         if (item && item != this) {
@@ -426,7 +428,7 @@ QGraphicsItem* PortGraphicsItem::tooltip() const {
             QGraphicsSimpleTextItem* tooltipText = new QGraphicsSimpleTextItem(textString);
             QGraphicsRectItem* tooltipTextRect = new QGraphicsRectItem((tooltipText->boundingRect()).adjusted(-3, -2, 3, 2));
             tooltipText->setParentItem(tooltipTextRect);
-            tooltipTextRect->translate(-(maxSize.x+5), -tooltipTextRect->rect().height() + 1);
+            tooltipTextRect->setTransform(QTransform::fromTranslate(-(maxSize.x+5), -tooltipTextRect->rect().height() + 1));
             tooltipTextRect->setBrush(QBrush(QColor(255, 255, 220), Qt::SolidPattern));
 
             // composite of render preview and port name
@@ -496,7 +498,7 @@ QGraphicsItem* PortGraphicsItem::tooltip() const {
     QGraphicsSimpleTextItem* tooltipText = new QGraphicsSimpleTextItem(portInfo);
     QGraphicsRectItem* tooltipRect = new QGraphicsRectItem((tooltipText->boundingRect()).adjusted(-4, -2, 4, 2));
     tooltipText->setParentItem(tooltipRect);
-    tooltipRect->translate(-tooltipRect->rect().width() - 4, 10);
+    tooltipRect->setTransform(QTransform::fromTranslate(-tooltipRect->rect().width() - 4, 10));
     tooltipRect->setBrush(QBrush(QColor(255, 255, 220), Qt::SolidPattern));
     return tooltipRect;
 }

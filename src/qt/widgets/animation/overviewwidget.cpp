@@ -88,8 +88,8 @@ void OverviewView::setCurrentFrame(int frame) {
 }
 
 void OverviewView::mousePressEvent(QMouseEvent* e) {
-    if (scene_->itemAt(mapToScene(e->pos()).x(), mapToScene(e->pos()).y())
-        && scene_->itemAt(mapToScene(e->pos()).x(), mapToScene(e->pos()).y())->boundingRect() == highlightBar_->boundingRect()) {
+    if (scene_->itemAt(mapToScene(e->pos()).x(), mapToScene(e->pos()).y(), QGraphicsView::transform())
+        && scene_->itemAt(mapToScene(e->pos()).x(), mapToScene(e->pos()).y(), QGraphicsView::transform())->boundingRect() == highlightBar_->boundingRect()) {
         barMovement_ = true;
         relativeBarPosition_ = e->pos().x();
     }

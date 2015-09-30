@@ -64,7 +64,7 @@ ArrowGraphicsItem::ArrowGraphicsItem(QGraphicsItem* sourceItem, QGraphicsItem* d
     tgtAssert(sourceItem, "null pointer passed");
     setFlag(ItemIsSelectable);
     setZValue(ZValueArrowGraphicsItem);
-    setAcceptsHoverEvents(true);
+    setAcceptHoverEvents(true);
 }
 
 ArrowGraphicsItem::~ArrowGraphicsItem() {
@@ -153,7 +153,7 @@ QGraphicsItem* ArrowGraphicsItem::tooltip() const {
         QGraphicsSimpleTextItem* tooltipText = new QGraphicsSimpleTextItem(tooltipText_);
         QGraphicsRectItem* tooltip = new QGraphicsRectItem((tooltipText->boundingRect()).adjusted(-4, 0, 4, 0));
         tooltipText->setParentItem(tooltip);
-        tooltip->translate(-tooltip->rect().width(), -tooltip->rect().height());
+        tooltip->setTransform(QTransform::fromTranslate(-tooltip->rect().width(), -tooltip->rect().height()));
         tooltip->setBrush(QBrush(QColor(253, 237, 212), Qt::SolidPattern));
         return tooltip;
     }

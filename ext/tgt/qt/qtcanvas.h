@@ -56,9 +56,9 @@ public:
     QtCanvas(const std::string& title = "",
              const ivec2& size = ivec2(DEFAULT_WINDOW_WIDTH, DEFAULT_WINDOW_HEIGHT),
              const Buffers buffers = RGBADD,
-             QWidget* parent = 0, bool shared = false, Qt::WFlags f = 0, char* name = 0);
+             QWidget* parent = 0, bool shared = false, Qt::WindowFlags f = 0, char* name = 0);
 
-    QtCanvas(QWidget* parent, bool shared = false, Qt::WFlags f = 0, char* name = 0);
+    QtCanvas(QWidget* parent, bool shared = false, Qt::WindowFlags f = 0, char* name = 0);
 
     /**
      * Destructor. Closes window (if canvas is a window).

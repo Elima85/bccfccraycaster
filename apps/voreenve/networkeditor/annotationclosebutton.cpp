@@ -49,7 +49,7 @@ AnnotationCloseButton::AnnotationCloseButton(QGraphicsItem* parent)
     , QGraphicsItem(parent)
 #endif
 {
-    setAcceptsHoverEvents(true);
+    setAcceptHoverEvents(true);
     setToolTip(tr("show/hide processor widget"));
 }
 

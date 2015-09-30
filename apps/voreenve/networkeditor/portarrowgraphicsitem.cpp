@@ -170,7 +170,7 @@ void PortArrowGraphicsItem::setLayer(NetworkEditorLayer layer) {
     switch (layer) {
     case NetworkEditorLayerDataflow:
         setFlag(ItemIsSelectable);
-        setAcceptsHoverEvents(true);
+        setAcceptHoverEvents(true);
 
         if (sourceSelectionItem_) {
             sourceSelectionItem_->setFlag(ItemIsSelectable);
@@ -188,7 +188,7 @@ void PortArrowGraphicsItem::setLayer(NetworkEditorLayer layer) {
         break;
     case NetworkEditorLayerLinking:
         setFlag(ItemIsSelectable, false);
-        setAcceptsHoverEvents(false);
+        setAcceptHoverEvents(false);
 
         if (sourceSelectionItem_) {
             sourceSelectionItem_->setFlag(ItemIsSelectable, false);

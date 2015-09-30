@@ -82,7 +82,7 @@ void ColorPicker::setCol(int h, int s) {
     QRect r(colPt(), QSize(20,20));
     hue_ = nhue;
     sat_ = nsat;
-    r = r.unite(QRect(colPt(), QSize(20,20)));
+    r = r.united(QRect(colPt(), QSize(20,20)));
     r.translate(contentsRect().x()-9, contentsRect().y()-9);
     repaint(r);
 }

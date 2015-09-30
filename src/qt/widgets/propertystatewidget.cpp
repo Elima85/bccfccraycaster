@@ -207,8 +207,8 @@ PropertyStateWidget::PropertyStateWidget(ProcessorNetwork* processorNetwork, QWi
     treeWidget_->setExpandsOnDoubleClick(false);
     //treeWidget_->setDragEnabled(true);
     //treeWidget_->setDragDropMode(QAbstractItemView::InternalMove);
-    treeWidget_->header()->setResizeMode(0, QHeaderView::Stretch);
-    treeWidget_->header()->setResizeMode(1, QHeaderView::ResizeToContents);
+    treeWidget_->header()->setSectionResizeMode(0, QHeaderView::Stretch);
+    treeWidget_->header()->setSectionResizeMode(1, QHeaderView::ResizeToContents);
     treeWidget_->header()->setStretchLastSection(false);
 
     treeDelegate_ = new QStyledItemDelegate;

@@ -39,7 +39,7 @@ namespace voreen {
 class ClickableLabel : public QLabel {
     Q_OBJECT
 public:
-    ClickableLabel(const char * text, QWidget * parent, Qt::WFlags f = 0,
+    ClickableLabel(const char * text, QWidget * parent, Qt::WindowFlags f = 0,
                     Qt::CursorShape hoverCursor = Qt::PointingHandCursor);
 
     virtual void mousePressEvent(QMouseEvent* e);

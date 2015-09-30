@@ -75,8 +75,14 @@
 #include "voreen/core/utils/stringconversion.h"
 
 #include <QDesktopServices>
+#include <QStandardPaths>
 #include <QLabel>
 #include <QPropertyAnimation>
+#include <QDesktopWidget>
+#include <QMdiArea>
+#include <QMessageBox>
+#include <QFileDialog>
+#include <QWhatsThis>
 
 #ifdef VRN_REMOTE_CONTROL
 #include "voreen/qt/widgets/remotecontrollerwidget.h"
@@ -1071,8 +1077,8 @@ void VoreenMainWindow::openNetwork() {
 #ifndef VRN_DEPLOYMENT
     urls << QUrl::fromLocalFile(VoreenApplication::app()->getModulePath().c_str());
 #endif
-    urls << QUrl::fromLocalFile(QDesktopServices::storageLocation(QDesktopServices::DesktopLocation));
-    urls << QUrl::fromLocalFile(QDesktopServices::storageLocation(QDesktopServices::HomeLocation));
+    urls << QUrl::fromLocalFile(QStandardPaths::writableLocation(QStandardPaths::DesktopLocation));
+    urls << QUrl::fromLocalFile(QStandardPaths::writableLocation(QStandardPaths::HomeLocation));
     fileDialog.setSidebarUrls(urls);
 
     if (fileDialog.exec()) {
@@ -1127,8 +1133,8 @@ bool VoreenMainWindow::saveNetworkAs() {
 #ifndef VRN_DEPLOYMENT
     urls << QUrl::fromLocalFile(VoreenApplication::app()->getModulePath().c_str());
 #endif
-    urls << QUrl::fromLocalFile(QDesktopServices::storageLocation(QDesktopServices::DesktopLocation));
-    urls << QUrl::fromLocalFile(QDesktopServices::storageLocation(QDesktopServices::HomeLocation));
+    urls << QUrl::fromLocalFile(QStandardPaths::writableLocation(QStandardPaths::DesktopLocation));
+    urls << QUrl::fromLocalFile(QStandardPaths::writableLocation(QStandardPaths::HomeLocation));
     fileDialog.setSidebarUrls(urls);
 
     if (fileDialog.exec()) {
@@ -1183,8 +1189,8 @@ void VoreenMainWindow::exportWorkspace() {
     urls << QUrl::fromLocalFile(VoreenApplication::app()->getModulePath().c_str());
 #endif
     urls << QUrl::fromLocalFile(VoreenApplication::app()->getDataPath().c_str());
-    urls << QUrl::fromLocalFile(QDesktopServices::storageLocation(QDesktopServices::DesktopLocation));
-    urls << QUrl::fromLocalFile(QDesktopServices::storageLocation(QDesktopServices::HomeLocation));
+    urls << QUrl::fromLocalFile(QStandardPaths::writableLocation(QStandardPaths::DesktopLocation));
+    urls << QUrl::fromLocalFile(QStandardPaths::writableLocation(QStandardPaths::HomeLocation));
     fileDialog.setSidebarUrls(urls);
 
     if (fileDialog.exec() == false)
@@ -1216,8 +1222,8 @@ void VoreenMainWindow::extractWorkspaceArchive() {
     urls << QUrl::fromLocalFile(VoreenApplication::app()->getModulePath().c_str());
 #endif
     urls << QUrl::fromLocalFile(VoreenApplication::app()->getDataPath().c_str());
-    urls << QUrl::fromLocalFile(QDesktopServices::storageLocation(QDesktopServices::DesktopLocation));
-    urls << QUrl::fromLocalFile(QDesktopServices::storageLocation(QDesktopServices::HomeLocation));
+    urls << QUrl::fromLocalFile(QStandardPaths::writableLocation(QStandardPaths::DesktopLocation));
+    urls << QUrl::fromLocalFile(QStandardPaths::writableLocation(QStandardPaths::HomeLocation));
     fileDialog.setSidebarUrls(urls);
 
     // pass queried filename to overloaded function
@@ -1393,8 +1399,8 @@ void VoreenMainWindow::openWorkspace() {
     urls << QUrl::fromLocalFile(VoreenApplication::app()->getModulePath().c_str());
 #endif
     urls << QUrl::fromLocalFile(VoreenApplication::app()->getDataPath().c_str());
-    urls << QUrl::fromLocalFile(QDesktopServices::storageLocation(QDesktopServices::DesktopLocation));
-    urls << QUrl::fromLocalFile(QDesktopServices::storageLocation(QDesktopServices::HomeLocation));
+    urls << QUrl::fromLocalFile(QStandardPaths::writableLocation(QStandardPaths::DesktopLocation));
+    urls << QUrl::fromLocalFile(QStandardPaths::writableLocation(QStandardPaths::HomeLocation));
     fileDialog.setSidebarUrls(urls);
 
     if (fileDialog.exec()) {
@@ -1459,8 +1465,8 @@ bool VoreenMainWindow::saveWorkspaceAs() {
     urls << QUrl::fromLocalFile(VoreenApplication::app()->getModulePath().c_str());
 #endif
     urls << QUrl::fromLocalFile(VoreenApplication::app()->getDataPath().c_str());
-    urls << QUrl::fromLocalFile(QDesktopServices::storageLocation(QDesktopServices::DesktopLocation));
-    urls << QUrl::fromLocalFile(QDesktopServices::storageLocation(QDesktopServices::HomeLocation));
+    urls << QUrl::fromLocalFile(QStandardPaths::writableLocation(QStandardPaths::DesktopLocation));
+    urls << QUrl::fromLocalFile(QStandardPaths::writableLocation(QStandardPaths::HomeLocation));
     fileDialog.setSidebarUrls(urls);
 
     if (fileDialog.exec()) {

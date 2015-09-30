@@ -32,7 +32,7 @@ QGLWidget* QtCanvas::shareWidget_ = 0;
 QtCanvas::QtCanvas(const std::string& title,
                    const ivec2& size,
                    const Buffers buffers,
-                   QWidget* parent, bool shared, Qt::WFlags f, char* /*name*/)
+                   QWidget* parent, bool shared, Qt::WindowFlags f, char* /*name*/)
     : QGLWidget(getQGLFormat(buffers), parent, (shared ? shareWidget_ : 0), f),
       GLCanvas(title, size, buffers)
 {
@@ -57,7 +57,7 @@ QtCanvas::QtCanvas(const std::string& title,
     stereoViewing_ = format().stereo();
 }
 
-QtCanvas::QtCanvas(QWidget* parent, bool shared, Qt::WFlags f, char* /*name*/)
+QtCanvas::QtCanvas(QWidget* parent, bool shared, Qt::WindowFlags f, char* /*name*/)
     : QGLWidget(parent, (shared ? shareWidget_ : 0), f),
       GLCanvas()
 {

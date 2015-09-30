@@ -42,7 +42,7 @@ KeyframeGraphicsItem::KeyframeGraphicsItem() {
     setFlag(ItemIsMovable);
     setFlag(ItemIsSelectable);
     setCursor(Qt::ArrowCursor);
-    setAcceptsHoverEvents(true);
+    setAcceptHoverEvents(true);
 }
 
 void KeyframeGraphicsItem::paint(QPainter *painter, const QStyleOptionGraphicsItem*  /*option*/, QWidget* /*widget*/) {

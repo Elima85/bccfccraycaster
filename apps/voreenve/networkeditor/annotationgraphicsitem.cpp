@@ -73,7 +73,7 @@ AnnotationGraphicsItem::AnnotationGraphicsItem(NetworkAnnotation* annotation)
 
     setFlag(ItemIsMovable);
     setFlag(ItemIsSelectable);
-    setAcceptsHoverEvents(true);
+    setAcceptHoverEvents(true);
     setZValue(ZValueNoteGraphicsItem);
 
     setPos(annotation->getPosition().first, annotation->getPosition().second);

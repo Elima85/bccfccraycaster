@@ -367,8 +367,8 @@ PerformanceRecordTreeWidget::PerformanceRecordTreeWidget(QWidget* parent, Perfor
     headeritems << "Processor" << "Time (ms)";
     setHeaderLabels(headeritems);
 
-    header()->setResizeMode(0, QHeaderView::Stretch);
-    header()->setResizeMode(1, QHeaderView::ResizeToContents);
+    header()->setSectionResizeMode(0, QHeaderView::Stretch);
+    header()->setSectionResizeMode(1, QHeaderView::ResizeToContents);
     header()->setStretchLastSection(false);
 
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);

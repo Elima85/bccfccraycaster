@@ -40,7 +40,7 @@
 #include <QVBoxLayout>
 #include <QMessageBox>
 #include <QApplication>
-#include <QDesktopServices>
+#include <QStandardPaths>
 
 namespace voreen {
 
@@ -319,12 +319,12 @@ const QString PythonEditor::getOpenFileName(QString filter) {
     QFileDialog fileDialog(this);
     fileDialog.setWindowTitle(tr("Choose a Python script to open"));
     fileDialog.setDirectory(VoreenApplication::app()->getScriptPath().c_str());
-    fileDialog.setFilter(filter);
+    fileDialog.setNameFilter(filter);
 
     QList<QUrl> urls;
     urls << QUrl::fromLocalFile(VoreenApplication::app()->getScriptPath().c_str());
-    urls << QUrl::fromLocalFile(QDesktopServices::storageLocation(QDesktopServices::DesktopLocation));
-    urls << QUrl::fromLocalFile(QDesktopServices::storageLocation(QDesktopServices::HomeLocation));
+    urls << QUrl::fromLocalFile(QStandardPaths::writableLocation(QStandardPaths::DesktopLocation));
+    urls << QUrl::fromLocalFile(QStandardPaths::writableLocation(QStandardPaths::HomeLocation));
     fileDialog.setSidebarUrls(urls);
 
     if (fileDialog.exec() && !fileDialog.selectedFiles().empty()) {
@@ -338,18 +338,18 @@ const QString PythonEditor::getSaveFileName(QStringList filters) {
     QFileDialog fileDialog(this);
     fileDialog.setWindowTitle(tr("Choose a filename to save script"));
     fileDialog.setDirectory(VoreenApplication::app()->getScriptPath().c_str());
-    fileDialog.setFilters(filters);
+    fileDialog.setNameFilters(filters);
     fileDialog.setAcceptMode(QFileDialog::AcceptSave);
 
     QList<QUrl> urls;
     urls << QUrl::fromLocalFile(VoreenApplication::app()->getScriptPath().c_str());
-    urls << QUrl::fromLocalFile(QDesktopServices::storageLocation(QDesktopServices::DesktopLocation));
-    urls << QUrl::fromLocalFile(QDesktopServices::storageLocation(QDesktopServices::HomeLocation));
+    urls << QUrl::fromLocalFile(QStandardPaths::writableLocation(QStandardPaths::DesktopLocation));
+    urls << QUrl::fromLocalFile(QStandardPaths::writableLocation(QStandardPaths::HomeLocation));
     fileDialog.setSidebarUrls(urls);
 
     QStringList fileList;
     if (fileDialog.exec() && !fileDialog.selectedFiles().empty()) {
-        QString endingFilter = fileDialog.selectedFilter();
+        QString endingFilter = fileDialog.selectedNameFilter();
         int pos = endingFilter.lastIndexOf(".");
         //removes closing bracket
         endingFilter.chop(1);

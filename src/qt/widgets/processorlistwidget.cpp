@@ -48,6 +48,9 @@
 #include <QVBoxLayout>
 #include <QMap>
 #include <QList>
+#include <QWidget>
+#include <QMimeData>
+#include <QDrag>
 
 namespace {
     QString whatsThisInfo = "<h3>ProcessorListWidget</h3><p>This widget manages available processors. The upper part shows all registered \
@@ -586,8 +589,8 @@ ProcessorListTreeWidget::ProcessorListTreeWidget(ProcessorListWidget* processorL
     headeritems << "Processor" << "State";
     setHeaderLabels(headeritems);
 
-    header()->setResizeMode(0, QHeaderView::Stretch);
-    header()->setResizeMode(1, QHeaderView::ResizeToContents);
+    header()->setSectionResizeMode(0, QHeaderView::Stretch);
+    header()->setSectionResizeMode(1, QHeaderView::ResizeToContents);
     header()->setStretchLastSection(false);
 
     connect(this, SIGNAL(itemDoubleClicked(QTreeWidgetItem*, int)), this, SLOT(itemHasBeenDoubleClicked(QTreeWidgetItem*, int)));

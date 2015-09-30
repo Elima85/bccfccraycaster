@@ -39,7 +39,7 @@ ArrowHeadSelectionGraphicsItem::ArrowHeadSelectionGraphicsItem(ArrowGraphicsItem
     , width_(0.0)
     , height_(0.0)
 {
-    setAcceptsHoverEvents(true);
+    setAcceptHoverEvents(true);
 }
 
 int ArrowHeadSelectionGraphicsItem::type() const {

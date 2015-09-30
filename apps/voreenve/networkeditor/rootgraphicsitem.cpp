@@ -86,7 +86,7 @@ RootGraphicsItem::RootGraphicsItem(voreen::NetworkEditor* networkEditor)
 
     setFlag(ItemIsMovable);
     setFlag(ItemIsSelectable);
-    setAcceptsHoverEvents(true);
+    setAcceptHoverEvents(true);
     setZValue(ZValueRootGraphicsItemNormal);
 }
 

@@ -51,7 +51,7 @@ namespace voreen {
     //currentFrameWidget_->hide();
     QHBoxLayout* currentLayout = new QHBoxLayout(currentFrameWidget_);
     currentLayout->addWidget(currentFrameLabel_);
-    setAcceptsHoverEvents(true);
+    setAcceptHoverEvents(true);
     setVisible(true);
 }
 
