@@ -20,7 +20,7 @@ Coming soon.
 Coming soon.
 
 ## Voreen 3.0.1
-This information is copied from the readme.txt, obtained from voreen.org.
+This information is copied from readme.txt, obtained from voreen.org.
 
 ### The Voreen directory structure:
  * include: contains all necessary headers
