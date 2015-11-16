@@ -1,7 +1,7 @@
 # BccFccRaycaster
 
 ## Introduction
-BccFccRaycaster is a tool for visualizing data sampled on body-centered cubic (BCC) and face-centered cubic (FCC) lattices. It is implemented as a patch for the volume renderer Voreen 3.0.1, obtained from voreen.org, but also included in this repository.
+BccFccRaycaster is a tool for visualizing data sampled on body-centered cubic (BCC) and face-centered cubic (FCC) lattices. It is implemented as a patch for the volume renderer [Voreen 3.0.1](voreen.org), a copy of which is included in this repository.
 
 ## Features
  * BCCVolumeRaycaster
@@ -14,7 +14,29 @@ BccFccRaycaster is a tool for visualizing data sampled on body-centered cubic (B
     * DC-spline interpolation [Domonkos and Csébfalvi, 2010](http://sirkan.iit.bme.hu/~domi/publications/index.php?pub=2010-vmv)
 
 ## Building
-Coming soon.
+The building procedure is identical to that of [Voreen 3.0.1](http://voreen.org/223-0-Getting-Started.html).
+
+### Requirements
+* Qt 4.5
+* GLEW 1.5
+* DevIL
+
+### Build instructions
+
+#### Windows
+Rename **config-default.txt** to **config.txt**.
+##### With Qt Visual Studio Addon
+In Visual Studio, go to **Qt** -> **Open Solution from .pro File**, and select **voreen.pro**.
+##### Without Qt Visual Studio Addon
+Please see the instructions [here](http://voreen.org/99-Build-Instructions.html).
+
+#### Linux
+In the root directory, call
+```bash
+cp config-default.txt config.txt
+qmake voreen.pro
+make
+```
 
 ## Generating test volumes
 Test volumes can be produced using [mkvol](https://github.com/Elima85/mkvol).
