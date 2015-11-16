@@ -17,7 +17,7 @@ BccFccRaycaster is a tool for visualizing data sampled on body-centered cubic (B
 Coming soon.
 
 ## Generating test volumes
-Coming soon.
+Test volumes can be produced using [mkvol](https://github.com/Elima85/mkvol).
 
 ## Voreen 3.0.1
 This information is copied from readme.txt, obtained from voreen.org.
