@@ -3,6 +3,8 @@
 ## Introduction
 BccFccRaycaster is a tool for visualizing data sampled on body-centered cubic (BCC) and face-centered cubic (FCC) lattices. It is implemented as a patch for the volume renderer [Voreen 3.0.1](voreen.org), a copy of which is included in this repository.
 
+BccFccRaycaster is written by [M. Morén](http://uu.diva-portal.org/smash/record.jsf?faces-redirect=true&aq2=%5B%5B%5D%5D&af=%5B%5D&searchType=SIMPLE&query=&language=sv&pid=diva2%3A546780&aq=%5B%5B%5D%5D&sf=all&aqe=%5B%5D&sortOrder=author_sort_asc&onlyFullText=false&noOfRows=50&dswid=-9993) and [K.-O. Smed](http://uu.diva-portal.org/smash/record.jsf?dswid=-9993&pid=diva2%3A838529&c=2&searchType=SIMPLE&language=sv&query=karl-oskar+smed&af=%5B%5D&aq=%5B%5B%5D%5D&aq2=%5B%5B%5D%5D&aqe=%5B%5D&noOfRows=50&sortOrder=author_sort_asc&onlyFullText=false&sf=all).
+
 ## Features
  * BCCVolumeRaycaster
     * nearest neighbor interpolation (z-interleaved storage recommended!)
